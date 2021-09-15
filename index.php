@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php include __DIR__ . '/partials/header.php'; ?>
 
-<head>
+<!--<head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi primera página :3</title>
 
-    <!--extenciones-->
+    <!extenciones->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
@@ -19,9 +18,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
+</head>-->
 
-<body>
+<!--<body>
     <header>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light" style="height: 80px">
             <a class="navbar-brand" href="#"></a>
@@ -43,9 +42,9 @@
                     </li>
                 </ul>
         </nav>
-        <!--Banner
+        <!-Banner
         <div class="banner" id="home" style="background: url('img/banner1.jpeg'); background-size: cover; "></div>-->
-    </header>
+
 
     <section class="seccionGeneralCarusel">
         <div class="contenedorGeneralCarrusel">
@@ -62,27 +61,27 @@
                     <div class="carousel-item active anchoImagenCa" data-bs-interval="10000">
                         <img class="d-block w-100" src="img/fotoCar1.png" alt="First slide" class="anchoImagenCa"
                             id="anchoImagenCaId">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="textoBlanco anuncioCarucel">La pasión por lo que haces te hará entender que los
+                        <div class="carousel-caption d-none d-md-block textCarrucel">
+                            <h5 class="textWhite anuncioCarucel">La pasión por lo que haces te hará entender que los
                                 límites son mentales.</h5>
-                            <p class="textoBlanco anuncioCarucel">Anónimo </p>
+                            <p class="textWhite anuncioCarucel ">Anónimo </p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
                         <img class="d-block w-100" src="img/fotoCa.png" alt="First slide" class="anchoImagenCa"
                             id="anchoImagenCaId">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="textoBlanco anuncioCarucel">La mejor forma de predecir tu futuro, es construirlo.
+                        <div class="carousel-caption d-none d-md-block textCarrucel">
+                            <h5 class="textWhite anuncioCarucel">La mejor forma de predecir tu futuro, es construirlo.
                             </h5>
-                            <p class="textoBlanco anuncioCarucel">Alan Kay</p>
+                            <p class="textWhite anuncioCarucel ">Alan Kay</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="img/fotoDescripcionDos.png" alt="First slide" class="anchoImagenCa"
                             id="anchoImagenCaId">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="textoBlanco anuncioCarucel">No por miedo a errar, vas a dejar de jugar.</h5>
-                            <p class="textoBlanco anuncioCarucel">Anónimo </p>
+                        <div class="carousel-caption d-none d-md-block textCarrucel">
+                            <h5 class="textWhite anuncioCarucel ">No por miedo a errar, vas a dejar de jugar.</h5>
+                            <p class="textWhite anuncioCarucel ">Anónimo </p>
                         </div>
                     </div>
                 </div>
@@ -155,36 +154,33 @@
         </div>
     </section>
 
-    <section class="seccionGeneral" id="contacto">
+    <section class="seccionGeneral">
         <div class="contenedorGeneral">
-            <h2 class="tituloGeneral">Contacto</h2>
-            <hr class="lineaTitulo">
-
-            <div class="contenedorServicios">
-                <div class="columna2">
-                    <form>
-                        <label class="labelRegular">Nombre:</label>
-                        <input class="inputRegular" type="text" placeholder="Escribe tu nombre aquí.">
-
-                        <label class="labelRegular">Teléfono:</label>
-                        <input class="inputRegular" type="number" placeholder="Escribe tu número aquí.">
-
-                        <label class="labelRegular">Asunto</label>
-                        <input class="inputRegular" type="text" placeholder="Escribe el asunto aquí.">
-                    </form>
+            <h2 class="textCenter">Testimonios</h2>
+            <div class="testimonios" >
+                <div class="testimoniosDos">
+                <div class="columnaTestimonio borde">
+                    <img class="imagenesTestimonios" src="img/cuadrado.png" alt="First slide"  id="">
+                    <p class="textCenter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nulla quibusdam officia rerum at, debitis reprehenderit et aut culpa accusamus recusandae. Cupiditate reprehenderit fuga praesentium voluptatibus voluptate corporis? Esse, quod.</p>
                 </div>
-                <div class="columna2">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.3637678657553!2d-75.61613722824659!3d6.16722924161877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTAnMDIuMCJOIDc1wrAzNic1NC44Ilc!5e0!3m2!1ses-419!2sco!4v1582996183364!5m2!1ses-419!2sco"
-                        class="mapa" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="columnaTestimonio borde">
+                    <img class="imagenesTestimonios" src="img/cuadrado.png" alt="First slide"  id="">
+                    <p class="textCenter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nulla quibusdam officia rerum at, debitis reprehenderit et aut culpa accusamus recusandae. Cupiditate reprehenderit fuga praesentium voluptatibus voluptate corporis? Esse, quod.</p>
                 </div>
+                <div class="columnaTestimonio borde">
+                    <img class="imagenesTestimonios" src="img/cuadrado.png" alt="First slide"  id="">
+                    <p class="textCenter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nulla quibusdam officia rerum at, debitis reprehenderit et aut culpa accusamus recusandae. Cupiditate reprehenderit fuga praesentium voluptatibus voluptate corporis? Esse, quod.</p>
+                </div>
+                </div>
+                
             </div>
+
         </div>
     </section>
 
    
 
-    <section class="seccionFooter">
+    <!--<section class="seccionFooter">
         <div class="contenedorGeneral">
             <footer class="footerCentrado">
                 <p class="textWhite parrafo">Hecho con amor por Robert Yarce Rincon</p>
@@ -213,7 +209,6 @@
 
 
         </footer>
-    </section>
-</body>
+    </section>-->
+    <?php include __DIR__ . '/partials/footer.php'; ?>
 
-</html>

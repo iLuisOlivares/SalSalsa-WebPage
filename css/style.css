@@ -71,12 +71,44 @@ a{
     max-width: 100%;
 }
 
+.textCarrucel{
+    font-size: 20px;
+    padding-bottom: 450px;
+}
+
 .anchoImagenCa{
     height: 660px;
 }
 
 #anchoImagenCaId{
     height: 660px;
+}
+
+.testimonios{
+    
+    height:50px;
+    width:900px;
+    margin:0px auto;
+}
+
+.imagenesTestimonios{
+    width: 150px;
+    height: 150px;
+}
+
+.columnaTestimonio{
+    width: 31%;
+    margin: 1%;
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.borde{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 15px; 
 }
 
 .seccionFooter{
