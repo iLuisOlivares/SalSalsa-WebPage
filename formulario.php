@@ -16,7 +16,7 @@
     <!--Navbar -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg  py-1" id="mainNav">
         <div class="container px-4 px-lg-0">
-            <a class="navbar-brand" href="#Main"> <img src="./images/logo@2x.png" alt="" width="200" height="150"></a>
+            <a class="navbar-brand" href="#Main"> <img src="./img/logo@2x.png" alt="" width="200" height="150"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -153,6 +153,7 @@
         </div>
 
     </section>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark">
