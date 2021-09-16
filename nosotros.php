@@ -46,23 +46,49 @@
     <!-- Historia -->
     <section class="page-section">
 
-      <!-- Contenedor -->
-      <div class="container">
-        <div class="col-12 text-center m-3 p-5 -ms p-ms-2">
-
-
+    <!-- Contenedor -->
+    <div class="container rounded-3 pb-4">
+  
+      <!-- Primera parte -->
+        <div class="row p-3  mt-5 rounded d-flex justify-content-end " >
+  
+          
+          <div class="col-12 col-lg-6 text-end p-3 p-ms-2 fondo rounded rounded-pill">
+          <h2 class ="text-light">Nuestra <b class="msg__in">Historia </b>  </h2>
         </div>
-      </div>
-
-    </section>
+        </div>
+  
+        <!-- Card Historia -->
+          <div class="card mb-3 p-3 bg-dark " style="max-width: 1800px; min-height: 500px">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="./img/foto4@2x.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6 rounded fondo">
+                  <div class="card-body">
+                    <h3 class="card-title text-light pb-5">Lorem ipsum dolor sit amet.</h3>
+                    <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti in dolores consequuntur sed iusto. Odit autem distinctio aliquid obcaecati iste! Porro doloremque facere voluptas adipisci sequi officiis dolores obcaecati!</p>
+                    <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum cum, quibusdam maiores repellat veritatis eveniet illum sequi quia consequatur pariatur sapiente molestiae molestias doloribus facere temporibus neque nulla laboriosam!.</p>
+                    <p class="card-text text-light fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem enim unde voluptatem est, reiciendis voluptate sunt provident, ex quaerat exercitationem perspiciatis alias dolores, culpa necessitatibus placeat quis. Nihil, illum asperiores!.</p>
+                    <p class="card-text text-light fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit odit repudiandae possimus, in deserunt nesciunt quasi beatae repellendus minus modi aliquid quia. Ab, quia odio doloribus numquam quam eos?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    </div>
+  
+  
+  
+  </section>
     
 
      <!-- Personal -->
      <section class="page-section" id="personal">
 
       <!-- contenedor -->
-        <div class="container ">
-          <div class="col-12 col-lg-12 text-center p-5 p-lg-0 m-ms-1 p-ms-2">
+        <div class="container">
+          <div class="col-12 text-center p-5 p-lg-5 m-ms-1 p-ms-2">
             <h2 class="text">Personal</h2>
             <hr class="divider" />
           </div>
@@ -98,7 +124,7 @@
                     <div class="card col-4" style="width: 18rem;">
                       <img src="./img/Personal.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h3 class="card-text d-flex justify-content-center">Jhon Jimenez</h3>
+                        <h3 class="card-text d-flex justify-content-center">Jhona Jimenez</h3>
                         <p class="card-text d-flex justify-content-center">Ayudante de cocina</p>
                       </div>
                     </div>
@@ -108,7 +134,7 @@
                 </div>  
                 
                 <!-- sub-row2 -->
-                <div class="row2 row bg-dark rounded m-2">
+                <div class="row2 row fondo rounded m-2">
   
                     <div class="col-12 col-lg-4 col-md-6 d-flex p-3 align-items-center justify-content-center">
                       <div class="card col-4" style="width: 18rem;">
@@ -163,9 +189,9 @@
           </div>
 
           <!-- Row principal -->
-          <div class="row  d-flex p-3 align-items-center justify-content-center">
+          <div class="row  d-flex align-items-center justify-content-center">
 
-              <div class="col-12 col-lg-10">
+              <div class="col-12 col-lg-12">
                 <!-- Sub row -->
                 <div class="row row2">
                   <div class="col-12 col-lg-8 p-2">
@@ -176,7 +202,7 @@
                           <img
                             src="./img/Testimonio.png"
                             alt="image-persona"
-                            class="img_testimonio border border-danger border-3 rounded-circle"
+                            class="img_testimonio border border-secondary border-3 rounded-circle"
                           />
                           <div class="ps-3">
                             <h6 class="m-0 h6 fw-bold fs-5">Gabriela Lopez</h6>
@@ -207,7 +233,7 @@
                           <img
                             src="./img/Testimonio2.png"
                             alt="image-persona"
-                            class="img_testimonio border border-danger border-3 rounded-circle"
+                            class="img_testimonio border border-secondary border-3 rounded-circle"
                           />
                           <div class="ps-3">
                             <h6 class="m-0 h6 fw-bold fs-5">Luisa Bravo</h6>
@@ -238,7 +264,7 @@
                           <img
                             src="./img/Testimonio3.png"
                             alt="image-persona"
-                            class=" img_testimonio border border-danger border-3 rounded-circle"
+                            class=" img_testimonio border border-secondary border-3 rounded-circle"
                           />
                           <div class="ps-3">
                             <h6 class="m-0 h6 fw-bold fs-5">Jairo Mendez</h6>
@@ -261,13 +287,13 @@
                   </div>
       
                   <div class="col-12 col-lg-8 p-2 text-white">
-                    <article class="card quotation h-100 bg-dark shadow-lg">
+                    <article class="card quotation h-100 fondo shadow-lg">
                       <div class="card-body">
                         <div class="d-flex mb-3">
                           <img
                             src="./img/Testimonio4.png"
                             alt="image-persona"
-                            class="img_testimonio border border-danger border-3 rounded-circle"
+                            class="img_testimonio border border-secondary border-3 rounded-circle"
                           />
                           <div class="ps-3">
                             <h6 class="m-0 h6 fw-bold fs-5">Roberto Mesa</h6>
@@ -327,16 +353,13 @@
         </div>
     
         <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
+          © 2021 Copyright:
           <a class="text-white" href="">Sal&Salsa.com</a>
         </div>
         
       </footer>
       
-    
   
-  
-      <script src="./js/contact.js"></script>
          
       
   </body>
