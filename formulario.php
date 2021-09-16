@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/Luis.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,12 +57,12 @@
                 </div>
             <!-- Form -->
             <div class="row gx-0 gx-lg-0 justify-content-center mb-2 mx-1 pb-5">
-                <div class=" shadow-lg  col-xll-3 col-xl-6 col-lg-8 px-4 py-3 px-sm-5">
+                <div class=" shadow-lg  col-xll-3 col-xl-6 col-lg-8 px-4 py-3 px-sm-5 rounded-3">
                     <form id="formulario">
 
                         <!-- Seleccion motivo -->
                         <div class="mb-3 mt-4" id="grupo_select">
-                            <label class="form-label">Seleccione el servicio</label>
+                            <label class="form-label ">Seleccione el servicio</label>
                             <select name="select" id="select-id" class="item-formulario form-select">
                                 <option selected>Seleccionar</option>
                                 <option> Celebración de cumpleaños     </option>

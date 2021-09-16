@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/Luis.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
     <section class="page-section">
 
     <!-- Contenedor -->
-    <div class="container rounded-3 pb-4">
+    <div class="container rounded-3 bg-dark pb-4">
   
       <!-- Primera parte -->
         <div class="row p-3  mt-5 rounded d-flex justify-content-end " >
@@ -59,14 +59,14 @@
         </div>
   
         <!-- Card Historia -->
-          <div class="card mb-3 p-3 bg-dark " style="max-width: 1800px; min-height: 500px">
+          <div class="fondo card mb-3 p-3 bg" style="max-width: 1800px; min-height: 500px">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex justify-content-center">
                   <img src="./img/foto4@2x.png" class="img-fluid rounded-start" alt="...">
                 </div>
-                <div class="col-md-6 rounded fondo">
-                  <div class="card-body">
-                    <h3 class="card-title text-light pb-5">Lorem ipsum dolor sit amet.</h3>
+                <div class="col-md-6 rounded-3">
+                  <div class="card-body rounded-3 fondo">
+                    <h3 class="card-title text-light pb-5">Lorem ipsum <b class="msg__in">dolor sit amet.</b></h3>
                     <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti in dolores consequuntur sed iusto. Odit autem distinctio aliquid obcaecati iste! Porro doloremque facere voluptas adipisci sequi officiis dolores obcaecati!</p>
                     <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum cum, quibusdam maiores repellat veritatis eveniet illum sequi quia consequatur pariatur sapiente molestiae molestias doloribus facere temporibus neque nulla laboriosam!.</p>
                     <p class="card-text text-light fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem enim unde voluptatem est, reiciendis voluptate sunt provident, ex quaerat exercitationem perspiciatis alias dolores, culpa necessitatibus placeat quis. Nihil, illum asperiores!.</p>
