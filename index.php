@@ -77,23 +77,23 @@
         <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati id explicabo tempora debitis doloremque voluptatum veritatis recusandae ratione in necessitatibus consequuntur eum excepturi nesciunt, facilis commodi. Ut, magnam earum?</p>
             <div class="columna2Dos">
-                <label class="labelRegular">Nuevas comidad:</label>
-                <img class="" src="img/fotodescripcionDos.png" alt="First slide" class="" id="" style="width: 200px; height: 200px;">
+                <label class="labelRegular">Para compartir en familia</label>
+                <img class="" src="./assets/img/menu/img11.jpg" alt="First slide" class="" id="" style="width:200px; height: 150px;">
 
-                <label class="labelRegular">Nuevos sabores:</label>
-                <img class="" src="img/fotodescripcionDos.png" alt="First slide" class="" id="" style="width: 200px; height: 200px;">
+                <label class="labelRegular">Mas crocantes</label>
+                <img class="" src="./assets/img/menu/img7.jpg" alt="First slide" class="" id="" style="width: 200px; height: 150px;">
             </div>
             <div class="columna2Dos">
-                <label class="labelRegular">Nuevos gustos:</label>
-                <img class="" src="img/fotodescripcionDos.png" alt="First slide" class="" id="" style="width: 200px; height: 200px;">
+                <label class="labelRegular">Nuevos combos:</label>
+                <img class="" src="./assets/img/menu/img1.jpg" alt="First slide" class="" id="" style="width: 200px; height: 150px;">
 
-                <label class="labelRegular">Nuevos espacios</label>
-                <img class="" src="img/fotodescripcionDos.png" alt="First slide" class="" id="" style="width: 200px; height: 200px;">
+                <label class="labelRegular">Nuevos gustos</label>
+                <img class="" src="./assets/img/menu/img14.png" alt="First slide" class="" id="" style="width: 200px; height: 150px;">
             </div>
 
             <div class="columna2Dos">
-                <label class="labelRegular">Miralo</label>
-                <img class="" src="img/fotodescripcionDos.png" alt="First slide" class="" id="" style="width: 500px; height: 430px;">
+                <label class="labelRegular">Mas sabores</label>
+                <img class="" src="./assets/img/menu/img13.jpg" alt="First slide" class="" id="" style="width: 500px; height: 430px;">
             </div>
 
         </div>
