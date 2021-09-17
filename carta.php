@@ -373,9 +373,13 @@
           ipsa veniam qui ipsam rem atque voluptate nihil vero? Libero, illo
           totam.
         </p>
-        <button type="button" class="btn btn-success o-btn-style">
-          Ver detalle
-        </button>
+        <div id="o-value-plato-image" class="o-img-modal-container"></div>
+        <!-- Open whatsapp to send a message -->
+        <a href="https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@">
+          <button type="button" class="btn btn-success o-btn-style" >
+            Ver contacto
+          </button>
+        </a>
       </div>
     </div>
 
