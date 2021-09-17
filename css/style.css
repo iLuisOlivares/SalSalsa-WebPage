@@ -174,23 +174,26 @@ hr.lineaTitulo{
 
 .contendor{
     position: relative;
-    display: inline-block;
+    display: inline-block; 
     text-align: center;
+    
+}
+
+.o-text-info {
+    position: relative;
+    /* display: flex; */
+
 }
 
 .textoEncima{
-    position: absolute;
-    top: 50px;
-    left: 10px;
+    position: relative;
+    top: 0px;
 }
 
-.centrado{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.textoAbajo{
+    position: relative;
+    bottom: 0px;
 }
-
 
 .descripcion{
     width: 50%;
