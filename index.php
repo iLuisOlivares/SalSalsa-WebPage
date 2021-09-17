@@ -99,11 +99,11 @@
             <div class="testimoniosDos textoTestimonios">
                 
 
-
-            <div class="card mb-3" style="max-width: fit-content;">
+            
+            <div class="card mb-3" style="max-width: 640px; align-self: center">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/personaTresE.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="./img/personaTresE.jpg" class="img-fluid rounded-start" alt="Testimonio1">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -115,10 +115,10 @@
             </div>
 
 
-            <div class="card mb-3">
+            <div class="card mb-3" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/personaUno.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="./img/personaUno.jpg" class="img-fluid rounded-start" alt="Testimonio2">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -129,10 +129,10 @@
                 </div>
             </div>
 
-            <div class="card mb-3" style="float: left; margin-top:20px;">
+            <div class="card mb-3" style="float: left; margin-top:20px; max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/personaDos.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="./img/personaDos.jpg" class="img-fluid rounded-start" alt="Testimonio3">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
