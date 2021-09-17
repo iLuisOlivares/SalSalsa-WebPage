@@ -35,11 +35,11 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Atras</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
     </div>
@@ -112,9 +112,9 @@
                         <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
                     </div>
                 </div>
-                
+
                 <div class="borde" style="float: left; margin-top:20px;">
-                    
+
                     <div class="imagenGaleria borde" style="background: url('img/personaUno.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: right;">
                         <img src="img/cuadrado.png" class="w100">
                     </div>
