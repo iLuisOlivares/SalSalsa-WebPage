@@ -8,7 +8,7 @@
         <div class="pt-5 container px-4 px-lg5 d-flex justify-content-center">
             <!-- description -->
             <div class="col-lg-8 col-xl-6 text-center ">
-                        <h2 class="mt-0">Contactanos</h2>
+                        <h2 class="mt-0 fw-bold">Contactanos</h2>
                         <hr class="divider" />
                         <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque voluptate in sed culpa facilis aliquid dolorum unde, consequatur quos exercitationem tenetur ut non ipsa rem sapiente harum distinctio est.</p>
                     </div>

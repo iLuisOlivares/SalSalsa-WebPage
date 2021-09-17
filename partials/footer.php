@@ -9,7 +9,7 @@
                         <ul class="social-networks">
                             <span class="textWhite parrafo">Sigueme en:</span>
                             <br>
-                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>

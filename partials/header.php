@@ -46,6 +46,7 @@
             <a class="social-icon" href="https://www.instagram.com/"><i class="fab fa-instagram-square icon"></i></a>
             <a class="social-icon" href="https://twitter.com/"><i class="fab fa-twitter-square icon"></i></a>
             <a class="social-icon" href="https://www.youtube.com/user/"><i class="fab fa-youtube-square icon"></i></a>
+            <a class="social-icon" href="https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@"><i class="fab fa-whatsapp-square icon"></i></a>
 
         </div>
     </header>
