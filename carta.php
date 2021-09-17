@@ -8,7 +8,7 @@
       <!-- El container del menú -->
       <div class="container">
         <!-- Carrosel items -->
-        <div id="carouselExampleIndicators" class="carousell slide">
+        <div id="carouselExampleIndicators" class="carousel slide o-fix">
           <div class="carousel-indicators">
             <button
               type="button"
