@@ -3,15 +3,7 @@
     <!-- contat us -->
     <section class="page-section" id="contact-us"></section>
 
-         <!-- social bar -->
     
-         <div class="social--bar">
-             <a class="social-icon" href="https://www.facebook.com/Colnodo/"><i class="fab fa-facebook-square icon"></i></a>
-             <a class="social-icon" href="https://www.instagram.com/colnodo/?hl=es"><i class="fab fa-instagram-square icon"></i></a>
-            <a class="social-icon" href="https://twitter.com/Colnodo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter-square icon"></i></a>
-            <a class="social-icon" href="https://www.youtube.com/user/colnodo"><i class="fab fa-youtube-square icon"></i></a>
-            
-        </div>
 
         <div class="pt-5 container px-4 px-lg5 d-flex justify-content-center">
             <!-- description -->
