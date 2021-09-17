@@ -154,7 +154,7 @@
                     />
                     <div class="card-body">
                       <h5 class="card-title">Copa de papas sencillo</h5>
-                      <p class="card-text">Copa de papas con</p>
+                      <p class="card-text">Copa de papas con guacamole.</p>
                       <!-- Trigger/Open The Modal -->
                       <button
                         type="button"
@@ -359,6 +359,11 @@
         </div>
       </div>
     </main>
+
+    <!-- Link to download the menu -->
+    <div class="o-menu-doc">
+      <a  href="./assets/doc/Menu_Completo.pdf" download="menu">Descarga el Menú completo aquí</a>
+    </div>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
