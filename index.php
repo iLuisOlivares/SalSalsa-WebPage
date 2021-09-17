@@ -45,7 +45,7 @@
     </div>
 </section>
 
-<section class="seccionGeneralCarusel" id="">
+<section class="" id="">
 
     <div class="contendor">
         <img class="d-block w-100" src="img/fotodescripcionDos.png" alt="First slide" class="" id="">
@@ -104,31 +104,34 @@
         <h2 class="textCenter">Testimonios</h2>
         <div class="testimonios ">
             <div class="testimoniosDos textoTestimonios">
-                <div class="borde" style="float: left; margin-top:20px;">
-                    <div class="imagenGaleria borde" style="background: url('img/personaUno.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: left;">
+                <div class="borde" style="float: left; margin-top:20px; background:#A0FCB3;">
+                    <div class="imagenGaleria borde" style="background: url('img/personaTresE.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: left;">
                         <img src="img/cuadrado.png" class="w100">
                     </div>
                     <div class="">
                         <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
+                        <h2 style="text-align: left;">Anónimo</h2>
                     </div>
                 </div>
 
-                <div class="borde" style="float: left; margin-top:20px;">
+                <div class="borde" style="float: left; margin-top:20px; background:#74AFF9;">
 
                     <div class="imagenGaleria borde" style="background: url('img/personaUno.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: right;">
                         <img src="img/cuadrado.png" class="w100">
                     </div>
                     <div class="">
                         <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
+                        <h2 style="text-align:right;">Anónimo</h2>
                     </div>
                 </div>
 
-                <div class="borde" style="float: left; margin-top:20px;">
-                    <div class="imagenGaleria borde" style="background: url('img/personaUno.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: left;">
+                <div class="borde" style="float: left; margin-top:20px; background:#C7A0FC">
+                    <div class="imagenGaleria borde" style="background: url('img/personaDos.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: left;">
                         <img src="img/cuadrado.png" class="w100">
                     </div>
                     <div class="">
                         <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
+                        <h2 style="text-align: left;">Anónimo</h2>
                     </div>
                 </div>
             </div>

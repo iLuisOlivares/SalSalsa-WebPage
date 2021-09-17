@@ -10,10 +10,10 @@
   text-align: center;
 }
 
-.carousel {
+/*.carousell {
   position: bottom;
   padding-bottom: 60px;
-}
+}*/
 
 .carousel-indicators [data-bs-target] {
   background-color: black;
