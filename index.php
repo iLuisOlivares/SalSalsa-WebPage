@@ -50,24 +50,17 @@
     <div class="contendor">
         <img class="d-block w-100" src="img/fotodescripcionDos.png" alt="First slide" class="" id="">
 
-        <p class="textoEncima  textWhite ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            ducimus consectetur perspiciatis veniam odit facilis laborum aperiam. Laborum, possimus. Quasi culpa
-            laborum deleniti doloremque qui
-            autem maxime labore asperiores ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            ducimus consectetur perspiciatis veniam odit facilis laborum aperiam. Laborum, possimus. Quasi culpa
-            laborum deleniti doloremque qui
-            autem maxime labore asperiores ut Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia obcaecati repellat animi nesciunt voluptates atque pariatur a, porro odio eaque rem eveniet asperiores laudantium eligendi. Provident corporis dolor dignissimos?</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="textoEncima centrado textWhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae?
-            Cumque laudantium reprehenderit iure quidem itaque rem a pariatur eveniet animi recusandae dignissimos
-            iusto ullam, deserunt maxime enim mollitia atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Hic cumque quaerat tempore est saepe modi voluptatum quidem illo neque, fugit, explicabo dolorem, illum vel maxime laboriosam ratione voluptas distinctio tempora.</p>
-        <br>
-        <div class="centrado"></div>
+        <section class="o-text-info" >
+            <p class="textoEncima  textWhite ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+                ducimus consectetur perspiciatis veniam odit facilis laborum aperiam. Laborum, possimus. Quasi culpa
+                laborum deleniti doloremque qui autem maxime labore asperiores ut.</p>
+    
+            <p class="textoAbajo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae?
+                Cumque laudantium reprehenderit iure quidem itaque rem a pariatur eveniet animi recusandae dignissimos
+                iusto ullam, deserunt maxime enim mollitia atque. </p>
+            
+            <!-- <div class="centrado"></div> -->
+        </section>  
     </div>
 </section>
 
@@ -104,36 +97,52 @@
         <h2 class="textCenter">Testimonios</h2>
         <div class="testimonios ">
             <div class="testimoniosDos textoTestimonios">
-                <div class="borde" style="float: left; margin-top:20px; background:#A0FCB3;">
-                    <div class="imagenGaleria borde" style="background: url('img/personaTresE.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: left;">
-                        <img src="img/cuadrado.png" class="w100">
+                
+
+            
+            <div class="card mb-3" style="max-width: 640px; align-self: center">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./img/personaTresE.jpg" class="img-fluid rounded-start" alt="Testimonio1">
                     </div>
-                    <div class="">
-                        <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
-                        <h2 style="text-align: left;">Anónimo</h2>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Anónimo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
+                    </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="borde" style="float: left; margin-top:20px; background:#74AFF9;">
 
-                    <div class="imagenGaleria borde" style="background: url('img/personaUno.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: right;">
-                        <img src="img/cuadrado.png" class="w100">
+            <div class="card mb-3" style="max-width: 640px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./img/personaUno.jpg" class="img-fluid rounded-start" alt="Testimonio2">
                     </div>
-                    <div class="">
-                        <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
-                        <h2 style="text-align:right;">Anónimo</h2>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Anónimo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
+                    </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="borde" style="float: left; margin-top:20px; background:#C7A0FC">
-                    <div class="imagenGaleria borde" style="background: url('img/personaDos.jpg'); background-size: cover; background-position-y: 27%; background-position-x: center; float: left;">
-                        <img src="img/cuadrado.png" class="w100">
+            <div class="card mb-3" style="float: left; margin-top:20px; max-width: 640px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./img/personaDos.jpg" class="img-fluid rounded-start" alt="Testimonio3">
                     </div>
-                    <div class="">
-                        <p class="textoTestimonios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
-                        <h2 style="text-align: left;">Anónimo</h2>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Anónimo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio error sed dolorem nihil, obcaecati nesciunt! Animi, cumque? Quos dicta dolores minus distinctio adipisci cum at aperiam maiores cumque, ratione sapiente?</p>
+                    </div>
                     </div>
                 </div>
+            </div>
+
             </div>
 
         </div>
