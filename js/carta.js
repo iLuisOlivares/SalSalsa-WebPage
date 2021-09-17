@@ -55,7 +55,7 @@ function determinarPlato(v) {
     document.getElementById("o-value-plato-image").appendChild(img);
   } else if(v == 6) {
     document.getElementById("o-value-plato-titulo").innerHTML = "Copa de papas sencillo";
-    document.getElementById("o-value-plato-descripcion").innerHTML = "Copa de papas con";
+    document.getElementById("o-value-plato-descripcion").innerHTML = "Copa de papas con guacamole.";
     img.src = 'http://localhost/proyecto/assets/img/menu/img6.jpg';
     document.getElementById("o-value-plato-image").appendChild(img);
   } else if(v == 7) {

@@ -28,7 +28,7 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.php">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="carta.php">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carta.php">Menú</a></li>
                         <li class="nav-item"><a class="nav-link" href="servicios.php">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="formulario.php">Contáctanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="mapa.php">Mapa</a></li>

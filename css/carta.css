@@ -15,6 +15,17 @@
   padding-bottom: 60px;
 }
 
+.o-menu-doc {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.o-menu-doc > a {
+  color: black;
+  font-weight: bold;
+}
+
 .carousel-indicators [data-bs-target] {
   background-color: black;
 }
