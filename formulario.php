@@ -8,7 +8,7 @@
         <div class="pt-5 container px-4 px-lg5 d-flex justify-content-center">
             <!-- description -->
             <div class="col-lg-8 col-xl-6 text-center ">
-                        <h2 class="mt-0 fw-bold">Contactanos</h2>
+                        <h2 class="mt-0 fw-bold">Contáctanos</h2>
                         <hr class="divider" />
                         <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque voluptate in sed culpa facilis aliquid dolorum unde, consequatur quos exercitationem tenetur ut non ipsa rem sapiente harum distinctio est.</p>
                     </div>
@@ -54,13 +54,13 @@
                         <!-- Correo electronico -->
                         <div class="form-floating mb-3" id="grupo_correo">
                             <input type="email" name ="correo" class="item-formulario form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
-                            <label for="floatingInput" class="form_label" >Correo electronico</label>
-                            <p class="msg__input-error">*Ingrese un correo electronico valido</p>
+                            <label for="floatingInput" class="form_label" >Correo electrónico</label>
+                            <p class="msg__input-error">*Ingrese un correo electrónico válido</p>
                         </div>
                         
                         <!-- Descripcion -->
                         <div class="form mb-3" id="grupo_descripcion">
-                            <label for="floatingInput" class="form_label">Descripcion</label>
+                            <label for="floatingInput" class="form_label">Descripción</label>
                             <textarea name="descripcion" class="item-formulario form-control" id="descripcion-id" rows="3" placeholder="Expliquenos el motivo de su contacto"></textarea>
                             <p class="msg__input-error">*Por favor escriba una breve descripcion</p>
                             <p class="msg2__input-error">La descripcion no debe sobrepasar los 500 caracteres</p>
@@ -68,9 +68,9 @@
                         
                         <!-- checkbox -->
                         <div class="mb-3 form-check" id="grupo_check">
-                            <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+                            <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
                             <input name="check" type="checkbox" class="item-formulario form-check-input" id="check-id">
-                            <p class="msg__input-error">*Por favor acepte terminos y condiciones</p>
+                            <p class="msg__input-error">*Por favor acepte términos y condiciones</p>
                         </div>
                         
                        
