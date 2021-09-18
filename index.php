@@ -57,51 +57,83 @@
             ducimus consectetur perspiciatis veniam odit facilis laborum aperiam. Laborum, possimus. Quasi culpa
             laborum deleniti doloremque qui
             autem maxime labore asperiores ut Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia obcaecati repellat animi nesciunt voluptates atque pariatur a, porro odio eaque rem eveniet asperiores laudantium eligendi. Provident corporis dolor dignissimos?</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="textoEncima centrado textWhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae?
-            Cumque laudantium reprehenderit iure quidem itaque rem a pariatur eveniet animi recusandae dignissimos
-            iusto ullam, deserunt maxime enim mollitia atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Hic cumque quaerat tempore est saepe modi voluptatum quidem illo neque, fugit, explicabo dolorem, illum vel maxime laboriosam ratione voluptas distinctio tempora.</p>
-        <br>
+
         <div class="centrado"></div>
     </div>
 </section>
 
-<section class="seccionGeneralDos">
+<section class="seccionGeneralDos colorSeccionDos">
+    <br><br><br>
     <div class="contenedorGeneral">
-        <h2 class="textCenter">Un poco de lo que hay</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati id explicabo tempora debitis doloremque voluptatum veritatis recusandae ratione in necessitatibus consequuntur eum excepturi nesciunt, facilis commodi. Ut, magnam earum?</p>
-            <div class="columna2Dos">
-                <label class="labelRegular">Para compartir en familia</label>
-                <img class="" src="./assets/img/menu/img11.jpg" alt="First slide" class="" id="" style="width:200px; height: 150px;">
+        <h2 class="textCenter textWhite">Un poco de lo que hay</h2>
+        <div class="">
 
-                <label class="labelRegular">Mas crocantes</label>
-                <img class="" src="./assets/img/menu/img7.jpg" alt="First slide" class="" id="" style="width: 200px; height: 150px;">
+            
+        <p class="textWhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati id explicabo tempora debitis doloremque voluptatum veritatis recusandae ratione in necessitatibus consequuntur eum excepturi nesciunt, facilis commodi. Ut, magnam earum?</p>
+        <br>
+        <div class="columna2Dos padd">
+                <label class="labelRegular textWhite">Para compartir en familia</label>
+                <img class="" src="./assets/img/menu/img11.jpg" class="" id="" style="width:250px; height: 150px; padding-right:20px;">
+
+                <label class="labelRegular textWhite">Mas crocantes</label>
+                <img class="" src="./assets/img/menu/img7.jpg" class="" id="" style="width:250px; height: 150px; padding-right:20px;">
             </div>
-            <div class="columna2Dos">
-                <label class="labelRegular">Nuevos combos:</label>
-                <img class="" src="./assets/img/menu/img1.jpg" alt="First slide" class="" id="" style="width: 200px; height: 150px;">
+            <div class="columna2Dos padd ">
+                <label class="labelRegular textWhite">Nuevos combos:</label>
+                <img class="" src="./assets/img/menu/img1.jpg" class="" id="" style="width:250px; height: 150px; padding-right:20px;">
 
-                <label class="labelRegular">Nuevos gustos</label>
-                <img class="" src="./assets/img/menu/img14.png" alt="First slide" class="" id="" style="width: 200px; height: 150px;">
+                <label class="labelRegular textWhite">Nuevos gustos</label>
+                <img class="" src="./assets/img/menu/img14.png" class="" id="" style="width:250px; height: 150px; padding-right:20px;">
             </div>
 
             <div class="columna2Dos">
-                <label class="labelRegular">Mas sabores</label>
-                <img class="" src="./assets/img/menu/img13.jpg" alt="First slide" class="" id="" style="width: 500px; height: 430px;">
+                <label class="labelRegular textWhite">Mas sabores</label>
+                <img class="" src="./assets/img/menu/img13.jpg" class="" id="" style="width: 500px; height: 430px;">
             </div>
 
         </div>
     </div>
 </section>
+
 <section class="seccionGeneral">
     <div class="contenedorGeneral">
-        <h2 class="textCenter">Testimonios</h2>
+        <h2 class="textCenter">Platos destacados</h2>
+        <div class="testimonios ">
+            <div class="contenedorPlatos textoTestimonios">
+                <form action="carta.php">
+                <div class="platos">
+                    <div class="imagenPlatos" style="background: url('./assets/img/menu/img11.jpg'); background-size: cover; background-position: top;">
+                    </div>
+                    <h2 class="subtitulo-servicios">Plato #1</h2>
+                    <p class="parrafo-regular text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <button class="botonRegular botonCentrado">Comprar</button>
+                </div>
+                
+                
+                <div class="platos">
+                    <div class="imagenPlatos" style="background: url('./assets/img/menu/img2.jpg'); background-size: cover; background-position-y: 13%;">
+                    </div>
+                    <h2 class="subtitulo-servicios">Plato #2</h2>
+                    <p class="parrafo-regular text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <button class="botonRegular botonCentrado">Comprar</button>
+                </div>
+                <div class="platos">
+                    <div class="imagenPlatos" style="background: url('./assets/img/menu/img4.jpg'); background-size: cover; background-position-y: 27%;">
+                    </div>
+                    <h2 class="subtitulo-servicios">Plato #2</h2>
+                    <p class="parrafo-regular text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <button class="botonRegular botonCentrado"> Comprar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="seccionGeneral colorSeccionDos">
+    <div class="contenedorGeneral">
+        <h2 class="textCenter textWhite">Testimonios</h2>
         <div class="testimonios ">
             <div class="testimoniosDos textoTestimonios">
                 <div class="borde" style="float: left; margin-top:20px; background:#A0FCB3;">
