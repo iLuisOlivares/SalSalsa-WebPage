@@ -2,17 +2,17 @@
     <footer>
         <div class="contenedorGeneral">
             <footer class="footerCentrado">
-                <p class="textWhite parrafo">Hecho por el Grupo #4</p>
+                <p class="textWhite parrafo">Pagina Web realizada por el <b>grupo #4</b><p>
 
                 <div class="custom-element custom-element-networks">
                     <span class="element-tag">
-                        <ul class="social-networks">
-                            <span class="textWhite parrafo">Sigueme en:</span>
+                        
+                            <span class="textWhite parrafo">Siguenos en:</span>
                             <br>
-                            <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+                            <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i style="font-size:25px;color:white" class="fab fa-instagram"></i></a></li>
+                       
                     </span>
                 </div>
                 <div>

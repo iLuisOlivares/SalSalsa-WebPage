@@ -7,7 +7,7 @@
         <div class="container">
           <div class="col-12 text-center p-5 p-lg-5 pb-lg-4 m-ms-1 p-ms-2">
             <h2 class="text fw-bold">Servicios</h2>
-            <hr class="divider" />
+            <!-- <hr class="divider shadow-lg" /> -->
           </div>
 
                

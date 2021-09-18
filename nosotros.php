@@ -143,7 +143,7 @@
     <section class="page-section" id="Testimonials">
 
       <!-- contenedor -->
-        <div class="container ">
+        <div class="container  pb-5">
           <div class="col-lg-12 text-center p-5 m-ms-1 p-ms-2">
             <h2 class="text">Testimonios</h2>
             <hr class="divider" />
