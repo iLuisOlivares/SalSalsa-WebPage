@@ -299,7 +299,22 @@ label.labelRegular{
     font-size: 15px;
 }
 
+/* Mapa styles */
+.o-mapa-container {
+    padding: 2rem;
+}
 
+.o-mapa-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 260px;
+    padding: 2rem;
+}
 
-
+.o-mapa-item {
+    margin: 12px 0px;
+    color: black;
+    text-decoration: none;
+}
 
