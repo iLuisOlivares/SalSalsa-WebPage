@@ -51,9 +51,9 @@
         <img class="d-block w-100" src="img/fotodescripcionDos.png" alt="First slide" class="" id="">
 
         <section class="o-text-info" >
-            <p class="textoEncima  textWhite ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+            <!-- <p class="textoEncima  textWhite ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
                 ducimus consectetur perspiciatis veniam odit facilis laborum aperiam. Laborum, possimus. Quasi culpa
-                laborum deleniti doloremque qui autem maxime labore asperiores ut.</p>
+                laborum deleniti doloremque qui autem maxime labore asperiores ut.</p> -->
     
             <p class="textoAbajo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae?
                 Cumque laudantium reprehenderit iure quidem itaque rem a pariatur eveniet animi recusandae dignissimos
