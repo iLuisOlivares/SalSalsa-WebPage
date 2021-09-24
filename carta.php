@@ -51,12 +51,6 @@
                       >
                         Ver detalle
                       </button>
-                      <button
-                      type=button
-                      class="btn btn-success o-btn-style"
-                      >
-                      Agregar al carrito
-                      </button>
                     </div>
                   </div>
                 </div>
