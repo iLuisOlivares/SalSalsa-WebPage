@@ -114,8 +114,7 @@
     
   </div>
 
+  <script src="./js/contact.js"></script>
 
 
-       
-    
     <?php include __DIR__ . '/partials/footer.php'; ?>

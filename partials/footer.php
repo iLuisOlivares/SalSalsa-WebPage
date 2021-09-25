@@ -35,8 +35,8 @@
 <script src="https://kit.fontawesome.com/34237dd665.js" crossorigin="anonymous"></script>
 
 <script src="./js/contact.js"></script>
-
 <script type="text/javascript" src="./js/carta.js"></script>
+
 </body>
 
 </html>

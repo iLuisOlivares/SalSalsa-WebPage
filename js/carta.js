@@ -31,7 +31,7 @@ function determinarPlato(v) {
         "Combo 1 hamburguesa";
       document.getElementById("o-value-plato-descripcion").innerHTML =
         "Combo de hamburguesa, con papas y refresco";
-      img.src = "../assets/img/menu/img1.jpg";
+      img.src = "../assets/";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 2:

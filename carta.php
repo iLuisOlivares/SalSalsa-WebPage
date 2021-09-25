@@ -301,6 +301,7 @@
         <input type="number" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
           style="max-width: 35px ;border: 2px solid rgb(5, 148, 5); border-radius: 5px">
         </input>
+      
       </div>
       
       </div>
@@ -309,7 +310,7 @@
     </div>
   </div>
 
-
+  <!-- <script type="text/javascript" src="./js/carta.js"></script> -->
 
 
   <?php include __DIR__ . '/partials/footer.php'; ?>
