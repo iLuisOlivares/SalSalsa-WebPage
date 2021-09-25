@@ -298,11 +298,11 @@
             </button>
       <div class="d-flex justify-content-center p-2">
         
-        <button type=button class="btn btn-success o-btn-style">
+        <button id="btn__agregar" type=button class="btn btn-success o-btn-style">
           Agregar al carrito
         </button>
-        <input type="number" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
-          style="max-width: 35px;border: 2px solid rgb(5, 148, 5); border-radius: 5px">
+        <input type="number" id="id_cantidad" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
+          style="max-width: 35px;border: 2px solid rgb(5, 148, 5); border-radius: 5px" min = 1>
         </input>
       
       </div>

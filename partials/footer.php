@@ -16,7 +16,7 @@
                     </span>
                 </div>
                 <div>
-                    <p class="parrafo textWhite">Copyright 2021 © Proyecto. Todos los derechos reservados.</p>
+                    <p class="parrafo textWhite">Copyright 2021© Proyecto. Todos los derechos reservados.</p>
                 </div>
         </div>
     </footer>
@@ -29,7 +29,11 @@
 
 <script src="./js/contact.js"></script>
 <script type="text/javascript" src="./js/carta.js  "></script>
-<script src="./js/class/array-objetos.js"></script>
+<script type="text/javascript" src="./js/carrito.js"></script>
+<!-- <script src="./js/class/array-objetos.js"></script> -->
+<!-- <script src="./js/class/class-plato.js"></script>
+<script src="./js/class/carrito-list.js"></script> -->
+
 
 </body>
 
