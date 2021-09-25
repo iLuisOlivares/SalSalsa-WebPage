@@ -287,7 +287,10 @@
         ipsa veniam qui ipsam rem atque voluptate nihil vero? Libero, illo
         totam.
       </p>
-      <div id="o-value-plato-image" class="o-img-modal-container"></div>
+      <div class="d-flex justify-content-center">
+        <div id="o-value-plato-image" class="o-img-modal-container" style= " width: 720px "></div>
+
+      </div>
       <div class="d-flex justify-content-center align-items-center p-2 pb-2 pt-3">
         <!-- Open whatsapp to send a message -->
         <button type="button" class="btn btn-success o-btn-style" onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'">
@@ -299,7 +302,7 @@
           Agregar al carrito
         </button>
         <input type="number" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
-          style="max-width: 35px ;border: 2px solid rgb(5, 148, 5); border-radius: 5px">
+          style="max-width: 35px;border: 2px solid rgb(5, 148, 5); border-radius: 5px">
         </input>
       
       </div>
