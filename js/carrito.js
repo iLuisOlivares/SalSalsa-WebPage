@@ -157,7 +157,6 @@ class carritosList {
     }
   }
 
-<<<<<<< Updated upstream
   // Imprime en consola los valores de un elemento
   getASpecificValue(id) {
     console.log(
@@ -165,9 +164,6 @@ class carritosList {
       JSON.parse(localStorage.getItem("Carrito"))[id]
     );
   }
-=======
-  
->>>>>>> Stashed changes
 }
 
 //clase para la creacion de los objetos del carrito
@@ -192,12 +188,13 @@ class platoObjeto {
 
 //Array de platos
 const carroList = new carritosList();
-<<<<<<< Updated upstream
+//Todos 3 devuelven el array de los platos
+console.log(carroList.carritoLista);  // array 
+console.log(carroList.getLocalstorage()); // array
+const carritoarray = carroList.mostrarCarrito() // array
+console.log(carritoarray);
+
 /* carroList.eliminarCarrito(); */
-=======
-
-
->>>>>>> Stashed changes
 //Listeners
 boton_agregar.addEventListener("click", () => {
   for (const iterator of platos) {
@@ -219,8 +216,4 @@ boton_agregar.onclick = function () {
   let div = document.getElementById("o-value-plato-image");
   div.removeChild(div.lastElementChild);
   cantidad_dom.value = 1;
-<<<<<<< Updated upstream
 };
-=======
-};
->>>>>>> Stashed changes
