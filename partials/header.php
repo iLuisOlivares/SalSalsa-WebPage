@@ -35,16 +35,10 @@
                         <li class="nav-item"><a class="nav-link" href="formulario.php">Contáctanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="mapa.php">Mapa</a></li>
                     </ul>
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="carrito.php"><img src="./img/icon/shopping_cart_white_36dp.svg" /></a>
-                        </li>
-                    </ul>
-                    <!-- Search comentado -->
-                    <!-- <form class="ps-sm-0 ps-lg-5 d-flex">
+                    <form class="ps-sm-0 ps-lg-5 d-flex">
                         <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
                         <button class="btn btn-danger" type="submit" style="border-color:rgb(196,60,60); background-color:rgb(196,60,60);">Buscar</button>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </nav>

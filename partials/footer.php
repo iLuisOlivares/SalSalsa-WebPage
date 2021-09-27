@@ -14,10 +14,17 @@
                         
                             <span class="textWhite parrafo">Siguenos en:</span>
                             <br>
+<<<<<<< HEAD
                             <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-facebook"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-twitter"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i style="font-size:25px;color:white" class="fab fa-instagram"></i></a></li>
                        
+=======
+                            <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+>>>>>>> Robert
                     </span>
                 </div>
                 <div>
@@ -47,12 +54,7 @@
 <script src="https://kit.fontawesome.com/34237dd665.js" crossorigin="anonymous"></script>
 
 <script src="./js/contact.js"></script>
-<script type="text/javascript" src="./js/carta.js  "></script>
-<script type="text/javascript" src="./js/carrito.js"></script>
-<!-- <script src="./js/class/array-objetos.js"></script> -->
-<!-- <script src="./js/class/class-plato.js"></script>
-<script src="./js/class/carrito-list.js"></script> -->
-
+<script type="text/javascript" src="./js/carta.js"></script>
 
 </body>
 

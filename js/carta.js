@@ -21,94 +21,121 @@ window.onclick = function (event) {
   }
 };
 
-const determinarPlato = (v) => {
+function determinarPlato(v) {
   modal.style.display = "block";
   var img = document.createElement("img");
-  console.log(platos);
 
-  switch (v) {  
+  switch (v) {
     case 1:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[0].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[0].descripcion;
-      img.src = platos[0].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Combo 1 hamburguesa";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Combo de hamburguesa, con papas y refresco";
+      img.src = "../assets/";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 2:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[1].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[1].descripcion;
-      img.src = platos[1].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Combo 2 hamburguesa";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Combo de hamburguesa y papas";
+      img.src = "../assets/img/menu/img2.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 3:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[2].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[2].descripcion;
-      img.src = platos[2].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Hamburguesa sencilla";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Hamburguesa con carne, tomate y demás vegetales.";
+      img.src = "../assets/img/menu/img3.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 4:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[3].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[3].descripcion;
-      img.src = platos[3].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Combo Hot Dog";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Combo 1 de Hot dog y papas.";
+      img.src = "../assets/img/menu/img4.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 5:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[4].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[4].descripcion;
-      img.src = platos[4].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Hot Dog Sencillo";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Hot dog sencillo con salsa.";
+      img.src = "../assets/img/menu/img5.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 6:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[5].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[5].descripcion;
-      img.src = platos[5].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Copa de papas sencillo";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Copa de papas con guacamole.";
+      img.src = "../assets/img/menu/img6.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 7:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[6].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[6].descripcion;
-      img.src = platos[6].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Papas sencillas";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Papas a la francesa sencilla";
+      img.src = "../assets/img/menu/img7.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 8:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[7].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[7].descripcion;
-      img.src = platos[7].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "2 Latas de Coca Cola";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Latas de Coca Cola, con limón y hielo";
+      img.src = "../assets/img/menu/img8.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 9:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[8].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[8].descripcion;
-      img.src = platos[8].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Jarra con limonada";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Jarra con limonada de 1/2 litro.";
+      img.src = "../assets/img/menu/img9.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 10:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[9].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[9].descripcion;
-      img.src = platos[9].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Jarra de agua";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Jarra de agua de 1/2 litro.";
+      img.src = "../assets/img/menu/img10.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 11:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[10].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[10].descripcion;
-      img.src = platos[10].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Pizza de Italiana";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Pizza Italiana con 8 porciones.";
+      img.src = "../assets/img/menu/img11.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 12:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[11].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[11].descripcion;
-      img.src = platos[11].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Pizza personal Italiana";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Pizza Italiana para 1 persona.";
+      img.src = "../assets/img/menu/img12.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 13:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[12].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[12].descripcion;
-      img.src = platos[12].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Copa de helado";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Copa de helado de 1 sabor con uvas.";
+      img.src = "../assets/img/menu/img13.jpg";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
     case 14:
-      document.getElementById("o-value-plato-titulo").innerHTML = platos[13].nombre;
-      document.getElementById("o-value-plato-descripcion").innerHTML = platos[13].descripcion;
-      img.src = platos[13].imagen;
+      document.getElementById("o-value-plato-titulo").innerHTML =
+        "Cono de helado";
+      document.getElementById("o-value-plato-descripcion").innerHTML =
+        "Cono de helado con 2 bolas de diferentes sabores.";
+      img.src = "../assets/img/menu/img14.png";
       document.getElementById("o-value-plato-image").appendChild(img);
       break;
   }
@@ -124,4 +151,3 @@ const data = {
     descripcion: "Primero plato del menu",
   },
 };
-
