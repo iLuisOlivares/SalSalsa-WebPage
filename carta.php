@@ -292,23 +292,20 @@
 
       </div>
       <div class="d-flex justify-content-center align-items-center p-2 pb-2 pt-3">
-        <!-- Open whatsapp to send a message -->
-        <button type="button" class="btn btn-success o-btn-style" onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'">
-            Ver contactos
-            </button>
-      <div class="d-flex justify-content-center p-2">
-        
-        <button id="btn__agregar" type=button class="btn btn-success o-btn-style">
-          Agregar al carrito
-        </button>
-        <input type="number" id="id_cantidad" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
-          style="max-width: 35px;border: 2px solid rgb(5, 148, 5); border-radius: 5px" min = 1>
-        </input>
-      
-      </div>
-      
-      </div>
 
+        <section class="o-style-btn-add-carrito">
+          <!-- Open whatsapp to send a message -->
+          <button type="button" class="btn btn-success o-btn-style" onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'">
+            Ver contactos
+          </button>
+          <button id="btn__agregar" type=button class="btn btn-success o-btn-style">
+            Agregar al carrito
+          </button>
+          <input type="number" id="id_cantidad" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
+            style="max-width: 3rem;border: 2px solid rgb(5, 148, 5); border-radius: 5px; margin-left: 1px" min = 1>
+          </input>
+        <section>
+      </div>
       </a>
     </div>
   </div>
