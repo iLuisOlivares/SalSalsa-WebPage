@@ -11,6 +11,8 @@
 <form method="post" action="">
 
 </form>
-
+<button id="btn__traer" type="button" class="btn btn-success o-btn-style">
+    Agregar al carrito
+</button>
 
 <?php include __DIR__ . '/partials/footer.php'; ?>       
