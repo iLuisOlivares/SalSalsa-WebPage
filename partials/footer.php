@@ -5,19 +5,26 @@
         <a href="informe.php" style="text-decoration:none; padding-left:50px; padding-right:10px; color:white;">Contacto</a>
     </div>
     <footer>
-        <div style="max-width: 100%; padding-left:50px" class="">
-            <div style="max-width: 100%; padding-left:50px" class="columna2Footer">
-                <a class="navbar-brand" href="#Main"> <img src="./img/logo@2x.png" alt="" width="200" height="150"></a>
+        <div class="contenedorGeneral">
+            <footer class="footerCentrado">
+                <p class="textWhite parrafo">Pagina Web realizada por el <b>grupo #4</b><p>
 
                 <div class="custom-element custom-element-networks">
                     <span class="element-tag">
-                        <ul class="social-networks">
+                        
                             <span class="textWhite parrafo">Siguenos en:</span>
                             <br>
-                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+<<<<<<< HEAD
+                            <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i style="font-size:25px;color:white" class="fab fa-instagram"></i></a></li>
+                       
+=======
+                            <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>
+>>>>>>> Robert
                     </span>
                 </div>
                 <div>
@@ -47,8 +54,8 @@
 <script src="https://kit.fontawesome.com/34237dd665.js" crossorigin="anonymous"></script>
 
 <script src="./js/contact.js"></script>
-
 <script type="text/javascript" src="./js/carta.js"></script>
+
 </body>
 
 </html>

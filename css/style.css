@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Permanent' ;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 a{
@@ -105,7 +107,6 @@ a{
 }
 
 .textoTestimonios{
-    text-align: center;
     padding-top: 40px;
 }
 
@@ -143,7 +144,6 @@ a{
 .seccionGeneralDos{
     width: 100%;
     height: auto;
-    display: inline-block;
     padding: 1px 29px;
 }
 
@@ -178,23 +178,26 @@ hr.lineaTitulo{
 
 .contendor{
     position: relative;
-
+    display: inline-block; 
     text-align: center;
+    
+}
+
+.o-text-info {
+    position: relative;
+    /* display: flex; */
+
 }
 
 .textoEncima{
-    position: absolute;
-    top: 50px;
-    left: 10px;
+    position: relative;
+    top: 0px;
 }
 
-.centrado{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.textoAbajo{
+    position: relative;
+    bottom: 0px;
 }
-
 
 .descripcion{
     width: 50%;
@@ -307,16 +310,26 @@ hr.lineaTitulo{
 }
 
 .parrafo{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
 }
 
-.mapa{
-    width: 100%;
-    height: 200px;
+/* Mapa styles */
+.o-mapa-container {
+    padding: 2rem;
 }
 
+.o-mapa-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 260px;
+    padding: 2rem;
+}
 
-
-
+.o-mapa-item {
+    margin: 12px 0px;
+    color: black;
+    text-decoration: none;
+}
 
