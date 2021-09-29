@@ -109,11 +109,10 @@ const platos = [
 
 //clase para la creacion de los objetos del carrito
 class PlatoObjeto {
-
   //Metodo statico que me permite generar las instancias del objeto
   //desde el local storage
-  static fromJson({id,cantidad}){
-    const platoTemporal = new PlatoObjeto(id,cantidad);
+  static fromJson({ id, cantidad }) {
+    const platoTemporal = new PlatoObjeto(id, cantidad);
 
     return platoTemporal;
   }
@@ -137,17 +136,15 @@ class PlatoObjeto {
   }
 }
 
-
 //Funciones
 
 //Inicializa el array y obtiene el localStorage
-const Inicializador = () =>{
+const Inicializador = () => {
   //Array de productos
-  console.log('Inicializado');
+  console.log("Inicializado");
   const carritoLista = [];
   getLocalstorage();
-
-}
+};
 
 //Agrega un objeto tipo plato al array
 const AgregarPlato = (plato) => {
@@ -160,57 +157,60 @@ const AgregarPlato = (plato) => {
   }
   carritoLista.push(plato);
   setLocalstorage();
-}
+};
 
 //Obtiene el array del local storage
-const  getLocalstorage = () => {
+const getLocalstorage = () => {
   //JSON.parse() regresar un archivo JSON a objeto
   if (localStorage.getItem("Carrito")) {
     carritoLista = JSON.parse(localStorage.getItem("Carrito"));
-    carritoLista = carritoLista.map(obj => PlatoObjeto.fromJson(obj));
+    carritoLista = carritoLista.map((obj) => PlatoObjeto.fromJson(obj));
     return carritoLista;
   } else {
-    carritoLista = []
-  }
-}
-
-   //Actualiza los datos modificados en el local storage
-   const setLocalstorage = () => {
-    //Json.stringify sirve para volver un Objeto a un string que
-    //se guarda en un archivo JSON
-    localStorage.setItem("Carrito", JSON.stringify(carritoLista));
-  }
-
-  //Muestra el carrito
-  const mostrarCarrito = ()=>{
-    console.log(carritoLista);
-    return carritoLista
-  }
-
-  //Elimina un plato atraves del id
-  const eliminarPlatoId = (id) =>{
-    carritoLista = carritoLista.filter((plato) => plato.id != id);
-    setLocalstorage();
-  }
-
-  //Elimina un plato atraves del nombre 
-  const eliminarPlatoName = (nombre) =>{
-    carritoLista = carritoLista.filter((plato) => plato.nombre != nombre);
-    setLocalstorage();
-  }
-
-  //Elimina todo el array
-  const eliminarCarrito = () =>{ 
     carritoLista = [];
-    setLocalstorage();
   }
+};
+
+//Actualiza los datos modificados en el local storage
+const setLocalstorage = () => {
+  //Json.stringify sirve para volver un Objeto a un string que
+  //se guarda en un archivo JSON
+  localStorage.setItem("Carrito", JSON.stringify(carritoLista));
+};
+
+//Muestra el carrito
+const mostrarCarrito = () => {
+  console.log(carritoLista);
+  return carritoLista;
+};
+
+//Elimina un plato atraves del id
+const eliminarPlatoId = (id) => {
+  carritoLista = carritoLista.filter((plato) => plato.id != id);
+  setLocalstorage();
+};
+
+//Elimina un plato atraves del nombre
+const eliminarPlatoName = (nombre) => {
+  carritoLista = carritoLista.filter((plato) => plato.nombre != nombre);
+  setLocalstorage();
+};
+
+//Elimina todo el array
+const eliminarCarrito = () => {
+  carritoLista = [];
+  setLocalstorage();
+};
+// Imprime en consola los valores de un elemento
+const getASpecificValue = (id) => {
+  console.log("El tamaño es:", JSON.parse(localStorage.getItem("Carrito"))[id]);
+};
 
 //Inicializar
 Inicializador();
 
 //Descomentar si desea eliminar el array
-// eliminarCarrito(); 
-
+// eliminarCarrito();
 
 //Listeners
 //Click  boton agregar al carrito
@@ -218,8 +218,8 @@ boton_agregar.addEventListener("click", () => {
   for (const iterator of platos) {
     if (nombre_plato_dom.textContent === iterator.nombre) {
       const cantidad = parseInt(cantidad_dom.value);
-      console.log( new PlatoObjeto(iterator.id, cantidad));
-      AgregarPlato( new PlatoObjeto(iterator.id, cantidad));
+      console.log(new PlatoObjeto(iterator.id, cantidad));
+      AgregarPlato(new PlatoObjeto(iterator.id, cantidad));
       break;
     }
   }
@@ -233,4 +233,4 @@ boton_agregar.onclick = () => {
   let div = document.getElementById("o-value-plato-image");
   div.removeChild(div.lastElementChild);
   cantidad_dom.value = 1;
-}
+};

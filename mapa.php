@@ -7,19 +7,19 @@
     <section class="o-mapa-content">
         <ul class="o-mapa-list">
             <li>
-                <a class="o-mapa-item" href="index.php">Inicio</a>
+                <a class="o-mapa-item select-color" href="index.php"><b>Inicio</b></a>
             </li>
             <li>  
-                <a class="o-mapa-item" href="nosotros.php">Nosotros</a>
+                <a class="o-mapa-item select-color" href="nosotros.php"><b>Nosotros</b></a>
             </li>
             <li>
-                <a class="o-mapa-item" href="carta.php">Menú</a>              
+                <a class="o-mapa-item select-color" href="carta.php"><b>Menú</b></a>              
             </li>
             <li>
-                <a class="o-mapa-item" href="servicios.php">Servicios</a>     
+                <a class="o-mapa-item select-color" href="servicios.php"><b>Servicios</b></a>     
             </li>
             <li>
-                <a class="o-mapa-item" href="formulario.php">Contáctanos</a>
+                <a class="o-mapa-item select-color" href="formulario.php"><b>Contáctanos</b></a>
             </li>
         </ul>
     </section>

@@ -101,6 +101,36 @@ div .fondo{
   background-color: rgb(0, 10, 29);
 }
 
+.botones{
+  border-color:rgba(231, 76, 76, 0.438); 
+  overflow: hidden;
+  font-style:initial;
+  border: 2px solid rgba(182, 6, 6, 0.8);
+  background-color:rgba(182, 6, 6, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: white;
+  transition: all 0.5s;
+}
+
+
+.botones:hover{
+  box-shadow: 0 0 3px rgba(182, 6, 6, 0.8), 0 0 3px rgba(182, 6, 6, 0.8), 0 0 3px rgba(182, 6, 6, 0.8);
+}
+
+.shoppingImput{
+  max-width: 3rem;
+  border: 2px solid rgba(182, 6, 6, 0.8);
+  border-radius: 5px; 
+  margin-left: 1px;
+  outline: none;
+}
+.shoppingImput:hover{
+  box-shadow: 0 0 3px rgba(182, 6, 6, 0.8), 0 0 3px rgba(182, 6, 6, 0.8), 0 0 3px rgba(182, 6, 6, 0.8);
+}
+
+
 .icono-1{
   color: whitesmoke;
   font-size: 20px;
@@ -112,6 +142,10 @@ div .fondo{
   padding: 1rem 0.5rem;
 
 }
+.select-color:hover{
+  color: rgb(228, 94, 94);
+  transition: all 1s;
+}
 .select-item:hover{
   color: rgb(228, 94, 94);
   font-size: 1.06rem;
@@ -121,4 +155,5 @@ div .fondo{
 .icono-1:hover{
   font-size: 25px;
 }
+
 

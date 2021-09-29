@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
 
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/34237dd665.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/Luis.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/carta.css"/>
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
         <!--Navbar -->
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg  py-1" id="mainNav">
             <div class="container px-4 px-lg-0">
-                <a class="navbar-brand" href="#Main"> <img src="./img/logo@2x.png" alt="" width="200" height="150"></a>
+                <a class="navbar-brand" href="index.php"> <img src="./img/logo@2x.png" alt="" width="200" height="150"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">

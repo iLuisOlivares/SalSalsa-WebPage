@@ -80,3 +80,8 @@
   justify-content: space-evenly;
   width: 50%;
 }
+
+.informacion{
+  min-height: 120px;
+  font-style: inherit;
+}

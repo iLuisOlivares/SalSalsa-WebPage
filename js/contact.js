@@ -93,7 +93,6 @@ const validacion = (event) => {
   }
 };
 
-
 //Listeners
 //La diferencia entre inputs y formulario es que uno es un arreglo y la etiqueta form original
 console.log(inputs);
@@ -107,29 +106,21 @@ inputs.forEach((input) => {
 
 //Listener del formulario en general
 formulario.addEventListener("submit", (event) => {
-  event.preventDefault(); //No enviar los datos
   console.log(campos);
-  if ( campos.asunto && campos.nombre && campos.descripcion && campos.correo && check.checked && campos.select) 
-  {
-
+  if (
+    campos.asunto &&
+    campos.nombre &&
+    campos.descripcion &&
+    campos.correo &&
+    check.checked &&
+    campos.select
+  ) {
     alert_notok.classList.add("d-none");
     alert_ok.classList.remove("d-none");
-
-    setTimeout(function(){ 
-
-      //Resetear formulario
-      formulario.reset();
-      for(const key in campos){
-        campos[key] = false;
-        alert_ok.classList.add("d-none");
-      }}, 6000);
-    //Reset del form
-    
-
   } else {
+    event.preventDefault(); //No enviar los datos
     alert_ok.classList.add("d-none");
     alert_notok.classList.remove("d-none");
-    
     //Aviso de datos que faltan
     for (const key in campos) {
       if (!campos[key]) {
@@ -138,3 +129,10 @@ formulario.addEventListener("submit", (event) => {
     }
   }
 });
+
+//Borrar form cuando regrese atras
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
