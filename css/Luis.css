@@ -101,3 +101,24 @@ div .fondo{
   background-color: rgb(0, 10, 29);
 }
 
+.icono-1{
+  color: whitesmoke;
+  font-size: 20px;
+
+}
+.select-item{
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+
+}
+.select-item:hover{
+  color: rgb(228, 94, 94);
+  font-size: 1.06rem;
+  transition: all 1s;
+
+} 
+.icono-1:hover{
+  font-size: 25px;
+}
+

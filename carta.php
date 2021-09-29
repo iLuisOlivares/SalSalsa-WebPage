@@ -34,7 +34,7 @@
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
 
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(1)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
 
@@ -51,7 +51,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(2)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -69,7 +69,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(3)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -85,7 +85,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(4)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -101,7 +101,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(5)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -117,7 +117,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(6)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -133,7 +133,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(7)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -151,7 +151,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(8)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -167,7 +167,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(9)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -183,7 +183,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(10)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -199,7 +199,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(11)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -215,7 +215,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(12)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -238,7 +238,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(13)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -255,7 +255,7 @@
                     <!-- Trigger/Open The Modal -->
                     <div class="d-flex justify-content-around align-items-center pb-2 pt-3">
                       <button type="button" class="btn btn-success o-btn-style" onclick="determinarPlato(14)">
-                        Ver detalle
+                        Agregar al carrito <i class="fas fa-shopping-cart"></i>
                       </button>
                     </div>
                   </div>
@@ -299,7 +299,7 @@
             Ver contactos
           </button>
           <button id="btn__agregar" type=button class="btn btn-success o-btn-style">
-            Agregar al carrito
+            Agregar al carrito <i class="fas fa-shopping-cart"></i>
           </button>
           <input type="number" id="id_cantidad" class="shopping-cart-quantity-input shoppingCartItemQuantity" value=1
             style="max-width: 3rem;border: 2px solid rgb(5, 148, 5); border-radius: 5px; margin-left: 1px" min = 1>
