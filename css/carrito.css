@@ -5,6 +5,12 @@
     /* align-items: center; */
 }
 
+.o-title-carrito {
+    margin: 3rem 0rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .o-item-delete-style {
     display: flex;
     width: 100%;
@@ -26,6 +32,10 @@
     width: 20rem;
 }
 
+.o-btn-bottom-carrito {
+    margin: 2rem 0rem;
+}
+
 @media (max-width: 975px) {
     .o-carrito-container {
       flex-direction: column;
@@ -33,10 +43,11 @@
     }
     
     .o-fix-card-carrito {
-        width: 100%;
+        width: 90vw;;
     }
     
     .o-fix-pay-carrito {
-        width: 100%;
+        width: 90vw;
+        margin-bottom: 2rem;
     }
 }
