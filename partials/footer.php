@@ -31,6 +31,7 @@
 <script src="./js/contact.js"></script>
 <script type="text/javascript" src="./js/carta.js  "></script>
 <script type="text/javascript" src="./js/carrito.js"></script>
+<script type="text/javascript" src="./js/compra.js"></script>
 <!-- <script src="./js/class/array-objetos.js"></script> -->
 <!-- <script src="./js/class/class-plato.js"></script>
 <script src="./js/class/carrito-list.js"></script> -->

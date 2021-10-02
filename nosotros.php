@@ -22,10 +22,10 @@
         <!-- Card Historia -->
           <div class="fondo card mb-3 p-3 bg" style="max-width: 1800px; min-height: 500px">
               <div class="row">
-                <div class="col-md-6 d-flex justify-content-center">
+                <div class="col-lg-6 d-flex justify-content-center">
                   <img src="./img/foto4@2x.png" class="img-fluid rounded-start" alt="...">
                 </div>
-                <div class="col-md-6 rounded-3">
+                <div class="col-lg-6 rounded-3">
                   <div class="card-body rounded-3 fondo">
                     <h3 class="card-title text-light pb-5">Lorem ipsum <b class="msg__in">dolor sit amet.</b></h3>
                     <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti in dolores consequuntur sed iusto. Odit autem distinctio aliquid obcaecati iste! Porro doloremque facere voluptas adipisci sequi officiis dolores obcaecati!</p>
@@ -59,7 +59,7 @@
 
               <div class="col-12 col-lg-12">
                 <!-- sub-row1 -->
-                <div class="row1 row cok-12 bg-dark rounded m-2">
+                <div class="row1 row cok-12 bg-dark rounded m-lg-2 m-0 m-md-1">
 
                   <div class="col-12 col-lg-4 col-md-6 d-flex p-3 align-items-center justify-content-center">
                     <div class="card col-4" style="width: 18rem;">
@@ -95,7 +95,7 @@
                 </div>  
                 
                 <!-- sub-row2 -->
-                <div class="row2 row fondo rounded m-2">
+                <div class="row2 row fondo rounded m-lg-2 m-0 m-md-1">
   
                     <div class="col-12 col-lg-4 col-md-6 d-flex p-3 align-items-center justify-content-center">
                       <div class="card col-4" style="width: 18rem;">
