@@ -24,7 +24,7 @@ window.onclick = function (event) {
 const determinarPlato = (v) => {
   modal.style.display = "block";
   var img = document.createElement("img");
-  console.log(platos);
+  // console.log(platos);
 
   switch (v) {  
     case 1:

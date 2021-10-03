@@ -73,3 +73,15 @@
   margin: 0;
   padding: 2rem;
 }
+
+.o-style-btn-add-carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.informacion{
+  min-height: 120px;
+  font-style: inherit;
+}

@@ -104,21 +104,71 @@ const platos = [
     descripcion: "Cono de helado con 2 bolas de diferentes sabores.",
   }),
 ];
+//CLASES
 
-//Clase para crear los platos como objetos
-
-//clase para la creacion de los objetos del carrito
-class PlatoObjeto {
-  //Metodo statico que me permite generar las instancias del objeto
-  //desde el local storage
-  static fromJson({ id, cantidad }) {
-    const platoTemporal = new PlatoObjeto(id, cantidad);
-
-    return platoTemporal;
+//Clase de una lista de platos llamada carrito
+class carritosList {
+  constructor() {
+    this.getLocalstorage();
   }
 
-  //constructor del objeto
-  constructor(id, cantidad) {
+  nuevoPlato(plato) {
+    for (const iterator of this.carritoLista) {
+      if (iterator.id === plato.id) {
+        iterator.cantidad = parseInt(iterator.cantidad) + plato.cantidad;
+        this.setLocalstorage();
+        return;
+      }
+    }
+    this.carritoLista.push(plato);
+    this.setLocalstorage();
+  }
+
+  eliminarPlato(id) {
+    this.carritoLista = this.carritoLista.filter((plato) => plato.id != id);
+    this.setLocalstorage();
+  }
+
+  eliminarCarrito() {
+    this.carritoLista = [];
+    this.setLocalstorage();
+  }
+
+  mostrarCarrito() {
+    console.log(this.carritoLista);
+    return this.carritoLista;
+  }
+
+  //Update del local storage
+  setLocalstorage() {
+    //Json.stringify sirve para volver un Objeto a un string que
+    //se guarda en un archivo JSON
+    localStorage.setItem("Carrito", JSON.stringify(this.carritoLista));
+  }
+
+  //Creacion del array
+  getLocalstorage() {
+    //JSON.parse() regresar un archivo JSON a objeto
+    if (localStorage.getItem("Carrito")) {
+      this.carritoLista = JSON.parse(localStorage.getItem("Carrito"));
+      return this.carritoLista;
+    } else {
+      this.carritoLista = []
+    }
+  }
+
+  // Imprime en consola los valores de un elemento
+  getASpecificValue(id) {
+    console.log(
+      "El tamaño es:",
+      JSON.parse(localStorage.getItem("Carrito"))[id]
+    );
+  }
+}
+
+//clase para la creacion de los objetos del carrito
+class platoObjeto {
+  constructor(id, cantidad, platos) {
     for (const iterator of platos) {
       if (iterator.id === id) {
         this.nombre = iterator.nombre;
@@ -130,106 +180,39 @@ class PlatoObjeto {
       }
     }
   }
-  //Calcula el precio
+
   calcularPrecio() {
     return this.precio * this.cantidad;
   }
 }
 
-//Funciones
+//Array de platos
+const carroList = new carritosList();
+//Todos 3 devuelven el array de los platos
+console.log(carroList.carritoLista);  // array 
+console.log(carroList.getLocalstorage()); // array
+const carritoarray = carroList.mostrarCarrito() // array
+console.log(carritoarray);
 
-//Inicializa el array y obtiene el localStorage
-const Inicializador = () => {
-  //Array de productos
-  console.log("Inicializado");
-  const carritoLista = [];
-  getLocalstorage();
-};
-
-//Agrega un objeto tipo plato al array
-const AgregarPlato = (plato) => {
-  for (const iterator of carritoLista) {
-    if (iterator.id === plato.id) {
-      iterator.cantidad = parseInt(iterator.cantidad) + plato.cantidad;
-      setLocalstorage();
-      return;
-    }
-  }
-  carritoLista.push(plato);
-  setLocalstorage();
-};
-
-//Obtiene el array del local storage
-const getLocalstorage = () => {
-  //JSON.parse() regresar un archivo JSON a objeto
-  if (localStorage.getItem("Carrito")) {
-    carritoLista = JSON.parse(localStorage.getItem("Carrito"));
-    carritoLista = carritoLista.map((obj) => PlatoObjeto.fromJson(obj));
-    return carritoLista;
-  } else {
-    carritoLista = [];
-  }
-};
-
-//Actualiza los datos modificados en el local storage
-const setLocalstorage = () => {
-  //Json.stringify sirve para volver un Objeto a un string que
-  //se guarda en un archivo JSON
-  localStorage.setItem("Carrito", JSON.stringify(carritoLista));
-};
-
-//Muestra el carrito
-const mostrarCarrito = () => {
-  console.log(carritoLista);
-  return carritoLista;
-};
-
-//Elimina un plato atraves del id
-const eliminarPlatoId = (id) => {
-  carritoLista = carritoLista.filter((plato) => plato.id != id);
-  setLocalstorage();
-};
-
-//Elimina un plato atraves del nombre
-const eliminarPlatoName = (nombre) => {
-  carritoLista = carritoLista.filter((plato) => plato.nombre != nombre);
-  setLocalstorage();
-};
-
-//Elimina todo el array
-const eliminarCarrito = () => {
-  carritoLista = [];
-  setLocalstorage();
-};
-// Imprime en consola los valores de un elemento
-const getASpecificValue = (id) => {
-  console.log("El tamaño es:", JSON.parse(localStorage.getItem("Carrito"))[id]);
-};
-
-//Inicializar
-Inicializador();
-
-//Descomentar si desea eliminar el array
-// eliminarCarrito();
-
+/* carroList.eliminarCarrito(); */
 //Listeners
-//Click  boton agregar al carrito
 boton_agregar.addEventListener("click", () => {
   for (const iterator of platos) {
     if (nombre_plato_dom.textContent === iterator.nombre) {
       const cantidad = parseInt(cantidad_dom.value);
-      console.log(new PlatoObjeto(iterator.id, cantidad));
-      AgregarPlato(new PlatoObjeto(iterator.id, cantidad));
+      const platillo = new platoObjeto(iterator.id, cantidad, platos);
+      console.log(platillo);
+      carroList.nuevoPlato(platillo);
       break;
     }
   }
-  mostrarCarrito();
-  cantidad_dom.value = 1;
+  carroList.mostrarCarrito();
 });
+carroList.getASpecificValue(0);
 
-//Cerrar el modal al undir agregar carrito
-boton_agregar.onclick = () => {
+boton_agregar.onclick = function () {
   modal.style.display = "none";
+  // Delete the duplicate image
   let div = document.getElementById("o-value-plato-image");
   div.removeChild(div.lastElementChild);
   cantidad_dom.value = 1;

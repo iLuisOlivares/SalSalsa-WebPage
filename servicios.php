@@ -14,10 +14,19 @@
                
           <!-- row principal -->
             <div class="row pb-5">
-
               <div class="col-12 col-lg-12">
+
                 <!-- sub-row1 -->
                 <div class="row1 row col-12 fondo rounded m-2 bg-light shadow-lg p-3">
+                  <!-- Botones -->
+                  <div class="row p-3">
+                        <div class="col-6 d-flex p-1 justify-content-end">
+                        <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@" role="button" style ="background-color:  #00bb2d;"> <i class="fab fa-whatsapp"></i> Contactanos: Via Whatsapp</a>
+                        </div>
+                        <div class="col-6 d-flex p-1 justify-content-start">
+                        <a class="btn btn-dark"  href="formulario.php" role="button"> <i class="fas fa-calendar-day"></i>  Reservar: Via Contactenos </a>
+                        </div>
+                    </div>
 
                   <div class="col-12 col-lg-4 col-md-6 d-flex p-3 align-items-center justify-content-center">
                     <div class="bg-dark card col-4" style="width: 18rem;">
@@ -79,15 +88,7 @@
                     </div>
                   </div>
 
-                       <!-- Botones -->
-                    <div class="row p-3">
-                        <div class="col-6 d-flex p-1 justify-content-end">
-                        <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@" role="button" style ="background-color:  #00bb2d;"> <i class="fab fa-whatsapp"></i> Contactanos: Via Whatsapp</a>
-                        </div>
-                        <div class="col-6 d-flex p-1 justify-content-start">
-                        <a class="btn btn-dark"  href="formulario.php" role="button"><i class="far fa-envelope"></i> Contactanos: Via Mensaje </a>
-                        </div>
-                    </div>
+                     
     
                 </div>
 
