@@ -105,7 +105,7 @@ const platos = [
   }),
 ];
 
-//Clase para crear los platos como objetos
+//PRIMERA PARTE
 
 //clase para la creacion de los objetos del carrito
 class PlatoObjeto {
@@ -205,6 +205,7 @@ const eliminarCarrito = () => {
 const getASpecificValue = (id) => {
   console.log("El tamaño es:", JSON.parse(localStorage.getItem("Carrito"))[id]);
 };
+
 
 //Inicializar
 Inicializador();
