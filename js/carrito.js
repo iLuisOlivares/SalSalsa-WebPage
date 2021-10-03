@@ -146,6 +146,7 @@ const Inicializador = () => {
   getLocalstorage();
 };
 
+
 //Agrega un objeto tipo plato al array
 const AgregarPlato = (plato) => {
   for (const iterator of carritoLista) {
@@ -195,6 +196,19 @@ const eliminarPlatoName = (nombre) => {
   carritoLista = carritoLista.filter((plato) => plato.nombre != nombre);
   setLocalstorage();
 };
+
+//Actualizar cantidad
+const actualizar_cantidad = (id, nCantidad) =>{
+for (const iterator of carritoLista) {
+  if(iterator.id == id ){
+    iterator.cantidad = nCantidad;
+    setLocalstorage();
+    console.log(nCantidad);
+    return id;
+  }
+}
+
+}
 
 //Elimina todo el array
 const eliminarCarrito = () => {
