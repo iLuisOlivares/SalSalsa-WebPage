@@ -13,7 +13,7 @@ const crearListHtml = ({ nombre,id, cantidad, precio, imagen, descripcion }) => 
                         <div class="card-body">
                             <section class="o-item-delete-style">
                                 <h5 class="card-title">${nombre}</h5>
-                                <button type="button" class="btn btn-danger" onclick="alert('¿Estas seguro de eliminar este producto?')">Eliminar
+                                <button type="button" class="btn btn-danger">Eliminar
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                             </section>
@@ -65,9 +65,30 @@ div_list.addEventListener('click', (e) =>{
     const targetElement = (e.target.parentElement.parentElement.parentElement.parentElement.parentElement); //div
     //Get attribute nos ayuda a sacar el valor de los atributos HTML(ej data-*)
     const targetId = targetElement.getAttribute('data-id');
-    eliminarPlatoId(targetId);
-    actualizar_precio();
-    div_list.removeChild(targetElement);
+    
+    /* API de sweet Alert */
+    Swal.fire({
+      title: '¿Estas seguro?',
+      text: "Elimaras el producto del carrito",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Sí, eliminar',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          '¡Se eliminó!',
+          'El producto ha sido eliminado.',
+          'success'
+        )
+        /* Elimina el producto del carrito */
+        eliminarPlatoId(targetId);
+        actualizar_precio();
+        div_list.removeChild(targetElement);
+      }
+    })
   }
 
   if(target == 'input'){
