@@ -78,10 +78,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 50%;
+  width: 80%;
 }
 
 .informacion{
   min-height: 120px;
   font-style: inherit;
+}
+
+.o-information-cost {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.o-information-cost > p {
+  font-weight: bold;
+}
+
+#o-value-plato-price {
+  margin-bottom: 1rem;
 }

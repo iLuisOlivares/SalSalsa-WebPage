@@ -206,7 +206,7 @@
               <!-- Item plato -->
               <div class="col">
                 <div class="card h-100">
-                  <img src="./assets/img/menu/img11.jpg" class="card-img-top" alt="Pizza de Italiana" />
+                  <img src="./assets/img/menu/img11.jpg" class="card-img-top" alt="Pizza Italiana" />
                   <div class="card-body">
                     <div class="informacion p-2">
                       <h5 class="card-title">Pizza de Italiana</h5>
@@ -313,12 +313,14 @@
         <div id="o-value-plato-image" class="img-thumbnail rounded o-img-modal-container" style=" width: 720px "></div>
 
       </div>
-      <div class="d-flex justify-content-center align-items-center p-2 pb-2 pt-3">
-
+      <div class="o-information-cost">
+        <!-- Precio -->
+        <p>Precio</p>
+        <span id="o-value-plato-price">Error</span>
         <section class="o-style-btn-add-carrito">
           <!-- Open whatsapp to send a message -->
           <button type="button" class="botones" onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'">
-            Ver contactos
+            Ver contacto
           </button>
           <button id="btn__agregar" type=button class="botones">
             Agregar al carrito <i class="fas fa-shopping-cart"></i>
@@ -330,8 +332,5 @@
       </a>
     </div>
   </div>
-
-  <!-- <script type="text/javascript" src="./js/carta.js"></script> -->
-
 
   <?php include __DIR__ . '/partials/footer.php'; ?>
