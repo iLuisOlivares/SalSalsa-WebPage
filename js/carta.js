@@ -18,6 +18,7 @@ window.onclick = function (event) {
     modal.style.display = "none";
     let div = document.getElementById("o-value-plato-image");
     div.removeChild(div.lastElementChild);
+    cantidad_dom.value = 1;
   }
 };
 

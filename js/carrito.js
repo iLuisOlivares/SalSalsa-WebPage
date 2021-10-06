@@ -230,22 +230,44 @@ Inicializador();
 //Listeners
 //Click  boton agregar al carrito
 boton_agregar.addEventListener("click", () => {
-  for (const iterator of platos) {
-    if (nombre_plato_dom.textContent === iterator.nombre) {
-      const cantidad = parseInt(cantidad_dom.value);
-      console.log(new PlatoObjeto(iterator.id, cantidad));
-      AgregarPlato(new PlatoObjeto(iterator.id, cantidad));
-      break;
+
+  Swal.fire({
+    title: '¿Estas seguro?',
+    text: `Agregarás ${cantidad_dom.value} de este producto al carrito `,
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    confirmButtonText: 'Sí, agregar',
+    cancelButtonText: 'Cancelar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        '¡Se agregó!',
+        'El producto se agrego al carrito.',
+        'success'
+      )
+        for (const iterator of platos) {
+        if (nombre_plato_dom.textContent === iterator.nombre) {
+          const cantidad = parseInt(cantidad_dom.value);
+          console.log(new PlatoObjeto(iterator.id, cantidad));
+          AgregarPlato(new PlatoObjeto(iterator.id, cantidad));
+          break;
+        }
+      }
+
+      mostrarCarrito();
+      cantidad_dom.value = 1;
+      CloseModal();
     }
-  }
-  mostrarCarrito();
-  cantidad_dom.value = 1;
+  })
+
+  
 });
 
-//Cerrar el modal al undir agregar carrito
-boton_agregar.onclick = () => {
+  // Cerrar el modal al undir agregar carrito
+function CloseModal() {
   modal.style.display = "none";
   let div = document.getElementById("o-value-plato-image");
   div.removeChild(div.lastElementChild);
-  cantidad_dom.value = 1;
-};
+}
