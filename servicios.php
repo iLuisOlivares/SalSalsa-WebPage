@@ -25,7 +25,7 @@
                         </div>
                         <div class="col-6 d-flex p-1 justify-content-start">
                         <button
-                         class="btn btn-dark" onclick= location.href='formulario.php' role="button"> <i class="fas fa-calendar-day"></i>  Reservar: Via Contactenos </button>
+                         class="btn btn-dark" onclick= location.href='formulario.php' role="button"> <i class="fas fa-calendar-day"></i> Contactanos: Haz tu Reserva </button>
                         </div>
                     </div>
 

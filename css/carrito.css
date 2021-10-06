@@ -1,6 +1,7 @@
 .o-carrito-container {
   display: flex;
   width: 100%;
+  min-height: 27.9rem;
   justify-content: space-evenly;
   /* align-items: center; */
 }

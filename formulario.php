@@ -8,7 +8,7 @@
 <div class="pt-5 container px-4 px-lg5 d-flex justify-content-center">
     <!-- description -->
     <div class="col-lg-8 col-xl-6 text-center ">
-        <h2 class="mt-0 fw-bold">Contáctanos</h2>
+        <h2 class="mt-0 fw-bold">Haz tu reserva</h2>
         <hr class="divider" />
         <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque voluptate in sed culpa facilis aliquid dolorum unde, consequatur quos exercitationem tenetur ut non ipsa rem sapiente harum distinctio est.</p>
     </div>
@@ -56,6 +56,36 @@
                 <input type="email" name="correo" class="item-formulario form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
                 <label for="floatingInput" class="form_label">Correo electrónico</label>
                 <p class="msg__input-error">*Ingrese un correo electrónico válido</p>
+            </div>
+
+            <!-- Numero celular -->
+            <div class="form-floating mb-3" id="grupo_celu">
+                <input type="text" name="celu" class="item-formulario form-control" id="exampleInputCell" aria-describedby="emailHelp" placeholder="1234567890">
+                <label for="floatingInput" class="form_label">Numero celular</label>
+                <p class="msg__input-error">*Ingrese un numero de celular válido</p>
+            </div>
+
+            <!-- Personas -->
+            <div class="form mb-3" id="grupo_numerop">
+                <label for="floatingInput" class="form_label">Numero de personas</label>
+                <input type="number" value= 1 min=1 name="numerop" class="item-formulario form-control" id="exampleInputPerson"  >                
+                <p class="msg__input-error">*Ingrese un numero de personas valido</p>
+            </div>
+
+            <!-- Fecha  -->
+            <div class="form mb-3" id="grupo_fecha">
+                <label for="floatingInput" class="form_label">Seleccione la fecha</label>
+                <input onfocus="this.min=new Date().toISOString().split('T')[0]"  type="date" value="datetime-local"  name="fecha"  class="item-formulario form-control mb-2  " id="exampleInputFecha" >                
+                <p class="msg__input-error">*Ingrese una fecha valida</p>
+
+            </div>
+
+            <!-- Hora  -->
+            <div class="form mb-3" id="grupo_hora">
+                <label for="floatingInput" class="form_label">Seleccione la hora</label>
+                <input type="time"  name="hora" min="13:00" max="23:00"  class="item-formulario form-control" id="exampleInputHora" >                
+                <p class="msg__input-error">*Ingrese una hora válida</p>
+                <p class="msg2__input-error">*Ingrese una hora posterior a las 13:00 y anterior a las 23:00</p>
             </div>
 
             <!-- Descripcion -->

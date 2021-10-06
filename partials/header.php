@@ -33,7 +33,7 @@
                         <li class="nav-item"><a class="select-item" href="nosotros.php">Nosotros</a></li>
                         <li class="nav-item"><a class="select-item" href="carta.php">Menú</a></li>
                         <li class="nav-item"><a class="select-item" href="servicios.php">Servicios</a></li>
-                        <li class="nav-item"><a class="select-item" href="formulario.php">Contáctanos</a></li>
+                        <li class="nav-item"><a class="select-item" href="formulario.php">Reservar</a></li>
                         <li class="nav-item"><a class="select-item" href="mapa.php">Mapa</a></li>
                     </ul>
                     <ul class = "navbar-nav p-3">

@@ -14,7 +14,7 @@ const expresiones = {
   asunto: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
   nombre: /^[a-zA-ZÀ-ÿ\s]{4,50}$/, // Letras y espacios, pueden llevar acentos.
   correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  // telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+  celular: /^\d{7,14}$/, // 7 a 14 numeros.
   descripcion: /^[a-zA-ZÀ-ÿ\s\W]{0,}$/, // Letras y espacios, pueden llevar acentos.
 };
 
@@ -26,6 +26,10 @@ const campos = {
   correo: false,
   descripcion: false,
   check: false,
+  celu: false,
+  fecha: false,
+  hora: false,
+  numerop: false,
 };
 
 //funciones
@@ -90,6 +94,40 @@ const validacion = (event) => {
       }
       msg("check", "");
       break;
+
+    case "celu":
+      comprobacion(expresiones.celular, event, "celu", "");
+      break;
+
+    case "numerop":
+      if(event.target.value >= 1){
+        campos["numerop"] = true;
+      }else{
+        campos["numerop"] = false
+      }
+      msg("numerop", "");
+      break;
+
+    case "fecha":
+      if(event.target.value === ""){
+        campos["fecha"] = false;
+      }else{
+        campos["fecha"] = true;
+      };
+      msg("fecha", "");
+      break;
+
+    case "hora":
+      if(event.target.validity.valid === true){
+        campos["hora"] = true;
+      }else if(event.target.validity.rangeOverflow === true || event.target.validity.rangeUnderflow === true){
+        campos["hora"] = false;
+        console.log("no cumple el rango");
+      }
+      
+      msg("hora", "");
+      msg("hora", "2");
+      break;
   }
 };
 
@@ -113,7 +151,11 @@ formulario.addEventListener("submit", (event) => {
     campos.descripcion &&
     campos.correo &&
     check.checked &&
-    campos.select
+    campos.select &&
+    campos.celu &&
+    campos.fecha && 
+    campos.hora &&
+    campos.numerop
   ) {
     alert_notok.classList.add("d-none");
     alert_ok.classList.remove("d-none");
@@ -125,6 +167,7 @@ formulario.addEventListener("submit", (event) => {
     for (const key in campos) {
       if (!campos[key]) {
         msg(key, "");
+        console.log(campos[key]);
       }
     }
   }

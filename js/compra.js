@@ -18,7 +18,7 @@ const crearListHtml = ({ nombre,id, cantidad, precio, imagen, descripcion }) => 
                                 </button>
                             </section>
                             <p class="card-text">${descripcion}</p>
-                            <p class="card-text">${precio}</p>
+                            <p class="card-text">${new Intl.NumberFormat().format(precio)}</p>
                             <input type="number" id="id_cantidad" class="shoppingImput" value='${cantidad}' style="max-width: 3rem;border: 2px solid rgba(182, 6, 6, 0.8); border-radius: 5px; margin-left: 1px" min=1 />
                         </div>
                     </div>
@@ -63,6 +63,7 @@ div_list.addEventListener('click', (e) =>{
 
   if(target == 'button'){
     const targetElement = (e.target.parentElement.parentElement.parentElement.parentElement.parentElement); //div
+    console.log(targetElement);
     //Get attribute nos ayuda a sacar el valor de los atributos HTML(ej data-*)
     const targetId = targetElement.getAttribute('data-id');
     eliminarPlatoId(targetId);
