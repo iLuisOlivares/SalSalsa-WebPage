@@ -19,7 +19,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Total</h5>
                     <!-- Cambiar el valor al total de todas  -->
-                    <p id="costo-total" class="card-text">$80.000</p>
+                    <p id="costo-total" class="card-text">Error</p>
                     <button id="btn__traer" type="button" class="btn btn-success o-btn-style">
                         Pagar ahora
                     </button>
