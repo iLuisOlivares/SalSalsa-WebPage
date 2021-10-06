@@ -53,7 +53,8 @@
 <!-- <script src="./js/class/array-objetos.js"></script> -->
 <!-- <script src="./js/class/class-plato.js"></script>
 <script src="./js/class/carrito-list.js"></script> -->
-
+<!-- Alert API -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
