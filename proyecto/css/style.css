@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    /*Estilo del menú o lista*/
+    list-style: none;
+    /*Para que lineal*/
+    display: inline-block;
+}
+
+.contenedorGeneral{
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+#logoPrincipal{
+    height: 50px;
+    margin: 10px;
+}
+
+.navegacion{
+    float: right;
+    height: 60px;
+}
+
+.menuPrincipal li{
+    color: white;
+    /*estilo*/
+    list-style: none;
+    height: 60px;
+    float: left;
+    font-size: 18px;
+    margin-left: 6px;
+    padding: 19px 9px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.menuPrincipal li:hover{
+    background: rgba(255, 255, 255, 0.109);
+    border-bottom: 2px solid violet;
+}
+
+.banner{
+    width: 100%;
+    height: 420px;
+}
+
+.seccionGeneral{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 100px 29px;
+}
+
+.seccionGeneralCarusel {
+    width: 100%;
+    height: auto;
+}
+
+
+.contenedorGeneralCarrusel{
+    width: 100%;
+    max-width: 100%;
+}
+
+.textCarrucel{
+    font-size: 20px;
+    padding-bottom: 450px;
+}
+
+.anchoImagenCa{
+    height: 660px;
+}
+
+#anchoImagenCaId{
+    height: 660px;
+}
+
+.testimonios{
+    
+    height:50px;
+    width:900px;
+    margin:0px auto;
+}
+
+.imagenGaleria {
+    width: 20%;
+    height: 10px;
+    margin: 1%;
+    float: left;
+    display: flex;
+    background: white;
+}
+
+.w100{
+    width: 100%;
+}
+
+.textoTestimonios{
+    padding-top: 40px;
+}
+
+.imagenesTestimonios{
+    width: 150px;
+    height: 150px;
+}
+
+.columnaTestimonio{
+    width: 31%;
+    margin: 1%;
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.borde{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 15px; 
+}
+
+.seccionFooter{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.seccionNegra{
+    background: black;
+}
+
+.seccionGeneralDos{
+    width: 100%;
+    height: auto;
+    padding: 1px 29px;
+}
+
+.colorSeccionDos{
+    background: #393D4E;
+}
+
+h2.tituloGeneral{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+hr.lineaTitulo{
+    width: 50px;
+    height: 6px;
+    background: violet;
+    display: block;
+    border: none;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+
+
+.contenedorDescripcion{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+
+}
+
+.contendor{
+    position: relative;
+    display: inline-block; 
+    text-align: center;
+    
+}
+
+.o-text-info {
+    position: relative;
+    /* display: flex; */
+
+}
+
+.textoEncima{
+    position: relative;
+    top: 0px;
+}
+
+.textoAbajo{
+    position: relative;
+    bottom: 0px;
+}
+
+.descripcion{
+    width: 50%;
+    margin: 0px 1%;
+    float: left;
+}
+
+.contenedorPlatos {
+    width: 100%;
+    height: auto;
+}
+
+.platos {
+    width: 31%;
+    margin: 0px 1%;
+    float: left;
+}
+
+.imagenPlatos{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 17px;
+}
+
+.subtituloDescripcion{
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.parrafoRegular{
+    font-size: 18px;
+}
+
+
+
+
+.textCenter{
+    text-align: center;
+}
+
+.imagenGaleria{
+    width: 18%;
+    height: auto;
+    margin: 1%;
+    
+    display: flex;
+    background: white;
+}
+
+.w100{
+    width: 100%;
+}
+
+.textWhite{
+    color: white;
+}
+
+.columna2{
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+
+.columna2Dos{
+    width: 25%;
+    margin: 1%;
+    float: left;
+}
+
+.columna2Footer{
+    width: 30%;
+    margin: 1%;
+    float: left;
+}
+
+
+.padd{
+    padding-top: 50px;
+}
+
+.botonCentrado{
+    display: block;
+    margin: 0px auto;
+}
+
+.botonRegular{
+    color: white;
+    padding: 0px 20px;
+    height: 40px;
+    font-size: 21px;
+    display: block;
+    background: black;
+    border: none;
+    margin-top: 17px;
+    border-radius: 4px;
+}
+
+.seccionFooter {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: #202529;
+    padding-top: 20px;
+    position: relative;
+}
+
+.footerCentrado{
+    text-align: center;
+    background-color: #202529 ;
+}
+
+.parrafo{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+/* Mapa styles */
+.o-mapa-container {
+    padding: 2rem;
+}
+
+.o-mapa-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 260px;
+    padding: 2rem;
+}
+
+.o-mapa-item {
+    margin: 12px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Global styles */
