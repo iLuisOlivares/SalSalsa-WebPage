@@ -1,0 +1,38 @@
+.container__error {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 490px;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  width: 38%;
+  margin: auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 360px;
+  background-color: blue;
+}
+
+.container__error--details {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1300px) {
+  .container__error {
+    border: none;
+  }
+}
