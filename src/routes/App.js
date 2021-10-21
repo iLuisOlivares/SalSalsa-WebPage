@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import Layout from "../components/Layout";
 import Carta from "../containers/Carta/Carta";
+import Reserva from '../containers/Reserva/reserva';
 import Home from "../containers/Home/Home";
 import NotFound from "../containers/NotFound/NotFound";
 /* 
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/carta" component={Carta} />
+        <Route exact path="/reserva" component={Reserva} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
