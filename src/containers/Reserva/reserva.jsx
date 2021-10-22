@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
+import ButtonElement from "../../assets/Elements/ButtonElement";
+import CheckElement from "../../assets/Elements/CheckElement";
 import SelectElement from "../../assets/Elements/SelectElement";
 import ComponenteForm from "../../components/ComponenteForm";
 import Input from "../../components/ComponenteInput";
+
 // import "./Carta.css";
 
 /* 
@@ -57,7 +60,8 @@ const Reserva = () => (
         inputType ="time"
         leyenda ="Ingrese una hora valida"
         />
-        
+        <CheckElement></CheckElement>
+        <ButtonElement nombre="Enviar"></ButtonElement>
       </ComponenteForm>
     </section>
   </Fragment>

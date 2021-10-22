@@ -31,7 +31,7 @@ function ComponenteInput({label,placeholder,inputType,leyenda}) {
 
       <div className="form mb-3" id="grupo_hora">
           <label htmlFor="" className="form_label">{label}</label>
-          <input type={inputType}  name="hora" min="13:00" max="23:00" defaultValue={hora}  className="item-formulario form-control" id="exampleInputHora" />                
+          <input type={inputType}  name="hora"  defaultValue={hora}  className="item-formulario form-control" id="" />                
           <p className="form-text">{leyenda}</p>
       </div>
     )
