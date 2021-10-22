@@ -61,7 +61,7 @@ const ItemPlato = (props) => {
     setOpen(false);
   };
 
-  const { tituloPlato, descripcionPlato, imgPlato, idPlato } = props;
+  const { tituloPlato, descripcionPlato, imgPlato, precioPlato, idPlato } = props;
   return (
     <Fragment>
       <div className="col">
@@ -89,9 +89,46 @@ const ItemPlato = (props) => {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box sx={{ ...style, width: 400 }}>
-          <h2 id="parent-modal-title">{tituloPlato}</h2>
-          <p id="parent-modal-description">{descripcionPlato}</p>
+        <Box sx={{ ...style, width: 800 }}>
+          <h1 id="o-value-plato-titulo">{tituloPlato}</h1>
+          {/* <span id="o-value-plato">num</span> */}
+          <p id="o-value-plato-descripcion">{descripcionPlato}</p>
+          <div className="d-flex justify-content-center">
+            <img
+              id="o-value-plato-image"
+              src={imgPlato}
+              className="img-thumbnail rounded o-img-modal-container"
+              style={{ height: 220 }}
+            />
+          </div>
+          <div className="o-information-cost">
+            {/* Precio */}
+            <p>Precio</p>
+            <span id="o-value-plato-price">{precioPlato}</span>
+            <section className="o-style-btn-add-carrito">
+              {/* Open whatsapp to send a message */}
+              <button
+                type="button"
+                className="botones"
+                onClick={
+                  "location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'"
+                }
+              >
+                Ver contacto
+              </button>
+              <button id="btn__agregar" type="button" className="botones">
+                Agregar al carrito <i className="fas fa-shopping-cart" />
+              </button>
+              <input
+                type="number"
+                id="id_cantidad"
+                className="shoppingImput"
+                // value={1}
+                className="o-input-carta"
+                min={1}
+              />
+            </section>
+          </div>
           <Button onClick={handleClose}>Close</Button>
         </Box>
       </Modal>

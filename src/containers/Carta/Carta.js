@@ -65,13 +65,15 @@ class Carta extends React.Component {
                     tituloPlato="Combo 1 hamburguesa"
                     descripcionPlato="Combo de hamburguesa, con papas y refresco."
                     imgPlato={img1}
+                    precioPlato="15000"
+                    precioPlato="15000"
                     idPlato={1}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Combo 2 hamburguesa"
                     descripcionPlato="Combo de hamburguesa, papas y sin refresco."
                     imgPlato={img2}
+                    precioPlato="10000"
                     idPlato={2}
                     
                   />
@@ -79,6 +81,7 @@ class Carta extends React.Component {
                     tituloPlato="Hamburguesa sencilla"
                     descripcionPlato="Hamburguesa con carne, tomate y vegetales."
                     imgPlato={img3}
+                    precioPlato="7000"
                     idPlato={3}
                     
                   />
@@ -86,6 +89,7 @@ class Carta extends React.Component {
                     tituloPlato="Combo Hot Dog"
                     descripcionPlato="Combo 1 de Hot dog y papas."
                     imgPlato={img4}
+                    precioPlato="15000"
                     idPlato={4}
                     
                   />
@@ -93,6 +97,7 @@ class Carta extends React.Component {
                     tituloPlato="Hot Dog Sencillo"
                     descripcionPlato="Hot dog sencillo con salsa."
                     imgPlato={img5}
+                    precioPlato="15000"
                     idPlato={5}
                     
                   />
@@ -100,6 +105,7 @@ class Carta extends React.Component {
                     tituloPlato="Copa de papas sencillo"
                     descripcionPlato="Copa de papas con guacamole."
                     imgPlato={img6}
+                    precioPlato="15000"
                     idPlato={6}
                     
                   />
@@ -107,6 +113,7 @@ class Carta extends React.Component {
                     tituloPlato="Papas sencillas"
                     descripcionPlato="Papas a la francesa sencilla."
                     imgPlato={img7}
+                    precioPlato="15000"
                     idPlato={7}
                     
                   />
@@ -114,6 +121,7 @@ class Carta extends React.Component {
                     tituloPlato="2 Latas de Coca Cola"
                     descripcionPlato="Latas de Coca Cola, con limón y hielo."
                     imgPlato={img8}
+                    precioPlato="15000"
                     idPlato={8}
                     
                   />
@@ -121,6 +129,7 @@ class Carta extends React.Component {
                     tituloPlato="Jarra con limonada"
                     descripcionPlato="Jarra con limonada de 1/2 litro."
                     imgPlato={img9}
+                    precioPlato="15000"
                     idPlato={9}
                     
                   />
@@ -128,6 +137,7 @@ class Carta extends React.Component {
                     tituloPlato="Jarra de agua"
                     descripcionPlato="Jarra de agua de 1/2 litro"
                     imgPlato={img10}
+                    precioPlato="15000"
                     idPlato={10}
                     
                   />
@@ -135,6 +145,7 @@ class Carta extends React.Component {
                     tituloPlato="Pizza de Italiana"
                     descripcionPlato="Pizza Italiana con 8 porciones."
                     imgPlato={img11}
+                    precioPlato="15000"
                     idPlato={11}
                     
                   />
@@ -142,6 +153,7 @@ class Carta extends React.Component {
                     tituloPlato="Pizza personal Italiana"
                     descripcionPlato="Pizza Italiana para 1 persona."
                     imgPlato={img12}
+                    precioPlato="15000"
                     idPlato={12}
                     
                   />
@@ -176,56 +188,7 @@ class Carta extends React.Component {
           </a>
         </div>
 
-        {/* The Modal  */}
-        <div id="myModal" className="modal">
-          {/* Modal content */}
-          <div className="modal-content">
-            <span className="close">&times;</span>
-            <h1 id="o-value-plato-titulo">Título del plato</h1>
-            <span id="o-value-plato">num</span>
-            <p id="o-value-plato-descripcion">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              aspernatur excepturi error temporibus odit, quod alias fuga.
-              Corporis ipsa veniam qui ipsam rem atque voluptate nihil vero?
-              Libero, illo totam.
-            </p>
-            <div className="d-flex justify-content-center">
-              <div
-                id="o-value-plato-image"
-                className="img-thumbnail rounded o-img-modal-container"
-                style={{ width: 720 }}
-              ></div>
-            </div>
-            <div className="o-information-cost">
-              {/* Precio */}
-              <p>Precio</p>
-              <span id="o-value-plato-price">Error</span>
-              <section className="o-style-btn-add-carrito">
-                {/* Open whatsapp to send a message */}
-                <button
-                  type="button"
-                  className="botones"
-                  onclick={
-                    "location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'"
-                  }
-                >
-                  Ver contacto
-                </button>
-                <button id="btn__agregar" type="button" className="botones">
-                  Agregar al carrito <i className="fas fa-shopping-cart" />
-                </button>
-                <input
-                  type="number"
-                  id="id_cantidad"
-                  className="shoppingImput"
-                  value={1}
-                  className="o-input-carta"
-                  min={1}
-                />
-              </section>
-            </div>
-          </div>
-        </div>
+        
       </Fragment>
     );
   }
