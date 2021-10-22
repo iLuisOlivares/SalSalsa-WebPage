@@ -5,11 +5,20 @@
   margin-left: 1px;
 }
 
+.o-fix-column {
+    display: flex !important;
+}
+
+.o-fix-column-2 {
+    display: flex !important;
+    height: 10px !important;
+}
+
 /* carta styles */
 
 .main-carta {
   padding: 2rem;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .o-title-menu {
