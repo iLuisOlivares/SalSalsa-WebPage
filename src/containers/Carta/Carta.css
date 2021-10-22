@@ -1,4 +1,12 @@
+.o-input-carta {
+  max-width: 3rem;
+  border: 2px solid rgba(182, 6, 6, 0.8);
+  border-radius: 5px;
+  margin-left: 1px;
+}
+
 /* carta styles */
+
 .main-carta {
   padding: 2rem;
   background-color: red;
@@ -13,6 +21,7 @@
 .o-fix {
   position: bottom;
   padding-bottom: 60px;
+  
 }
 
 .o-menu-doc {
@@ -26,7 +35,7 @@
   font-weight: bold;
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel-indicators  [data-bs-target] {
   background-color: black;
 }
 
@@ -81,7 +90,7 @@
   width: 80%;
 }
 
-.informacion{
+.informacion {
   min-height: 120px;
   font-style: inherit;
 }
