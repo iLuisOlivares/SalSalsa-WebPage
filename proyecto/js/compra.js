@@ -3,7 +3,7 @@
 const div_list = document.querySelector("#container-list");
 const costo = document.getElementById("costo-total");
 
-const crearListHtml = ({ nombre,id, cantidad, precio, imagen, descripcion }) => {
+const crearListHtml = ({ nombre,id, cantidad, precio, imagen, descripcion, cantidad }) => {
   const html = `<div class="card mb-3 o-fix-card-carrito" data-id = '${id}'>
                 <div class="row g-0">
                     <div class="col-md-4">

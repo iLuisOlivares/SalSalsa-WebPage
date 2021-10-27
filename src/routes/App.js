@@ -3,9 +3,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import Layout from "../components/Layout";
 import Carta from "../containers/Carta/Carta";
-import Reserva from '../containers/Reserva/reserva';
 import Home from "../containers/Home/Home";
 import NotFound from "../containers/NotFound/NotFound";
+import Reserva from '../containers/Reserva/Reserva';
+import Carrito from '../containers/Carrito/Carrito';
 /* 
   función que permite crear todas las rutas de la página:
   -. Es necesario de traer un componente que desde los containers.
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/carta" component={Carta} />
         <Route exact path="/reserva" component={Reserva} />
+        <Route exact path="/carrito" component={Carrito} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
