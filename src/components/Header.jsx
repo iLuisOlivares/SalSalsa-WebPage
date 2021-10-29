@@ -15,7 +15,7 @@ const Header = () => {
     <header className="header">     
     <nav className="navbar navbar-dark bg-dark navbar-expand-lg  py-1" id="mainNav">
       <div className="container px-4 px-lg-0">
-      <a className="navbar-brand"><img src={img} /></a>
+      <a className="navbar-brand"><img className="logo" src={img} /></a>
       <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="">
                     <ul className="navbar-nav ms-auto my-2 my-lg-0">

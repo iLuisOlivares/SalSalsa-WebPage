@@ -1,10 +1,11 @@
+import { minHeight } from "@mui/system";
 import React from "react";
 import ComponentePago from "../../components/ComponentePago";
 import ItemsCarrito from "../../components/ItemsCarrito";
 
 function Carrito() {
   return (
-    <div className="my-3 container-xxl">
+    <div className="my-3 container-xxl" style={{minHeight: '74vh'}}>
       <h2 class="d-flex mb-3 justify-content-center">Carrito de compra</h2>
 
       {/* Contenedor de los items  */}
@@ -13,6 +14,15 @@ function Carrito() {
           <div className="card col-8">
             <div className="">
                 <p className="d-flex justify-content-center">Todavia no has agregado items al carrito de compras</p>
+
+                {/* Items */}
+                <ItemsCarrito
+                nombre = "Item"
+                descripcion = "Descripcion"
+                precio = "Precio"
+                id = "1"
+                cantidad = "2"
+                ></ItemsCarrito>
                 <ItemsCarrito
                 nombre = "Item"
                 descripcion = "Descripcion"

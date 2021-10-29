@@ -2,15 +2,15 @@ import React from 'react'
 import imagen from '../assets/Img/img1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import { divContainerStyled, InputCompraStyled } from '../assets/Elements/Carrito';
+import { ContainerImgStyled, divContainerStyled, ImagenStyled, InputCompraStyled } from '../assets/Elements/Carrito';
 
 function ItemsCarrito({nombre,descripcion, precio,id, cantidad}) {
     return (
             <divContainerStyled class="card mb-3" data-id = {id}>
                 <div class="row g-0">
-                    <div className="col-md-4">
-                    <img src= {imagen} className="img-fluid rounded-center" alt="..."/>
-                    </div>
+                    <ContainerImgStyled className="col-md-4">
+                    <ImagenStyled src= {imagen} className="rounded-center" alt="..."/>
+                    </ContainerImgStyled>
                     <div class="col-md-8">
                         
                         <div class="card-body">

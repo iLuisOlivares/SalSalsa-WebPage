@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Carta from "../containers/Carta/Carta";
 import Home from "../containers/Home/Home";
 import NotFound from "../containers/NotFound/NotFound";
-import Reserva from '../containers/Reserva/Reserva';
+import Reserva from '../containers/Reserva/reserva';
 import Carrito from '../containers/Carrito/Carrito';
 /* 
   función que permite crear todas las rutas de la página:
