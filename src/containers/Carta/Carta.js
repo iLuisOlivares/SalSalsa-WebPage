@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./Carta.css";
 import ItemPlato from "../../components/ItemPlato";
+import { Link } from "react-router-dom";
 
 /* 
   Container para mostrar el diseño de la página Carta
@@ -46,8 +47,6 @@ class Carta extends React.Component {
     //   alert("attribute");
     // };
 
-
-
     return (
       <Fragment>
         {/* Main content */}
@@ -75,7 +74,6 @@ class Carta extends React.Component {
                     imgPlato={img2}
                     precioPlato="10000"
                     idPlato={2}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Hamburguesa sencilla"
@@ -83,7 +81,6 @@ class Carta extends React.Component {
                     imgPlato={img3}
                     precioPlato="7000"
                     idPlato={3}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Combo Hot Dog"
@@ -91,7 +88,6 @@ class Carta extends React.Component {
                     imgPlato={img4}
                     precioPlato="15000"
                     idPlato={4}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Hot Dog Sencillo"
@@ -99,7 +95,6 @@ class Carta extends React.Component {
                     imgPlato={img5}
                     precioPlato="15000"
                     idPlato={5}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Copa de papas sencillo"
@@ -107,7 +102,6 @@ class Carta extends React.Component {
                     imgPlato={img6}
                     precioPlato="15000"
                     idPlato={6}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Papas sencillas"
@@ -115,7 +109,6 @@ class Carta extends React.Component {
                     imgPlato={img7}
                     precioPlato="15000"
                     idPlato={7}
-                    
                   />
                   <ItemPlato
                     tituloPlato="2 Latas de Coca Cola"
@@ -123,7 +116,6 @@ class Carta extends React.Component {
                     imgPlato={img8}
                     precioPlato="15000"
                     idPlato={8}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Jarra con limonada"
@@ -131,7 +123,6 @@ class Carta extends React.Component {
                     imgPlato={img9}
                     precioPlato="15000"
                     idPlato={9}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Jarra de agua"
@@ -139,7 +130,6 @@ class Carta extends React.Component {
                     imgPlato={img10}
                     precioPlato="15000"
                     idPlato={10}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Pizza de Italiana"
@@ -147,7 +137,6 @@ class Carta extends React.Component {
                     imgPlato={img11}
                     precioPlato="15000"
                     idPlato={11}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Pizza personal Italiana"
@@ -155,7 +144,6 @@ class Carta extends React.Component {
                     imgPlato={img12}
                     precioPlato="15000"
                     idPlato={12}
-                    
                   />
                 </div>
 
@@ -166,14 +154,12 @@ class Carta extends React.Component {
                     descripcionPlato="Copa de helado de 1 sabor con uvas."
                     imgPlato={img13}
                     idPlato={13}
-                    
                   />
                   <ItemPlato
                     tituloPlato="Cono de helado"
                     descripcionPlato="ono de helado con 2 bolas de diferentes sabores."
                     imgPlato={img14}
                     idPlato={14}
-                    
                   />
                 </div>
               </Slider>
@@ -183,12 +169,10 @@ class Carta extends React.Component {
 
         {/* Link to download the menu  */}
         <div className="o-menu-doc">
-          <a href="./assets/doc/Menu_Completo.pdf" download="menu">
+          <Link to="/files/Menu_Completo.pdf" target="_blank" download>
             Descarga el Menú completo aquí
-          </a>
+          </Link>
         </div>
-
-        
       </Fragment>
     );
   }

@@ -6,12 +6,12 @@
 }
 
 .o-fix-column {
-    display: flex !important;
+  display: flex !important;
 }
 
 .o-fix-column-2 {
-    display: flex !important;
-    height: 10px !important;
+  display: flex !important;
+  height: 10px !important;
 }
 
 /* carta styles */
@@ -30,7 +30,6 @@
 .o-fix {
   position: bottom;
   padding-bottom: 60px;
-  
 }
 
 .o-menu-doc {
@@ -44,7 +43,7 @@
   font-weight: bold;
 }
 
-.carousel-indicators  [data-bs-target] {
+.carousel-indicators [data-bs-target] {
   background-color: black;
 }
 
@@ -118,4 +117,21 @@
 
 #o-value-plato-price {
   margin-bottom: 1rem;
+}
+
+.botones {
+  overflow: hidden;
+  font-style: initial;
+  border: 2px solid rgba(182, 6, 6, 0.8);
+  background-color: rgba(182, 6, 6, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: white;
+  transition: all 0.5s;
+}
+
+.botones:hover {
+  box-shadow: 0 0 3px rgba(182, 6, 6, 0.8), 0 0 3px rgba(182, 6, 6, 0.8),
+    0 0 3px rgba(182, 6, 6, 0.8);
 }

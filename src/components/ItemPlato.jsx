@@ -61,7 +61,8 @@ const ItemPlato = (props) => {
     setOpen(false);
   };
 
-  const { tituloPlato, descripcionPlato, imgPlato, precioPlato, idPlato } = props;
+  const { tituloPlato, descripcionPlato, imgPlato, precioPlato, idPlato } =
+    props;
   return (
     <Fragment>
       <div className="col">
@@ -110,9 +111,12 @@ const ItemPlato = (props) => {
               <button
                 type="button"
                 className="botones"
-                onClick={
-                  "location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'"
-                }
+                onClick={() => {
+                  window.open(
+                    "https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@",
+                    "_blank"
+                  );
+                }}
               >
                 Ver contacto
               </button>
@@ -129,7 +133,7 @@ const ItemPlato = (props) => {
               />
             </section>
           </div>
-          <Button onClick={handleClose}>Close</Button>
+          <Button onClick={handleClose}>Cerrar</Button>
         </Box>
       </Modal>
     </Fragment>
