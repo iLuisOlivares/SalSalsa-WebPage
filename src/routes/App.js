@@ -7,6 +7,7 @@ import Home from "../containers/Home/Home";
 import NotFound from "../containers/NotFound/NotFound";
 import Reserva from '../containers/Reserva/reserva';
 import Carrito from '../containers/Carrito/Carrito';
+import Mapa from '../containers/Mapa/Mapa';
 /* 
   función que permite crear todas las rutas de la página:
   -. Es necesario de traer un componente que desde los containers.
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/carta" component={Carta} />
         <Route exact path="/reserva" component={Reserva} />
         <Route exact path="/carrito" component={Carrito} />
+        <Route exact path="/mapa" component={Mapa} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
