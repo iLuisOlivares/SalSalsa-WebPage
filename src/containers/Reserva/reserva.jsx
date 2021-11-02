@@ -39,16 +39,15 @@ const Reserva = () => {
     descripcion: /^[a-zA-ZÀ-ÿ\s\W]{0,}$/, // Letras y espacios, pueden llevar acentos.
   };
   const onSubmit = (e) => {
-    e.preventDefault();
     if (
       asunto.valido === "true" &&
       nombre.valido === "true" &&
       correo.valido === "true" &&
-      celular.valido === "true" &&
-      numeroPersonas.valido === true &&
-      fecha.valido === true &&
-      hora.valido === true &&
-      terminos === true
+      celular.valido === "true" 
+      // numeroPersonas === "true" &&
+      // fecha  === "true" &&
+      // hora === "true" &&
+      // terminos === true
     ) {
       console.log("Formulario Completado");
       cambiarFormulario(true);
@@ -61,8 +60,14 @@ const Reserva = () => {
       cambiarNumero(null);
       cambiarTerminos(null);
     } else {
-      console.log("Formulario no completado");
+    e.preventDefault();
       cambiarFormulario(false);
+      console.log("Formulario no completado");
+      console.log(asunto.valido);
+      console.log(nombre.valido);
+      console.log(correo.valido);
+      console.log(numeroPersonas);
+      console.log(terminos);  
     }
   };
 
@@ -71,7 +76,7 @@ const Reserva = () => {
       <section>
         <div className="row gx-0 gx-lg-0 justify-content-center mb-2 mx-1 py-5">
           <div className=" shadow-lg  col-xll-3 col-xl-6 col-lg-8 px-4 py-3 px-sm-5 rounded-3">
-            <form onSubmit={onSubmit} estado={formulario} action="">
+            <form onSubmit={onSubmit} estado={formulario} action="https://formspree.io/f/xqkwjage" method="POST">
               <SelectElement />
               <Input
                 estado={asunto}

@@ -1,0 +1,22 @@
+import React from 'react'
+import ItemsCarrito from '../../components/ItemsCarrito'
+
+function ContainerCarro({carrito, setCarrito}) {
+
+    return (
+        <div className='xd'>
+            {carrito.length === 0 ? (<p>No hay</p>) : (
+                  carrito.map((item => <ItemsCarrito
+                                        nombre = {item.nombre}
+                                        descripcion = {item.descripcion}
+                                        precio = {item.precio}
+                                        id = {item.id}
+                                        cantidad = {item.cantidad}
+                                        carrito = {carrito}
+                                        setCarrito = {setCarrito}
+                                        ></ItemsCarrito>)))
+                  }
+        </div>)
+}
+
+export default ContainerCarro

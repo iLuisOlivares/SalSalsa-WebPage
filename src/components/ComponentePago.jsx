@@ -1,13 +1,24 @@
 import React from "react";
 
-function ComponentePago() {
+function ComponentePago({carrito}) {
+
+  const calcularPrecio = () =>{
+    var precio = 0;
+    for (const iterator of carrito) {
+      var total = iterator.precio * iterator.cantidad;
+      precio = total + precio;
+    }
+    return precio;
+  }
+
+
   return (
     <div class="col-4">
       <div class=" card d-flex align-content-center ">
         <div class="card-body  ">
           <h5 class="card-title d-flex justify-content-center ">Total</h5>
           <p id="costo-total" class="d-flex justify-content-center card-text">
-            0000
+            {calcularPrecio()}
           </p>
           <div className=" d-flex justify-content-center  ">
             <button id="btn__traer" type="button" class=" btn btn-success ">
