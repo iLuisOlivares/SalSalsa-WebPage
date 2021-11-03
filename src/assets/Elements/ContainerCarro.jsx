@@ -11,6 +11,7 @@ function ContainerCarro({carrito, setCarrito}) {
                                         descripcion = {item.descripcion}
                                         precio = {item.precio}
                                         id = {item.id}
+                                        key = {item.id}
                                         cantidad = {item.cantidad}
                                         carrito = {carrito}
                                         setCarrito = {setCarrito}

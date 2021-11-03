@@ -13,15 +13,15 @@ function ComponentePago({carrito}) {
 
 
   return (
-    <div class="col-4">
-      <div class=" card d-flex align-content-center ">
-        <div class="card-body  ">
-          <h5 class="card-title d-flex justify-content-center ">Total</h5>
-          <p id="costo-total" class="d-flex justify-content-center card-text">
+    <div className="col-4">
+      <div className=" card d-flex align-content-center ">
+        <div className="card-body  ">
+          <h5 className="card-title d-flex justify-content-center ">Total</h5>
+          <p id="costo-total" className="d-flex justify-content-center card-text">
             {calcularPrecio()}
           </p>
           <div className=" d-flex justify-content-center  ">
-            <button id="btn__traer" type="button" class=" btn btn-success ">
+            <button id="btn__traer" type="button" className=" btn btn-success ">
               Pagar ahora
             </button>
           </div>

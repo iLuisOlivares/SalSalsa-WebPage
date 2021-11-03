@@ -13,7 +13,7 @@ const InputCompraStyled = styled.input`
 `;
 
 
-const divContainerStyled = styled.div`
+const DivContainerStyled = styled.div`
   max-width: 300px;
 
 `;
@@ -29,4 +29,4 @@ const ImagenStyled = styled.img`
  width: 100%;
 `;
 
-export {InputCompraStyled, divContainerStyled, ImagenStyled, ContainerImgStyled}
+export {InputCompraStyled, DivContainerStyled, ImagenStyled, ContainerImgStyled}
