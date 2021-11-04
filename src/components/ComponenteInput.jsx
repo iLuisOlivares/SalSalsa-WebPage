@@ -3,7 +3,7 @@ import { InputStyled, LabelStyled, LeyendaStyled } from '../assets/Elements/Form
 
 
 
-function ComponenteInput({estado,cambiarEstado, label,placeholder,leyenda,expresionRegular}) {
+function ComponenteInput({estado,cambiarEstado, label,placeholder,leyenda,expresionRegular, name}) {
 
   const onChange = (e) =>{
     cambiarEstado({...estado, campo: e.target.value});}
@@ -25,7 +25,7 @@ function ComponenteInput({estado,cambiarEstado, label,placeholder,leyenda,expres
     return (
         <div className="mb-3">
         <LabelStyled  valido={estado.valido} htmlFor="" className=" form-label">{label}</LabelStyled>
-        <InputStyled  name={label} valido={estado.valido} type="text" value= {estado.campo} onChange={onChange} onKeyUp = {validacion} onBlur={validacion} placeholder = {placeholder} className="form-control" id=""></InputStyled>
+        <InputStyled  name={name} valido={estado.valido} type="text" value= {estado.campo} onChange={onChange} onKeyUp = {validacion} onBlur={validacion} placeholder = {placeholder} className="form-control" id=""></InputStyled>
         <LeyendaStyled valido={estado.valido}  className="form-text">{leyenda}</LeyendaStyled>
         </div>
     )

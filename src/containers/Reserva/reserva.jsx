@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useRef  } from "react";
 import ButtonElement from "../../assets/Elements/ButtonElement";
 import CheckElement from "../../assets/Elements/CheckElement";
 import SelectElement from "../../assets/Elements/SelectElement";
@@ -11,6 +11,8 @@ import {
   MensajeStyled1,
   MensajeStyled2,
 } from "../../assets/Elements/Formularios";
+import emailjs from 'emailjs-com';
+
 
 // import "./Carta.css";
 
@@ -19,13 +21,16 @@ import {
 */
 
 const Reserva = () => {
+
+
+  
   const [asunto, cambiarAsunto] = useState({ campo: "", valido: null });
   const [nombre, cambiarNombre] = useState({ campo: "", valido: null });
   const [correo, cambiarCorreo] = useState({ campo: "", valido: null });
   const [celular, cambiarCelular] = useState({ campo: "", valido: null });
-  const [numeroPersonas, cambiarNumero] = useState(null);
-  const [fecha, cambiarFecha] = useState(null);
-  const [hora, cambiarHora] = useState(null);
+  const [numeroPersonas, cambiarNumero] = useState('true');
+  const [fecha, cambiarFecha] = useState('true');
+  const [hora, cambiarHora] = useState('true');
   const [terminos, cambiarTerminos] = useState(false);
   const [formulario, cambiarFormulario] = useState(null);
 
@@ -38,18 +43,29 @@ const Reserva = () => {
     celular: /^\d{7,14}$/, // 7 a 14 numeros.
     descripcion: /^[a-zA-ZÀ-ÿ\s\W]{0,}$/, // Letras y espacios, pueden llevar acentos.
   };
+
   const onSubmit = (e) => {
     if (
       asunto.valido === "true" &&
       nombre.valido === "true" &&
       correo.valido === "true" &&
-      celular.valido === "true" 
-      // numeroPersonas === "true" &&
-      // fecha  === "true" &&
-      // hora === "true" &&
-      // terminos === true
+      celular.valido === "true" &&
+      numeroPersonas === "true" &&
+      fecha  === "true" &&
+      hora === "true" &&
+      terminos === true
     ) {
       console.log("Formulario Completado");
+      e.preventDefault();
+
+    emailjs.sendForm('service_abyircw', 'template_1zoz45o', e.target, 'user_D3SnG2Ug2C29tarRbxdi0')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+
       cambiarFormulario(true);
       cambiarNombre({ campo: "", valido: null });
       cambiarAsunto({ campo: "", valido: null });
@@ -67,16 +83,19 @@ const Reserva = () => {
       console.log(nombre.valido);
       console.log(correo.valido);
       console.log(numeroPersonas);
+      console.log(fecha);
+      console.log(hora);
       console.log(terminos);  
     }
   };
+
 
   return (
     <Fragment>
       <section>
         <div className="row gx-0 gx-lg-0 justify-content-center mb-2 mx-1 py-5">
           <div className=" shadow-lg  col-xll-3 col-xl-6 col-lg-8 px-4 py-3 px-sm-5 rounded-3">
-            <form onSubmit={onSubmit} estado={formulario} action="https://formspree.io/f/xqkwjage" method="POST">
+            <form onSubmit={onSubmit} estado={formulario}>
               <SelectElement />
               <Input
                 estado={asunto}
@@ -86,6 +105,7 @@ const Reserva = () => {
                 inputType="text"
                 leyenda="Escriba un asunto valido"
                 expresionRegular={expresiones.asunto}
+                name = "asunto"
               />
               <Input
                 estado={nombre}
@@ -95,6 +115,7 @@ const Reserva = () => {
                 placeholder="Nombre Completo"
                 inputType="text"
                 leyenda="Escriba un nombre valido"
+                name = "nombre"
               />
               <Input
                 estado={correo}
@@ -104,6 +125,7 @@ const Reserva = () => {
                 placeholder="Correo Electronico"
                 inputType="email"
                 leyenda="Escriba un Email valido"
+                name = "email"
               />
               <Input
                 estado={celular}
@@ -113,6 +135,7 @@ const Reserva = () => {
                 placeholder="Celular"
                 inputType="text"
                 leyenda="Escriba un numero celular valido"
+                name = "celular"
               />
               <InputNumber
                 estado={numeroPersonas}
@@ -120,6 +143,7 @@ const Reserva = () => {
                 label="Numero de personas"
                 leyenda="Ingrese un numero de valido: Entre 1 y 30 personas"
                 exprecionRegular=""
+                name = "personas"
               />
               <InputDate
                 estado={fecha}
@@ -127,6 +151,7 @@ const Reserva = () => {
                 expresionRegular={expresiones.celular}
                 label="Fecha"
                 leyenda="Ingrese una fecha valida: Posterior al dia de hoy"
+                name = "fecha"
               />
               <InputTime
                 estado={hora}
@@ -134,6 +159,7 @@ const Reserva = () => {
                 expresionRegular={expresiones.celular}
                 label="Hora"
                 leyenda="Ingrese una hora valida: Entre las 13:00 y las 23:00"
+                name = "hora"
               />
               <CheckElement
                 estado={terminos}
@@ -150,7 +176,7 @@ const Reserva = () => {
                   Se ha enviado el formulario: Muchas gracias
                 </MensajeStyled2>
               )}
-              <ButtonElement nombre="Enviar"></ButtonElement>
+              <input type="submit" value="Send"></input>
             </form>
           </div>
         </div>

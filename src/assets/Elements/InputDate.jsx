@@ -5,11 +5,10 @@ const hoy = new Date();
 const minFecha = hoy.toISOString().split('T')[0];
 
 
-function InputDate({estado,cambiarEstado, label,leyenda}) {
+function InputDate({estado,cambiarEstado, label,leyenda,name}) {
 
     const validacion = (e) => {
-        cambiarEstado({...estado, campo: e.target.value});
-    
+      
         if(e.target.validity.valid === true){
         cambiarEstado('true');
         }else if(e.target.validity.rangeOverflow === true || e.target.validity.rangeUnderflow === true){
@@ -20,7 +19,7 @@ function InputDate({estado,cambiarEstado, label,leyenda}) {
     return(
         <div className="form mb-3" id="grupo_fecha">
             <LabelStyled valido={estado} htmlFor="" className="form_label">{label}</LabelStyled>
-            <InputStyled valido={estado} type="date" min={minFecha} defaultValue={minFecha} onChange={validacion} onKeyUp = {validacion} onBlur={validacion} className="item-formulario form-control mb-2 "/>                
+            <InputStyled name={name} valido={estado} type="date" min={minFecha} defaultValue={minFecha} onChange={validacion} onKeyUp = {validacion} onBlur={validacion} className="item-formulario form-control mb-2 "/>                
             <LeyendaStyled valido={estado} className="form-text msg_ok">{leyenda}</LeyendaStyled>
         </div>
   
