@@ -17,11 +17,11 @@ const getData = async () => {
     })
     .catch((error) => console.log(error));
 };
+getData()
 
 const Carrito = () => {
   const [carrito, setCarrito] = useState(lista);
   console.log("Llamar a la función");
-  getData()
 
   return (
     <div className="my-3 container-xxl" style={{ minHeight: "74vh" }}>
