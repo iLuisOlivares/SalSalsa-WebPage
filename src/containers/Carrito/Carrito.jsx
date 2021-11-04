@@ -5,8 +5,8 @@ import ComponentePago from "../../components/ComponentePago";
 import ItemsCarrito from "../../components/ItemsCarrito";
 import ContainerCarro from "../../assets/Elements/ContainerCarro";
 
-function Carrito() {
-  
+ const inicializar = () =>{
+
   var lista=[];
   const url = 'https://store-express-greg.herokuapp.com/api/v1/orders'
   fetch(url).then(response => response.json()).then(data => {
@@ -15,10 +15,15 @@ function Carrito() {
     }
   }).catch(error => console.log(error));
   
-  
-  
-  const [carrito, setCarrito] =  useState(lista);
+  return lista
+ }
 
+function Carrito() {
+
+  
+  const lista = inicializar();
+  console.log(lista);
+  const [carrito, setCarrito] =  useState(lista);
  
   return (
     <div className="my-3 container-xxl" style={{minHeight: '74vh'}}>

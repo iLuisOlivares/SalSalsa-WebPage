@@ -5,8 +5,8 @@ function SelectElement() {
     return (
             <div className="mb-3 mt-4" id="grupo_select">
                 <LabelStyled className="form-label ">Seleccione el servicio</LabelStyled>
-                <select defaultValue="Seleccionar" name="select" id="select-id" className="item-formulario form-select">
-                    <option>Seleccionar</option>
+                <select  defaultValue="Reunion" name="select" id="select-id" className="item-formulario form-select">
+                    <option> Reunion</option>
                     <option> Celebración de cumpleaños </option>
                     <option> Aniversarios </option>
                     <option> Fiestas infantiles </option>
