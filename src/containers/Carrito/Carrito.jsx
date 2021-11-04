@@ -1,5 +1,6 @@
 import { minHeight } from "@mui/system";
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import ComponentePago from "../../components/ComponentePago";
 import ItemsCarrito from "../../components/ItemsCarrito";
 import ContainerCarro from "../../assets/Elements/ContainerCarro";
@@ -43,9 +44,9 @@ function Carrito() {
 
         {/* Boton seguir comprando */}
         <div className="row p-2">
-          <a className="btn btn-danger " href="carta">
+          <Link className="btn btn-danger " to="/carta">
             Continuar comprando
-          </a>
+          </Link>
         </div>
 
 
