@@ -5,19 +5,23 @@ import ComponentePago from "../../components/ComponentePago";
 import ItemsCarrito from "../../components/ItemsCarrito";
 import ContainerCarro from "../../assets/Elements/ContainerCarro";
 
-var lista = [];
-const url = "https://store-express-greg.herokuapp.com/api/v1/orders";
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    for (const iterator of data) {
-      lista.push(iterator);
-    }
-  })
-  .catch((error) => console.log(error));
+let lista = [];
+const getData = async () => {
+  const url = "https://store-express-greg.herokuapp.com/api/v1/orders";
+  await fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      for (const iterator of data) {
+        lista.push(iterator);
+      }
+    })
+    .catch((error) => console.log(error));
+};
 
 const Carrito = () => {
   const [carrito, setCarrito] = useState(lista);
+  console.log("Llamar a la función");
+  getData()
 
   return (
     <div className="my-3 container-xxl" style={{ minHeight: "74vh" }}>

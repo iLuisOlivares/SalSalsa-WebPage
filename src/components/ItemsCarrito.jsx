@@ -29,6 +29,7 @@ function ItemsCarrito({
       .then((res) => res.json())
       .then((res) => console.log(res));
     setCarrito(lista);
+    window.location.reload(true);
   };
 
   const validacion = (e) => {
