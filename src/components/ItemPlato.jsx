@@ -16,7 +16,7 @@ const style = {
   pb: 3,
 };
 
-function ChildModal() {
+/* function ChildModal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -45,12 +45,29 @@ function ChildModal() {
       </Modal>
     </React.Fragment>
   );
-}
+}*/
 
 const ItemPlato = (props) => {
-  const determinarPlato = (cb) => {
-    // alert(id)
-    // cb.style.display = "block";
+  const postData = async (productName, descriptionName, price, id) => {
+    let amount = parseInt(document.getElementById("id_cantidad").value);
+    
+    // console.log("JSON DATA ES ", JSON.stringify(data))
+    //alert(`cantidad ${cantidad} mas id ${id}`)
+
+    await fetch("https://store-express-greg.herokuapp.com/api/v1/orders", {
+      method: 'POST',
+      mode: 'cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        "nombre": productName,
+        "descripcion": descriptionName,
+        "precio": price,
+        "id": id, 
+        "cantidad": amount 
+      })
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
   };
 
   const [open, setOpen] = React.useState(false);
@@ -120,14 +137,19 @@ const ItemPlato = (props) => {
               >
                 Ver contacto
               </button>
-              <button id="btn__agregar" type="button" className="botones">
+              <button
+                id="btn__agregar"
+                onClick={() => postData(tituloPlato, descripcionPlato, precioPlato, idPlato)}
+                type="button"
+                className="botones"
+              >
                 Agregar al carrito <i className="fas fa-shopping-cart" />
               </button>
               <input
                 type="number"
                 id="id_cantidad"
                 className="shoppingImput"
-                // value={1}
+                // value={cantidad}
                 className="o-input-carta"
                 min={1}
               />

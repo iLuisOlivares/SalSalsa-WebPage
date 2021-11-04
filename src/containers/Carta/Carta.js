@@ -65,7 +65,6 @@ class Carta extends React.Component {
                     descripcionPlato="Combo de hamburguesa, con papas y refresco."
                     imgPlato={img1}
                     precioPlato="15000"
-                    precioPlato="15000"
                     idPlato={1}
                   />
                   <ItemPlato
@@ -79,7 +78,7 @@ class Carta extends React.Component {
                     tituloPlato="Hamburguesa sencilla"
                     descripcionPlato="Hamburguesa con carne, tomate y vegetales."
                     imgPlato={img3}
-                    precioPlato="7000"
+                    precioPlato="5000"
                     idPlato={3}
                   />
                   <ItemPlato
@@ -93,42 +92,42 @@ class Carta extends React.Component {
                     tituloPlato="Hot Dog Sencillo"
                     descripcionPlato="Hot dog sencillo con salsa."
                     imgPlato={img5}
-                    precioPlato="15000"
+                    precioPlato="1000"
                     idPlato={5}
                   />
                   <ItemPlato
                     tituloPlato="Copa de papas sencillo"
                     descripcionPlato="Copa de papas con guacamole."
                     imgPlato={img6}
-                    precioPlato="15000"
+                    precioPlato="7000"
                     idPlato={6}
                   />
                   <ItemPlato
                     tituloPlato="Papas sencillas"
                     descripcionPlato="Papas a la francesa sencilla."
                     imgPlato={img7}
-                    precioPlato="15000"
+                    precioPlato="5000"
                     idPlato={7}
                   />
                   <ItemPlato
                     tituloPlato="2 Latas de Coca Cola"
                     descripcionPlato="Latas de Coca Cola, con limón y hielo."
                     imgPlato={img8}
-                    precioPlato="15000"
+                    precioPlato="7000"
                     idPlato={8}
                   />
                   <ItemPlato
                     tituloPlato="Jarra con limonada"
                     descripcionPlato="Jarra con limonada de 1/2 litro."
                     imgPlato={img9}
-                    precioPlato="15000"
+                    precioPlato="8000"
                     idPlato={9}
                   />
                   <ItemPlato
                     tituloPlato="Jarra de agua"
                     descripcionPlato="Jarra de agua de 1/2 litro"
                     imgPlato={img10}
-                    precioPlato="15000"
+                    precioPlato="7000"
                     idPlato={10}
                   />
                   <ItemPlato
@@ -142,7 +141,7 @@ class Carta extends React.Component {
                     tituloPlato="Pizza personal Italiana"
                     descripcionPlato="Pizza Italiana para 1 persona."
                     imgPlato={img12}
-                    precioPlato="15000"
+                    precioPlato="5000"
                     idPlato={12}
                   />
                 </div>
@@ -153,12 +152,14 @@ class Carta extends React.Component {
                     tituloPlato="Copa de helado"
                     descripcionPlato="Copa de helado de 1 sabor con uvas."
                     imgPlato={img13}
+                    precioPlato="3000"
                     idPlato={13}
                   />
                   <ItemPlato
                     tituloPlato="Cono de helado"
                     descripcionPlato="ono de helado con 2 bolas de diferentes sabores."
                     imgPlato={img14}
+                    precioPlato="4000"
                     idPlato={14}
                   />
                 </div>
