@@ -21,11 +21,15 @@ function Servicios () {
  
                   <div class="row p-3">
                         <div class="col-6 d-flex p-1 justify-content-end">
-                        <button class="botones" onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'" role="button"> <i class="fab fa-whatsapp"></i> Contactanos: Via Whatsapp</button>
+                          <a href="https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'">
+
+                        <button class="botones" role="button"> <i class="fab fa-whatsapp"></i> Contactanos: Via Whatsapp</button>
+                          </a>
                         </div>
                         <div class="col-6 d-flex p-1 justify-content-start">
-                        <button
-                         class="btn btn-dark" role="button"> <i class="fas fa-calendar-day"></i> Contactanos: Haz tu Reserva </button>
+                        <Link to="reserva">
+                        <button class="botones btn-dark" role="button"> <i class="fas fa-calendar-day"></i> Contactanos: Haz tu Reserva </button>
+                        </Link>
                         </div>
                   </div>
 
