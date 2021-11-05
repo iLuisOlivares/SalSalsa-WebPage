@@ -1,0 +1,25 @@
+.formu{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputFormu{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.subTitulo{
+    padding-top: 20px;
+}
+
+.btn{
+
+    border-radius: 10px;
+    color: white;
+    background-color:black ;
+}

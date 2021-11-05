@@ -34,3 +34,8 @@
   width: 200px;
   height: 150px;
 }
+
+.active{
+  background-color: black;
+  color: violet;
+}

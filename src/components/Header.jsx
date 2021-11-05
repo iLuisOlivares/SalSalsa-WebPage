@@ -1,14 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../assets/styles/components/Header.css";
 import img from "../assets/Img/logo@2x.png";
 import "../assets/styles/components/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
+import useAuth from "../containers/Login/auth/useAuth";
+
 /* 
   Componente del header
 */
+
 const Header = () => {
+
+  const auth = useAuth();
   return (
     <header className="header">
       <nav
@@ -33,41 +39,71 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="">
             <ul className="navbar-nav ms-auto my-2 my-lg-0">
               <li className="nav-item">
-                <Link className="select-items" to="/">
+                <Link className="select-item" to="/">
                   Inicio
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-items" to="/nosotros">
+                <Link className="select-item" to="/nosotros">
                   Nosotros
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-items" to="/carta">
+                <Link className="select-item" to="/carta">
                   Menú
-                </Link>
+                </NavLink>
               </li>
+              {auth.isLogged() &&(
+                <>
+                  <li className="nav-item">
+                    <NavLink className="select-item" exact to="/updateCarta" activeClass="active">
+                      Actualizar Menú
+                    </NavLink>
+                  </li>
+                </>
+
+              )}
+
               <li className="nav-item">
-                <Link className="select-items" to="/servicios">
+                <Link className="select-item" to="/servicios">
                   Servicios
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-items" to="/reserva">
+                <Link className="select-item" to="/reserva">
                   Reservar
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-items" to="mapa">
+                <Link className="select-item" to="mapa">
                   Mapa
-                </Link>
+                </NavLink>
               </li>
+              {!auth.isLogged() && (
+                <><li className="nav-item">
+                  <NavLink className="select-item" exact to="login" activeClass="active">
+                    Iniciar Sesión
+                  </NavLink>
+                </li><li className="nav-item">
+                    <NavLink className="select-item" exact to="register">
+                      Registrarse
+                    </NavLink>
+                  </li></>
+              )}
+
+              {auth.isLogged() &&(
+                <>
+                <button onClick={auth.logout}>Cerrar Sessión</button>
+                </>
+              )}
+
+
             </ul>
             <ul className="navbar-nav p-3">
               <li className="nav-item">
-                <Link className="icono-1 select-items" to="carrito">
+                <Link className="icono-1 select-item" to="carrito">
                   <FontAwesomeIcon icon={faShoppingBasket} />
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
