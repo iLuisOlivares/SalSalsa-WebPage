@@ -5,7 +5,7 @@ function ContainerCarro({ carrito, setCarrito }) {
   return (
     <div className="xd">
       {carrito.length === 0 ? (
-        <p>No hay ningún producto en el carrito</p>
+        <p className="m-5 d-flex justify-content-center">No hay ningún producto en el carrito</p>
       ) : (
         carrito.map((item) => (
           <ItemsCarrito

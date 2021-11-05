@@ -10,7 +10,7 @@
   font-size: 20px;
 
 }
-.select-item{
+.select-items{
   color: whitesmoke;
   text-decoration: none;
   padding: 1rem 0.5rem;
@@ -20,12 +20,12 @@
   color: rgb(228, 94, 94);
   transition: all 1s;
 }
-.select-item:hover{
+.select-items:hover{
   color: rgb(228, 94, 94);
-  font-size: 1.06rem;
   transition: all 1s;
 
 } 
+
 .icono-1:hover{
   font-size: 25px;
 }

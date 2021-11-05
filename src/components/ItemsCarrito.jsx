@@ -32,6 +32,8 @@ function ItemsCarrito({
     // window.location.reload(true);
   };
 
+ 
+  
   const validacion = (e) => {
     const lista = [];
     console.log(e.target.id);

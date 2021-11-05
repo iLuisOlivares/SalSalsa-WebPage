@@ -38,12 +38,13 @@ const Carrito = () => {
           </div>
 
           {/* < Contenedor para pagar todo  */}
-          <ComponentePago carrito={carrito}></ComponentePago>
+          <ComponentePago carrito={carrito}
+          setCarrito={setCarrito}></ComponentePago>
         </div>
 
         {/* Boton seguir comprando */}
         <div className="row p-2">
-          <Link className="btn btn-danger " to="/carta">
+          <Link className="btn btn-dark " to="/carta">
             Continuar comprando
           </Link>
         </div>

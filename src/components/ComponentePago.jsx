@@ -1,6 +1,7 @@
 import React from "react";
+import ComponenteModal from "./ComponenteModal";
 
-function ComponentePago({carrito}) {
+function ComponentePago({carrito,setCarrito}) {
 
   const calcularPrecio = () =>{
     var precio = 0;
@@ -11,6 +12,7 @@ function ComponentePago({carrito}) {
     return precio;
   }
 
+  const valor = calcularPrecio()
 
   return (
     <div className="col-4">
@@ -18,12 +20,17 @@ function ComponentePago({carrito}) {
         <div className="card-body  ">
           <h5 className="card-title d-flex justify-content-center ">Total</h5>
           <p id="costo-total" className="d-flex justify-content-center card-text">
-            {calcularPrecio()}
+            {valor}
           </p>
           <div className=" d-flex justify-content-center  ">
-            <button id="btn__traer" type="button" className=" btn btn-success ">
-              Pagar ahora
-            </button>
+          
+          <ComponenteModal
+          precio = {valor}
+          carrito = {carrito}
+          setCarrito = {setCarrito}
+          
+          ></ComponenteModal>
+          
           </div>
         </div>
       </div>
