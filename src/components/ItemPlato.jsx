@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import NumericInput from "react-numeric-input";
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -19,18 +21,18 @@ const style = {
 const ItemPlato = (props) => {
   const postData = async (productName, descriptionName, price, id) => {
     let amount = parseInt(document.getElementById("id_cantidad").value);
-    
+
     await fetch("https://store-express-greg.herokuapp.com/api/v1/orders", {
-      method: 'POST',
-      mode: 'cors',
-      headers: {'Content-Type': 'application/json'},
+      method: "POST",
+      mode: "cors",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        "nombre": productName,
-        "descripcion": descriptionName,
-        "precio": price,
-        "id": id, 
-        "cantidad": amount 
-      })
+        nombre: productName,
+        descripcion: descriptionName,
+        precio: price,
+        id: id,
+        cantidad: amount,
+      }),
     })
       .then((res) => res.json())
       .then((res) => console.log(res));
@@ -43,7 +45,7 @@ const ItemPlato = (props) => {
   const handleClose = () => {
     setOpen(false);
   };
-
+  // document.getElementById("id_cantidad").value = 1;
   const { tituloPlato, descripcionPlato, imgPlato, precioPlato, idPlato } =
     props;
   return (
@@ -105,19 +107,21 @@ const ItemPlato = (props) => {
               </button>
               <button
                 id="btn__agregar"
-                onClick={() => postData(tituloPlato, descripcionPlato, precioPlato, idPlato)}
+                onClick={() =>
+                  postData(tituloPlato, descripcionPlato, precioPlato, idPlato)
+                }
                 type="button"
                 className="botones"
               >
                 Agregar al carrito <i className="fas fa-shopping-cart" />
               </button>
-              <input
-                type="number"
+
+              <NumericInput
                 id="id_cantidad"
-                className="shoppingImput"
-                // value={cantidad}
-                className="o-input-carta"
+                className="shopping-input"
                 min={1}
+                max={100}
+                value={1}
               />
             </section>
           </div>
