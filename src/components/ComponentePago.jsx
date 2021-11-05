@@ -21,7 +21,7 @@ function ComponentePago({carrito}) {
             {calcularPrecio()}
           </p>
           <div className=" d-flex justify-content-center  ">
-            <button id="btn__traer" type="button" className=" btn btn-success ">
+            <button id="btn__traer" type="button" className=" btn btn-dark ">
               Pagar ahora
             </button>
           </div>

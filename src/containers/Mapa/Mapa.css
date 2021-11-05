@@ -1,6 +1,7 @@
 /* Mapa styles */
 .o-mapa-container {
   padding: 2rem;
+  min-height: 50.5vh;
 }
 
 .o-mapa-content {

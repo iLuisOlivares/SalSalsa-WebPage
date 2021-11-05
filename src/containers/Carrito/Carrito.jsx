@@ -43,7 +43,7 @@ const Carrito = () => {
 
         {/* Boton seguir comprando */}
         <div className="row p-2">
-          <Link className="btn btn-danger " to="/carta">
+          <Link className="btn btn-dark " to="/carta">
             Continuar comprando
           </Link>
         </div>

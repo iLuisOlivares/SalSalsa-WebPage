@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import imagenes from '../assets/Img/imagenes'
 
 function ComponenteServicio({nombre,leyenda,imagen}) {
-  console.log(imagen);
     return (
     <div>    
             <div  class="bg-dark card col-4" style={{width: "18rem"}}>

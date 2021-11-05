@@ -12,13 +12,10 @@
                 <div class="custom-element custom-element-networks">
                     <span class="element-tag">
                         
-                            <span class="textWhite parrafo">Siguenos en:</span>
-                            <br>
                             <li class="list-inline-item" style="font-size:25px;color:white"><a href="https://www.facebook.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-facebook"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.twitter.com/" target="_blank"><i style="font-size:25px;color:white" class="fab fa-twitter"></i></a></li>
                             <li class="list-inline-item" style="font-size:25px;color:black"><a href="https://www.instagram.com" target="_blank"><i style="font-size:25px;color:white" class="fab fa-instagram"></i></a></li>
                        
-                    </span>
                 </div>
                 <div>
                     <p class="parrafo textWhite">Copyright 2021 © Proyecto. Todos los derechos reservados.</p>
