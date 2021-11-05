@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assets/styles/components/Header.css";
 import img from "../assets/Img/logo@2x.png";
 import "../assets/styles/components/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,39 +33,39 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="">
             <ul className="navbar-nav ms-auto my-2 my-lg-0">
               <li className="nav-item">
-                <Link className="select-item" to="/">
+                <Link className="select-items" to="/">
                   Inicio
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/nosotros">
+                <Link className="select-items" to="/nosotros">
                   Nosotros
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/carta">
+                <Link className="select-items" to="/carta">
                   Menú
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/servicios">
+                <Link className="select-items" to="/servicios">
                   Servicios
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/reserva">
+                <Link className="select-items" to="/reserva">
                   Reservar
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="mapa">
+                <Link className="select-items" to="mapa">
                   Mapa
                 </Link>
               </li>
             </ul>
             <ul className="navbar-nav p-3">
               <li className="nav-item">
-                <Link className="icono-1 select-item" to="carrito">
+                <Link className="icono-1 select-items" to="carrito">
                   <FontAwesomeIcon icon={faShoppingBasket} />
                 </Link>
               </li>

@@ -19,7 +19,6 @@
 
 .select-item:hover {
   color: rgb(228, 94, 94);
-  font-size: 1.06rem;
   transition: all 1s;
 }
 

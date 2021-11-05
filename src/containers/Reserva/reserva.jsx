@@ -176,7 +176,7 @@ const Reserva = () => {
                   Se ha enviado el formulario: Muchas gracias
                 </MensajeStyled2>
               )}
-              <input type="submit" value="Send"></input>
+              <button id="button-id" value = "Send" type="submit" className="btn btn-danger">Enviar</button>
             </form>
           </div>
         </div>
