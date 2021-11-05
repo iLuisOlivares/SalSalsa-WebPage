@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../assets/styles/components/Header.css";
 import img from "../assets/Img/logo@2x.png";
 import "../assets/styles/components/Header.css";
@@ -39,24 +39,24 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="">
             <ul className="navbar-nav ms-auto my-2 my-lg-0">
               <li className="nav-item">
-                <Link className="select-item" to="/">
+                <NavLink className="select-items" exact to="/">
                   Inicio
                 </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/nosotros">
+                <NavLink className="select-items" to="/nosotros">
                   Nosotros
                 </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/carta">
+                <NavLink className="select-items" to="/carta">
                   Menú
                 </NavLink>
               </li>
               {auth.isLogged() &&(
                 <>
                   <li className="nav-item">
-                    <NavLink className="select-item" exact to="/updateCarta" activeClass="active">
+                    <NavLink className="select-items" exact to="/updateCarta" activeClass="active">
                       Actualizar Menú
                     </NavLink>
                   </li>
@@ -65,27 +65,27 @@ const Header = () => {
               )}
 
               <li className="nav-item">
-                <Link className="select-item" to="/servicios">
+                <NavLink className="select-items" to="/servicios">
                   Servicios
                 </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="/reserva">
+                <NavLink className="select-items" to="/reserva">
                   Reservar
                 </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="select-item" to="mapa">
+                <NavLink className="select-items" to="mapa">
                   Mapa
                 </NavLink>
               </li>
               {!auth.isLogged() && (
                 <><li className="nav-item">
-                  <NavLink className="select-item" exact to="login" activeClass="active">
+                  <NavLink className="select-items" exact to="login" activeClass="active">
                     Iniciar Sesión
                   </NavLink>
                 </li><li className="nav-item">
-                    <NavLink className="select-item" exact to="register">
+                    <NavLink className="select-items" exact to="register">
                       Registrarse
                     </NavLink>
                   </li></>
@@ -101,7 +101,7 @@ const Header = () => {
             </ul>
             <ul className="navbar-nav p-3">
               <li className="nav-item">
-                <Link className="icono-1 select-item" to="carrito">
+                <NavLink className="icono-1 select-item" to="carrito">
                   <FontAwesomeIcon icon={faShoppingBasket} />
                 </NavLink>
               </li>

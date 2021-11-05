@@ -1,41 +1,37 @@
 .item {
-
   font-size: 20px;
   color: aliceblue;
- 
 }
 
-.icono-1{
+.icono-1 {
   color: whitesmoke;
   font-size: 20px;
-
 }
-.select-items{
+.select-items {
   color: whitesmoke;
   text-decoration: none;
   padding: 1rem 0.5rem;
-
 }
-.select-color:hover{
+.select-color:hover {
   color: rgb(228, 94, 94);
   transition: all 1s;
 }
-.select-items:hover{
+.select-items:hover {
   color: rgb(228, 94, 94);
   transition: all 1s;
+}
 
-} 
-
-.icono-1:hover{
+.icono-1:hover {
   font-size: 25px;
 }
 
-.logo{
+.logo {
   width: 200px;
   height: 150px;
 }
 
-.active{
-  background-color: black;
-  color: violet;
+.active {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem; 
+  color: rgb(228, 94, 94);
 }
