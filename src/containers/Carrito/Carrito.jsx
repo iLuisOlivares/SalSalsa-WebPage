@@ -1,27 +1,27 @@
 import { minHeight } from "@mui/system";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ComponentePago from "../../components/ComponentePago";
 import ItemsCarrito from "../../components/ItemsCarrito";
 import ContainerCarro from "../../assets/Elements/ContainerCarro";
 
-let lista = [];
-const getData = async () => {
-  const url = "https://store-express-greg.herokuapp.com/api/v1/orders";
-  await fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      for (const iterator of data) {
-        lista.push(iterator);
-      }
-    })
-    .catch((error) => console.log(error));
-};
-getData()
 
 const Carrito = () => {
-  const [carrito, setCarrito] = useState(lista);
-  console.log("Llamar a la función");
+ 
+  const [carrito, setCarrito] = useState([]);
+  // const [carrito, setCarrito] = useState(JSON.parse(window.localStorage.getItem("Carrito")));
+ useEffect(()=>{
+   let data = localStorage.getItem("Carrito");
+   if(data != null){
+     setCarrito(JSON.parse(data));
+   }
+   },[])
+
+   useEffect(()=>{
+    localStorage.setItem("Carrito", JSON.stringify(carrito));
+    },[carrito]);
+    
+ 
 
   return (
     <div className="my-3 container-xxl" style={{ minHeight: "74vh" }}>

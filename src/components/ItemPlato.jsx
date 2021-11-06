@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -18,36 +18,53 @@ const style = {
   pb: 3,
 };
 
-const ItemPlato = (props) => {
-  const postData = async (productName, descriptionName, price, id) => {
-    let amount = parseInt(document.getElementById("id_cantidad").value);
+const ItemPlato = ({
+  tituloPlato,
+  descripcionPlato,
+  imgPlato,
+  precioPlato,
+  idPlato,
+  carrito,
+  setCarrito,
+  platillos,
+}) => {
 
-    await fetch("https://store-express-greg.herokuapp.com/api/v1/orders", {
-      method: "POST",
-      mode: "cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        nombre: productName,
-        descripcion: descriptionName,
-        precio: price,
-        id: id,
-        cantidad: amount,
-      }),
-    })
-      .then((res) => res.json())
-      .then((res) => console.log(res));
+  //Obtiene el array del local storage
+
+
+  //Actualiza los datos modificados en el local storage
+
+
+  
+
+  const postData = (id) => {
+    let amount = parseInt(document.getElementById("id_cantidad").value);
+    console.log("Agregar");
+    const item = {
+      nombre: tituloPlato,
+      id: idPlato,
+      precio: precioPlato,
+      imagen: imgPlato,
+      descripcion: descripcionPlato,
+      cantidad: amount,
+    };
+    const lista = carrito.filter((item) => item.id !== id);
+
+    setCarrito([...lista, item]);
+
+
   };
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
+  
     setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
   };
-  // document.getElementById("id_cantidad").value = 1;
-  const { tituloPlato, descripcionPlato, imgPlato, precioPlato, idPlato } =
-    props;
+
+
   return (
     <Fragment>
       <div className="col">
@@ -107,9 +124,7 @@ const ItemPlato = (props) => {
               </button>
               <button
                 id="btn__agregar"
-                onClick={() =>
-                  postData(tituloPlato, descripcionPlato, precioPlato, idPlato)
-                }
+                onClick={() => postData(idPlato)}
                 type="button"
                 className="botones"
               >

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import imagen from "../assets/Img/img1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
@@ -17,19 +17,19 @@ function ItemsCarrito({
   carrito,
   setCarrito,
 }) {
-  const eliminarItem = async (id) => {
+
+
+  const eliminarItem = (id) => {
     const lista = carrito.filter((item) => item.id !== id);
-    await fetch(
-      "https://store-express-greg.herokuapp.com/api/v1/orders/" + id,
-      {
-        method: "DELETE",
-        mode: "cors",
-      }
-    )
-      .then((res) => res.json())
-      .then((res) => console.log(res));
-    setCarrito(lista);
-    // window.location.reload(true);
+    console.log(lista);
+    if(lista != ''){
+      setCarrito(lista);
+      console.log('no vacio');
+
+    }else{
+      setCarrito([]);
+    }
+ 
   };
 
  
@@ -58,9 +58,16 @@ function ItemsCarrito({
     setCarrito(lista);
   };
 
-  const modificarItem = (id, cantidad) => {
-    const lista = carrito.filter((item) => item.id !== id);
-    setCarrito([...carrito]);
+  const modificarItem = (e) => {
+    const carritoList = [];
+    for (const iterator of carrito) {
+      if(e.target.id == iterator.id){
+        iterator.cantidad = e.target.value;
+      }
+      carritoList.push(iterator);
+    }
+    console.log('modificar');
+    setCarrito(carritoList);
   };
 
   return (
@@ -89,7 +96,8 @@ function ItemsCarrito({
               id={id}
               className="shoppingImput"
               onChange={validacion}
-              value={cantidad}
+              defaultValue={cantidad}
+              onChange={modificarItem}
             />
           </div>
         </div>

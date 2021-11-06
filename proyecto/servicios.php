@@ -17,11 +17,11 @@
               <div class="col-12 col-lg-12">
 
                 <!-- sub-row1 -->
-                <div class="row1 row col-12 fondo rounded m-2 bg-light shadow-lg p-3">
+ onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'"               <div class="row1 row col-12 fondo rounded m-2 bg-light shadow-lg p-3">
                   <!-- Botones -->
                   <div class="row p-3">
                         <div class="col-6 d-flex p-1 justify-content-end">
-                        <button class="botones" onclick="location.href='https://api.whatsapp.com/send?phone=3116291954&text=Hablamos%20para%20saber%20en%20qu%C3%A9%20estas%20interesad@'" role="button"> <i class="fab fa-whatsapp"></i> Contactanos: Via Whatsapp</button>
+                        <button class="botones"  role="button"> <i class="fab fa-whatsapp"></i> Contactanos: Via Whatsapp</button>
                         </div>
                         <div class="col-6 d-flex p-1 justify-content-start">
                         <button
