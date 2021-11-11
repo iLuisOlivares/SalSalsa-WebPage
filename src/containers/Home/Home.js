@@ -18,309 +18,122 @@ import img14 from "../../assets/static/img/img14.png";
 import slide1 from "../../assets/static/img/fotoCar1.png";
 import slide2 from "../../assets/static/img/fotoCa.png";
 import slide3 from "../../assets/static/img/fotoDescripcionDos.png";
+
+import Testimonio1 from "../../assets/static/img/personaUno.jpg";
+import Testimonio2 from "../../assets/static/img/personaDos.jpg";
+import Testimonio3 from "../../assets/static/img/personaTres.jpg";
+
+import FeaturedPlato from "./../../components/FeaturedPlato";
+import Testimonio from "./../../components/Testimonio";
 /* 
   Container para mostrar el diseño de la página Home
 */
 
-const Home = () => (
-  <Fragment>
-    <section className="seccionGeneralCarusel">
-      <div className="contenedorGeneralCarrusel">
-        <div
-          id="carouselExampleDark"
-          className="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+import Slider from "react-slick";
+
+class Home extends React.Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
+    };
+    return (
+      <Fragment>
+        <Slider {...settings} className="o-slider-container">
+          <div className="o-container-slider-item">
+            <section className="o-mensaje-slider">
+              <h5>
+                La pasión por lo que haces te hará entender que los límites son
+                mentales.
+              </h5>
+              <h6>Anónimo</h6>
+            </section>
+            <img
+              className="o-slide-inicio"
+              src={slide1}
+              alt="First slide"
+              id="anchoImagenCaId"
+            />
           </div>
-          <div className="carousel-inner">
-            <div
-              className="carousel-item active anchoImagenCa"
-              data-bs-interval="10000"
-            >
-              <img
-                className="d-block w-100 anchoImagenCa"
-                src={slide1}
-                alt="First slide"
-                id="anchoImagenCaId"
-              />
-              <div className="carousel-caption d-none d-md-block textCarrucel">
-                <h5 className="textWhite anuncioCarucel">
-                  La pasión por lo que haces te hará entender que los límites
-                  son mentales.
-                </h5>
-                <p className="textWhite anuncioCarucel ">Anónimo </p>
-              </div>
-            </div>
-            <div className="carousel-item" data-bs-interval="15000">
-              <img
-                className="d-block w-100 anchoImagenCa"
-                src={slide2}
-                alt="First slide"
-                id="anchoImagenCaId"
-              />
-              <div className="carousel-caption d-none d-md-block textCarrucel">
-                <h5 className="textWhite anuncioCarucel">
-                  La mejor forma de predecir tu futuro, es construirlo.
-                </h5>
-                <p className="textWhite anuncioCarucel ">Alan Kay</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block w-100 anchoImagenCa"
-                src={slide3}
-                alt="First slide"
-                id="anchoImagenCaId"
-              />
-              <div className="carousel-caption d-none d-md-block textCarrucel">
-                <h5 className="textWhite anuncioCarucel ">
-                  No por miedo a errar, vas a dejar de jugar.
-                </h5>
-                <p className="textWhite anuncioCarucel ">Anónimo </p>
-              </div>
-            </div>
+          <div className="o-container-slider-item">
+            <section className="o-mensaje-slider">
+              <h5>La mejor forma de predecir tu futuro, es construirlo.</h5>
+              <h6>Anónimo</h6>
+            </section>
+            <img
+              className="o-slide-inicio"
+              src={slide2}
+              alt="First slide"
+              id="anchoImagenCaId"
+            />
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Atras</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </div>
-    </section>
+          <div className="o-container-slider-item">
+            <section className="o-mensaje-slider">
+              <h5>No por miedo a errar, vas a dejar de jugar.</h5>
+              <h6>Alan Kay</h6>
+            </section>
+            <img
+              className="o-slide-inicio"
+              src={slide3}
+              alt="First slide"
+              id="anchoImagenCaId"
+            />
+          </div>
+        </Slider>
+        <section>
+          {/* description information */}
+          <section className="o-description-container-text">
+            <h3>¿Qué puedes encontrar?</h3>
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              beatae? Cumque laudantium reprehenderit iure quidem itaque rem a
+              pariatur eveniet animi recusandae dignissimos iusto ullam,
+              deserunt maxime enim mollitia atque.
+            </h5>
+          </section>
+          {/* images information */}
+          <section className="o-description-container-img">
+            <img src={img1} className="o-img-info" />
+            <img src={img7} className="o-img-info" />
+            <img src={img11} className="o-img-info" />
+            <img src={img14} className="o-img-info" />
+          </section>
 
-    <section className="" id="">
-      <div className="contendor">
-        <img
-          className="d-block w-100"
-          src="img/fotodescripcionDos.png"
-          alt="First slide"
-          className=""
-          id=""
-        />
-
-        <section className="o-text-info">
-          {/* <p className="textoEncima  textWhite ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-                    ducimus consectetur perspiciatis veniam odit facilis laborum aperiam. Laborum, possimus. Quasi culpa
-                    laborum deleniti doloremque qui autem maxime labore asperiores ut.</p>  */}
-
-          <p className="textoAbajo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            beatae? Cumque laudantium reprehenderit iure quidem itaque rem a
-            pariatur eveniet animi recusandae dignissimos iusto ullam, deserunt
-            maxime enim mollitia atque.{" "}
-          </p>
-
-          {/* <div className="centrado"></div> */}
+          <section className="o-description-tf">
+            <h4 className="o-description-title-featured">Platos destacados</h4>
+            <section className="o-description-container-featured">
+              <FeaturedPlato
+                img={img1}
+                title="Combo 1 hamburguesa"
+                description="Combo de hamburguesa, con papas y refresco"
+              />
+              <FeaturedPlato
+                img={img7}
+                title="Papas sencillas"
+                description="Papas a la francesa sencilla"
+              />
+              <FeaturedPlato
+                img={img11}
+                title="Pizza Italiana"
+                description="Pizza Italiana de 8 porciones."
+              />
+            </section>
+          </section>
         </section>
-      </div>
-    </section>
-
-    <section className="seccionGeneralDos colorSeccionDos">
-      {/* <br><br><br> */}
-      <div className="contenedorGeneral">
-        <h2 className="textCenter textWhite">Un poco de lo que hay</h2>
-        <div className="">
-          <p className="textWhite">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            obcaecati id explicabo tempora debitis doloremque voluptatum
-            veritatis recusandae ratione in necessitatibus consequuntur eum
-            excepturi nesciunt, facilis commodi. Ut, magnam earum?
-          </p>
-          {/* <br> */}
-          <div className="columna2Dos padd">
-            <label className="labelRegular textWhite">
-              Para compartir en familia
-            </label>
-            <img className="o-style-uno" src={img11} id="" />
-
-            <label className="labelRegular textWhite">Mas crocantes</label>
-            <img className="o-style-uno" src={img7} id="" />
-          </div>
-          <div className="columna2Dos padd ">
-            <label className="labelRegular textWhite">Nuevos combos:</label>
-            <img className="o-style-uno" src={img1} id="" />
-
-            <label className="labelRegular textWhite">Nuevos gustos</label>
-            <img className="o-style-uno" src={img14} id="" />
-          </div>
-
-          <div className="columna2Dos">
-            <label className="labelRegular textWhite">Mas sabores</label>
-            <img className="o-style-dos" src={img13} id="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/*      <section className="seccionGeneral">
-      <div className="contenedorGeneral">
-        <h2 className="textCenter">Platos destacados</h2>
-        <div className="testimonios ">
-          <div className="contenedorPlatos textoTestimonios">
- 
-            <form action="carta.php">
-
-              <div className="platos">
-                <div className="imagenPlatos bg-img1"></div>
-                <h2 className="subtitulo-servicios">Plato #1</h2>
-                <p className="parrafo-regular text-center">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book
-                </p>
-                <button className="botonRegular botonCentrado">Comprar</button>
-              </div>
-              <div className="platos">
-                <div className="imagenPlatos bg-img2"></div>
-                <h2 className="subtitulo-servicios">Plato #2</h2>
-                <p className="parrafo-regular text-center">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book
-                </p>
-                <button className="botonRegular botonCentrado">Comprar</button>
-              </div>
-              <div className="platos">
-                <div className="imagenPlatos bg-img3"></div>
-                <h2 className="subtitulo-servicios">Plato #2</h2>
-                <p className="parrafo-regular text-center">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book
-                </p>
-                <button className="botonRegular botonCentrado"> Comprar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section> */}
-
-    {/* <section className="seccionGeneral colorSeccionDos">
-      <div className="contenedorGeneral">
-        <h2 className="textCenter textWhite">Testimonios</h2>
-        <div className="testimonios ">
-          <div className="testimoniosDos textoTestimonios">
-            <div className="card mb-3 o-fix-style-home">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    src="./img/personaTresE.jpg"
-                    className="img-fluid rounded-start"
-                    alt="Testimonio1"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title">Anónimo</h5>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Distinctio error sed dolorem nihil, obcaecati nesciunt!
-                      Animi, cumque? Quos dicta dolores minus distinctio
-                      adipisci cum at aperiam maiores cumque, ratione sapiente?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card mb-3">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    src="./img/personaUno.jpg"
-                    className="img-fluid rounded-start"
-                    alt="Testimonio2"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title">Anónimo</h5>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Distinctio error sed dolorem nihil, obcaecati nesciunt!
-                      Animi, cumque? Quos dicta dolores minus distinctio
-                      adipisci cum at aperiam maiores cumque, ratione sapiente?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card mb-3 o-style-tres">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    src="./img/personaDos.jpg"
-                    className="img-fluid rounded-start"
-                    alt="Testimonio3"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title">Anónimo</h5>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Distinctio error sed dolorem nihil, obcaecati nesciunt!
-                      Animi, cumque? Quos dicta dolores minus distinctio
-                      adipisci cum at aperiam maiores cumque, ratione sapiente?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
-  </Fragment>
-);
+        <section className="container-testimonio">
+          <h4 className="o-testimonio-title">Testimonios</h4>
+          <Testimonio img={Testimonio1} name="Juan Pablo" />
+          <Testimonio img={Testimonio2} name="Violeta Salazar" />
+          <Testimonio img={Testimonio3} name="Daniel Alexander" />
+        </section>
+      </Fragment>
+    );
+  }
+}
 
 export default Home;
