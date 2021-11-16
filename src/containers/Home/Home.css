@@ -46,38 +46,30 @@
   text-decoration: none;
 }
 .btn-l {
-
-      height: 45px;
-      width: 35%;
-      border: none;
-      outline: none;
-      background-color: #a12017;
-      color: rgb(255, 255, 255);
-      font-weight: 700;
-      border-radius: 60px;
-
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: #a12017;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-radius: 60px;
 }
 .btn-l2 {
-
-      height: 45px;
-      width: 35%;
-      border: none;
-      outline: none;
-      background-color: #441919;
-      color: rgb(189, 183, 183);
-      font-weight: 700;
-      border-radius: 60px;
-
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: #441919;
+  color: rgb(189, 183, 183);
+  font-weight: 700;
+  border-radius: 60px;
 }
 .btn-l2:hover {
-
-
-      color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-
-
-.box-text{
+.box-text {
   border-radius: 50px;
   max-height: 300px;
   max-width: 500px;
@@ -87,32 +79,36 @@
   padding: 15px;
   background: rgba(0, 0, 0, 0.568);
 }
-.containerL{
+.containerL {
   height: 200px;
   max-width: 800px;
   position: relative;
+}
+
+/* única alternativa, sorry by: Greg */
+.slick-next {
+  display: none !important;
 }
 
 @media (max-width: 600px) {
-  .box-text{
-  border-radius: 50px;
-  max-height: 300px;
-  max-width: 300px;
-  position: absolute;
-  top: 80%;
-  left: 10%;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.568);
-}
-.containerL{
-  height: 200px;
-  max-width: 800px;
-  position: relative;
-}
+  .box-text {
+    border-radius: 50px;
+    max-height: 300px;
+    max-width: 300px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.568);
+  }
+  .containerL {
+    height: 200px;
+    max-width: 800px;
+    position: relative;
+  }
 }
 
 .o-description-container-text {
- 
   min-height: 95vh;
   color: rgb(61, 54, 54);
   padding: 3rem;
@@ -170,8 +166,7 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 30px;
-  background: rgb(68, 68, 68)
-
+  background: rgb(68, 68, 68);
 }
 
 .o-testimonio-title {
@@ -188,13 +183,13 @@
   height: 100%;
 }
 
-.section_3{
-    background-image: url(../../assets/Img/fondo.jfif);
-    background-size: cover;
-    height: 100vh;
-    background-position: 50% 50%;
-    width: 100%;
+.section_3 {
+  background-image: url(../../assets/Img/fondo.jfif);
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  width: 100%;
 }
-.section_4{
-  background:#1b1b1b
+.section_4 {
+  background: #1b1b1b;
 }
