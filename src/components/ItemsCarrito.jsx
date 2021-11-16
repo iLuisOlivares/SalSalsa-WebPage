@@ -8,6 +8,8 @@ import {
   InputCompraStyled,
 } from "../assets/Elements/Carrito";
 
+import '../containers/Carrito/carrito.css';
+
 function ItemsCarrito({
   nombre,
   descripcion,
@@ -83,10 +85,9 @@ function ItemsCarrito({
               <button
                 type="button"
                 onClick={() => eliminarItem(id)}
-                className="btn btn-danger "
-              >
-                Eliminar
-                <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon>
+                className="button"
+              >   
+              <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon>
               </button>
             </div>
             <p className="card-text">{descripcion}</p>

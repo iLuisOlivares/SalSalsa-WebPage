@@ -1,4 +1,4 @@
-
+import React, { Component }  from 'react';
 import { Checkbox } from "@mui/material";
 import { useHistory } from "react-router";
 import UseAuth from "../Login/auth/useAuth";
@@ -37,7 +37,7 @@ export default function Register() {
                 <label></label>
             </div>
             <div></div>
-            <button className="btn" >
+            <button className="btn-r" >
                 Registrarse
             </button>
             </div>

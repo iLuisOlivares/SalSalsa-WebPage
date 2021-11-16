@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Testimonio({ img, name }) {
   return (
-    <div className="card mb-3 o-testimonio-fix">
+    <div className="">
       <div className="row g-0">
         <div className="col-md-4">
           <img

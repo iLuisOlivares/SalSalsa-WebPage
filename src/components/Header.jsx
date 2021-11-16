@@ -5,7 +5,6 @@ import img from "../assets/Img/logo@2x.png";
 import "../assets/styles/components/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
-
 import useAuth from "../containers/Login/auth/useAuth";
 
 /* 
@@ -79,17 +78,20 @@ const Header = () => {
                   Mapa
                 </NavLink>
               </li>
-              {!auth.isLogged() && (
-                <><li className="nav-item">
-                  <NavLink className="select-items" exact to="login" activeClass="active">
-                    Iniciar Sesión
-                  </NavLink>
-                </li><li className="nav-item">
-                    <NavLink className="select-items" exact to="register">
-                      Registrarse
+
+              <div className="d-flex px-5">  
+                {!auth.isLogged() && (
+                  <><li className="nav-item">
+                    <NavLink className="select-items" exact to="login" activeClass="active">
+                      Iniciar Sesión
                     </NavLink>
-                  </li></>
-              )}
+                  </li><li className="nav-item">
+                      <NavLink className="select-items" exact to="register">
+                        Registrarse
+                      </NavLink>
+                    </li></>
+                )}
+              </div>
 
               {auth.isLogged() &&(
                 <>

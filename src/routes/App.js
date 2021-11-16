@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Layout from "../components/Layout";
