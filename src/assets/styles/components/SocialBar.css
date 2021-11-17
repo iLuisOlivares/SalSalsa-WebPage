@@ -1,0 +1,38 @@
+
+.social--bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+  }
+  
+  a i.icon {
+    color: white;
+    padding: 0.7rem;
+    display: flex;
+  }
+  
+  div .social-icon {
+    background: rgba(182, 6, 6, 0.8);
+    transition: all 0.5s;
+    text-decoration: none;
+  }
+  
+  div .social-icon:first-child {
+    border-radius: 1rem 0 0 0;
+  }
+  
+  div .social-icon:last-child {
+    border-radius: 0 0 0 1rem;
+  }
+  
+  div .social-icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 0.5rem rgb(0, 0, 0, 0.4);
+  }
+  

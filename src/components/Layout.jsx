@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import SocialBar from "./SocialBar";
 
 /* 
   Componente que permite conectar el header y footer en todas las páginas
@@ -12,6 +13,7 @@ import Footer from "./Footer";
 const Layout = ({ children }) => (
   <div className="App">
     <Header />
+    <SocialBar></SocialBar>
     {children}
     <Footer />
   </div>

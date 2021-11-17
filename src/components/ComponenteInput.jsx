@@ -23,7 +23,7 @@ function ComponenteInput({estado,cambiarEstado, label,placeholder,leyenda,expres
   }
 
     return (
-        <div className="mb-3">
+        <div style={{minHeight: "100px"}} className="mb-0">
         <LabelStyled  valido={estado.valido} htmlFor="" className=" form-label">{label}</LabelStyled>
         <InputStyled  name={name} valido={estado.valido} type="text" value= {estado.campo} onChange={onChange} onKeyUp = {validacion} onBlur={validacion} placeholder = {placeholder} className="form-control" id=""></InputStyled>
         <LeyendaStyled valido={estado.valido}  className="form-text">{leyenda}</LeyendaStyled>

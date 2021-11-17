@@ -74,6 +74,11 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="select-items" to="/contactanos">
+                  Contactanos
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="select-items" to="mapa">
                   Mapa
                 </NavLink>

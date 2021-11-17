@@ -4,7 +4,7 @@ const colors = {
     principal: "rgb(228, 94, 94)",
     principal2: "rgb(228, 94, 94, 30%)",
     secundario: "rgb(94, 186, 228, 30%)", 
-    Terciario: "rgb(90, 180, 148)", 
+    Terciario: "rgb(17, 190, 156)", 
 }
 
 const InputStyled = styled.input` 
@@ -22,21 +22,35 @@ const InputStyled = styled.input`
     `}
 
 `;
-const LabelStyled = styled.label` 
-    border-bottom: .5rem;
-    font-weight: 400;
 
+const TextStyled = styled.textarea` 
+
+    resize: none;
+    &:focus{
+        border-color: ${colors.secundario};
+        outline: 0;
+        box-shadow: 0 0 0 .25rem ${colors.principal2};
+    }
+
+  
     ${props => props.valido === 'false' &&   css `
-       color: ${colors.principal};
+        border: 3px solid ${colors.principal} !important;
     `}
+
+`;
+
+const LabelStyled = styled.label` 
+    font-weight: 400;
+ 
 
 
 `;
 const LeyendaStyled = styled.p` 
     color: ${colors.principal};
-    display:none;
+    font-size: 12px;
+    opacity: 0;
     ${props => props.valido === 'false' &&   css `
-        display: block;
+        opacity: 100;
     `}
   
 
@@ -52,4 +66,4 @@ const MensajeStyled2 = styled.p`
 
 `;
 
-export {InputStyled, LabelStyled, LeyendaStyled, MensajeStyled1, MensajeStyled2};
+export {InputStyled, LabelStyled, LeyendaStyled, MensajeStyled1, MensajeStyled2, TextStyled};

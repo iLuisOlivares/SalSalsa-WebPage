@@ -16,6 +16,7 @@ import UpdateCarta from "../containers/Carta/UpdateCarta";
 import AuthProvider from "../containers/Login/auth/AuthProvider";
 import PrivateRoute from "./PrivateRoute";
 import InicioAdmin from "../containers/Login/InicioAdmin";
+import Contact from "../containers/ContacUs/ContactUs";
 
 /* 
   función que permite crear todas las rutas de la página:
@@ -35,6 +36,7 @@ function App() {
             <PrivateRoute exact path="/updateCarta" component={UpdateCarta} />
             <Route exact path="/servicios" component={Servicios} />
             <Route exact path="/reserva" component={Reserva} />
+            <Route exact path="/contactanos" component={Contact} />
             <Route exact path="/carrito" component={Carrito} />
             <Route exact path="/mapa" component={Mapa} />
             <Route exact path="/inicioAdmin" component={InicioAdmin} />
@@ -47,6 +49,7 @@ function App() {
             <Route exact path="/register" component={Register} />
 
             <Route component={NotFound} />
+            
           </Switch>
         </Layout>
       </Router>
