@@ -12,7 +12,8 @@ import {
   MensajeStyled2,
 } from "../../assets/Elements/Formularios";
 import emailjs from 'emailjs-com';
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 // import "./Carta.css";
 
@@ -44,6 +45,28 @@ const Reserva = () => {
     descripcion: /^[a-zA-ZÀ-ÿ\s\W]{0,}$/, // Letras y espacios, pueden llevar acentos.
   };
 
+  
+  const MySwal = withReactContent(Swal)
+
+  const sendAlert = () =>{
+
+    MySwal.fire({
+      title: <p>Juventic</p>,
+      footer: 'Copyright 2021',
+      didOpen: () => {
+
+        MySwal.clickConfirm()
+      }
+    }).then(() => {
+      return Swal.fire({
+        title: 'Enviado!',
+        text: 'Se ha enviado la reserva correctamente',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
+    })
+  }
+
   const onSubmit = (e) => {
     if (
       asunto.valido === "true" &&
@@ -56,6 +79,7 @@ const Reserva = () => {
       terminos === true
     ) {
       console.log("Formulario Completado");
+      sendAlert();
       e.preventDefault();
 
     emailjs.sendForm('service_abyircw', 'template_1zoz45o', e.target, 'user_D3SnG2Ug2C29tarRbxdi0')
@@ -88,6 +112,8 @@ const Reserva = () => {
       console.log(terminos);  
     }
   };
+
+
 
 
   return (

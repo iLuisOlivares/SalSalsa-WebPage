@@ -3,6 +3,8 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import NumericInput from "react-numeric-input";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const style = {
   position: "absolute",
@@ -29,10 +31,26 @@ const ItemPlato = ({
   platillos,
 }) => {
 
-  //Obtiene el array del local storage
+  const MySwal = withReactContent(Swal)
 
+  const addAlert = () =>{
 
-  //Actualiza los datos modificados en el local storage
+    MySwal.fire({
+      title: <p>Juventic</p>,
+      footer: 'Copyright 2021',
+      didOpen: () => {
+
+        MySwal.clickConfirm()
+      }
+    }).then(() => {
+      return Swal.fire({
+        title: 'Agregado!',
+        text: 'Se ha agregado el platillo',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
+    })
+  }
 
 
   
@@ -50,8 +68,9 @@ const ItemPlato = ({
     };
     const lista = carrito.filter((item) => item.id !== id);
 
+    addAlert();
     setCarrito([...lista, item]);
-
+    setOpen(false);
 
   };
 

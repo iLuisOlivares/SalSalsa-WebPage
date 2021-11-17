@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import img1 from "../../assets/static/img/img1.jpg";
 // import img2 from "../../assets/static/img/img2.jpg";
@@ -185,7 +186,7 @@ class Home extends React.Component {
                 Ven a disfrutar de la mejor comida escuchando la mejor musica en
                 vivo de la ciudad
               </p>
-              <button className="btn btn-l m-3">Conocenos</button>
+              <a href="/nosotros"><button className="btn btn-l m-3">Conócenos</button></a>
             </div>
           </div>
         </section>
@@ -212,8 +213,18 @@ class Home extends React.Component {
                 </div>
               ))}
 
-              <button className="mt-5  btn-l2 ">Haz tu reserva</button>
+              <div className="mt-5 d-flex justify-content-center">
+
+              <a href="/reserva">
+              <button className=" btn-l2 ">Haz tu reserva</button>
+              </a>
+              </div>
             </div>
+
+
+
+
+
           </div>
         </section>
 

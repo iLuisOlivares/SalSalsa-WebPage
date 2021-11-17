@@ -8,6 +8,9 @@ import {
   InputCompraStyled,
 } from "../assets/Elements/Carrito";
 
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 import '../containers/Carrito/carrito.css';
 
 function ItemsCarrito({
@@ -20,10 +23,44 @@ function ItemsCarrito({
   setCarrito,
 }) {
 
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  const MySwal = withReactContent(Swal)
+      
+  const deleteAlert = () =>{
+
+    MySwal.fire({
+      title: <p>Juventic</p>,
+      footer: 'Copyright 2021',
+      didOpen: () => {
+
+        MySwal.clickConfirm()
+      }
+    }).then(() => {
+      return Toast.fire({
+        title: 'Eliminado!',
+        text: 'Se ha eliminado el platillo',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
+    })
+  }
+
 
   const eliminarItem = (id) => {
     const lista = carrito.filter((item) => item.id !== id);
     console.log(lista);
+    deleteAlert()
     if(lista != ''){
       setCarrito(lista);
       console.log('no vacio');

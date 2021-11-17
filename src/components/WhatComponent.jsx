@@ -9,7 +9,7 @@ function WhatComponent({ img, tittle }) {
         <h4 class="m-2 card-title">{tittle}</h4>
         <p className="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         </div>
-        <a className="btn btn-dark" href="">Ir al menu</a>
+        <a className="btn btn-dark" href="/carta">Ir al menu</a>
       </div>
   );
 }

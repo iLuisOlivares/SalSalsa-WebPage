@@ -1,9 +1,42 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs, { send } from "emailjs-com";
 import { Button } from "bootstrap";
 import emailjss from "emailjs-com";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 function ComponenteModal({ precio, carrito, setCarrito }) {
+
+  const MySwal = withReactContent(Swal);
+
+  const sendAlert = (bool) =>{
+    MySwal.fire({
+      title: <p>Juventic</p>,
+      footer: 'Copyright 2021',
+      didOpen: () => {
+
+        MySwal.clickConfirm()
+      }
+    }).then(() => {
+      if(bool){
+        return Swal.fire({
+          title: 'Compra exitosa!',
+          text: 'Su compra ha sido exitosa',
+          icon: 'success',
+          confirmButtonText: 'Cool'
+        })
+
+      }else{
+        return Swal.fire({
+          title: 'Compra Rechazada!',
+          text: 'Su compra fue rechazada',
+          icon: 'error',
+          confirmButtonText: 'Cool'
+        })
+      }
+    })
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,10 +50,12 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
       .then(
         (result) => {
           console.log(result.text);
+          sendAlert(true);
           e.target.reset();
           eliminarAllItems();
         },
         (error) => {
+          sendAlert(false)
           console.log(error.text);
         }
       );
@@ -38,7 +73,6 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
     //   .then((res) => res.json())
     //   .then((res) => console.log(res));
     setCarrito(lista);
-    window.location.reload(true);
   };
 
   return (
