@@ -92,7 +92,7 @@ const Footer = () => {
                 style={style1}
                 />
               <p></p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1258050551014!2d-75.57171838528315!3d6.247148095478077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442855eabbc4e9%3A0x29e5f9d50a8d96ba!2sEstaci%C3%B3n%20Metro%20San%20Antonio!5e0!3m2!1ses-419!2sco!4v1631889298286!5m2!1ses-419!2sco" className="mapa" style={{border:"0",width: "90%"}} allowFullScreen="" loading="lazy"></iframe>
+          <iframe title="MapaRestaurante" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1258050551014!2d-75.57171838528315!3d6.247148095478077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442855eabbc4e9%3A0x29e5f9d50a8d96ba!2sEstaci%C3%B3n%20Metro%20San%20Antonio!5e0!3m2!1ses-419!2sco!4v1631889298286!5m2!1ses-419!2sco" className="mapa" style={{border:"0",width: "90%"}} allowFullScreen="" loading="lazy"></iframe>
                    
           </div>
         </div>

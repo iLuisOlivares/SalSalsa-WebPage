@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment} from "react";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -93,7 +93,7 @@ const ItemPlato = ({
           <h4 className="m-2 card-title">{tituloPlato}</h4>
           <p className="card-text text-secondary">{descripcionPlato}</p>
           </div>
-          <a className="btn btn-dark" onClick={handleOpen} > Agregar al carrito <i className="fas fa-shopping-cart"></i></a>
+          <button  className="btn btn-dark" onClick={handleOpen} > Agregar al carrito <i className="fas fa-shopping-cart"></i></button>
           </div>
       </div> 
     
@@ -132,6 +132,7 @@ const ItemPlato = ({
               src={imgPlato}
               className="img-thumbnail rounded o-img-modal-container"
               style={{ height: 220 }}
+              alt= "imagen de plato"
             />
           </div>
           <div className="o-information-cost">

@@ -7,33 +7,33 @@ import "./Mapa.css";
 */
 
 const Mapa = () => (
-  <section class="o-mapa-container">
+  <section className="o-mapa-container">
     <h1>Mapa del Sitio</h1>
 
-    <section class="o-mapa-content">
-      <ul class="o-mapa-list">
+    <section className="o-mapa-content">
+      <ul className="o-mapa-list">
         <li>
-          <Link class="o-mapa-item select-color" to="/">
+          <Link className="o-mapa-item select-color" to="/">
             <b>Inicio</b>
           </Link>
         </li>
         <li>
-          <Link class="o-mapa-item select-color" to="/nosotros">
+          <Link className="o-mapa-item select-color" to="/nosotros">
             <b>Nosotros</b>
           </Link>
         </li>
         <li>
-          <Link class="o-mapa-item select-color" to="/carta">
+          <Link className="o-mapa-item select-color" to="/carta">
             <b>Menú</b>
           </Link>
         </li>
         <li>
-          <Link class="o-mapa-item select-color" to="/servicios">
+          <Link className="o-mapa-item select-color" to="/servicios">
             <b>Servicos</b>
           </Link>
         </li>
         <li>
-          <Link class="o-mapa-item select-color" to="/reserva">
+          <Link className="o-mapa-item select-color" to="/reserva">
             <b>Contáctanos</b>
           </Link>
         </li>

@@ -20,7 +20,7 @@ function InputTime({estado,cambiarEstado, label,leyenda,name}) {
       return(
         <div className="form mb-3" id="grupo_hora">
             <LabelStyled  valido={estado} htmlFor="" className="form_label">{label}</LabelStyled>
-            <InputStyled name={name} type="time"  name="hora" min="13:00" max="23:00" valido={estado} defaultValue={hora} onChange={validacion} onKeyUp = {validacion} onBlur={validacion} className="item-formulario form-control" id="" />                
+            <InputStyled  type="time"  name="hora" min="13:00" max="23:00" valido={estado} defaultValue={hora} onChange={validacion} onKeyUp = {validacion} onBlur={validacion} className="item-formulario form-control" id="" />                
             <LeyendaStyled valido={estado} className="form-text">{leyenda}</LeyendaStyled>
         </div>
       )

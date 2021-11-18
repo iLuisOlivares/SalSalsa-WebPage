@@ -1,13 +1,9 @@
 import React from 'react';
-import { useHistory } from "react-router";
-import UseAuth from "../Login/auth/useAuth";
 import "./login.css";
 
 export default function Register() {
 
-    const history = useHistory();
 
-    const auth = UseAuth();
 
     return (
         <div className="formu">

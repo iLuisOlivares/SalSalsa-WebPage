@@ -21,8 +21,8 @@ const Header = () => {
         id="mainNav"
       >
         <div className="container px-4 px-lg-0">
-          <a className="navbar-brand">
-            <img className="logo" src={img} />
+          <a className="navbar-brand" href="/">
+            <img className="logo" src={img} alt="Logo" />
           </a>
           <button
             className="navbar-toggler navbar-toggler-right"

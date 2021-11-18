@@ -61,7 +61,7 @@ function ItemsCarrito({
     const lista = carrito.filter((item) => item.id !== id);
     console.log(lista);
     deleteAlert()
-    if(lista != ''){
+    if(lista !== ''){
       setCarrito(lista);
       console.log('no vacio');
 
@@ -73,34 +73,34 @@ function ItemsCarrito({
 
  
   
-  const validacion = (e) => {
-    const lista = [];
-    console.log(e.target.id);
-    for (const iterator of carrito) {
-      if (iterator.id == e.target.id) {
-        iterator.cantidad = e.target.value;
-      }
-      lista.push(iterator);
-    }
-    console.log(lista);
-    setCarrito(lista);
-  };
+  // const validacion = (e) => {
+  //   const lista = [];
+  //   console.log(e.target.id);
+  //   for (const iterator of carrito) {
+  //     if (iterator.id == e.target.id) {
+  //       iterator.cantidad = e.target.value;
+  //     }
+  //     lista.push(iterator);
+  //   }
+  //   console.log(lista);
+  //   setCarrito(lista);
+  // };
 
-  const onChange = (id, e) => {
-    const lista = [];
-    for (const iterator of carrito) {
-      if (iterator.id === id) {
-        iterator.cantidad = e.target.value;
-      }
-      lista.push(iterator);
-    }
-    setCarrito(lista);
-  };
+  // const onChange = (id, e) => {
+  //   const lista = [];
+  //   for (const iterator of carrito) {
+  //     if (iterator.id === id) {
+  //       iterator.cantidad = e.target.value;
+  //     }
+  //     lista.push(iterator);
+  //   }
+  //   setCarrito(lista);
+  // };
 
   const modificarItem = (e) => {
     const carritoList = [];
     for (const iterator of carrito) {
-      if(e.target.id == iterator.id){
+      if(e.target.id === iterator.id.toString()){
         iterator.cantidad = e.target.value;
       }
       carritoList.push(iterator);
@@ -133,7 +133,6 @@ function ItemsCarrito({
               type="number"
               id={id}
               className="shoppingImput"
-              onChange={validacion}
               defaultValue={cantidad}
               onChange={modificarItem}
             />

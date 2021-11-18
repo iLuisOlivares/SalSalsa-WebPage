@@ -1,10 +1,8 @@
-import React, { Fragment, useState, useRef  } from "react";
-import ButtonElement from "../../assets/Elements/ButtonElement";
+import React, { Fragment, useState } from "react";
 import CheckElement from "../../assets/Elements/CheckElement";
 import SelectElement from "../../assets/Elements/SelectElement";
 import InputNumber from "../../assets/Elements/InputNumber";
 import InputTime from "../../assets/Elements/InputTime";
-import ImputDate from "../../assets/Elements/InputDate";
 import Input from "../../components/ComponenteInput";
 import InputDate from "../../assets/Elements/InputDate";
 import {
@@ -89,19 +87,20 @@ const Reserva = () => {
           console.log(error.text);
       });
       e.target.reset();
-
-      cambiarFormulario(true);
+      cambiarFormulario('true');
       cambiarNombre({ campo: "", valido: null });
       cambiarAsunto({ campo: "", valido: null });
       cambiarCorreo({ campo: "", valido: null });
       cambiarCelular({ campo: "", valido: null });
-      cambiarHora(null);
-      cambiarFecha(null);
-      cambiarNumero(null);
-      cambiarTerminos(null);
+      cambiarHora('true');
+      cambiarFecha('true');
+      cambiarNumero('true');
+      cambiarTerminos(false);
+
+    
     } else {
     e.preventDefault();
-      cambiarFormulario(false);
+      cambiarFormulario('false');
       console.log("Formulario no completado");
       console.log(asunto.valido);
       console.log(nombre.valido);
@@ -194,13 +193,13 @@ const Reserva = () => {
                 estado={terminos}
                 cambiarEstado={cambiarTerminos}
               ></CheckElement>
-              {formulario === false && (
+              {formulario === 'false' && (
                 <MensajeStyled1>
                   No se ha enviado el formulario: Verifique cada uno de los
                   campos
                 </MensajeStyled1>
               )}
-              {formulario === true && (
+              {formulario === 'true' && (
                 <MensajeStyled2>
                   Se ha enviado el formulario: Muchas gracias
                 </MensajeStyled2>

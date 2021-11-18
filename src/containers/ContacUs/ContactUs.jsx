@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import ReactDOM from "react-dom";
+import React, { useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -116,9 +115,9 @@ function ContactUs() {
 
   return (
     <div className="container mb-5">
-      <div class="col-12 text-center p-lg-5 pb-lg-4 m-ms-1 p-ms-2">
-        <h2 class="text fw-bold">Contactanos</h2>
-        <hr class="divider" />
+      <div className="col-12 text-center p-lg-5 pb-lg-4 m-ms-1 p-ms-2">
+        <h2 className="text fw-bold">Contactanos</h2>
+        <hr className="divider" />
       </div>
 
       <div className="row">
@@ -134,9 +133,7 @@ function ContactUs() {
 
           <div style={{ fontSize: "20px", color: "white" }} className="Barlist mt-4 d-flex justify-content-center"  >
             <div  style={{ width: "250px" }} className="d-flex justify-content-between mb-5">
-              <a href="">
                 
-              </a>
               <FontAwesomeIcon style={styleIcon} icon={faFacebookF} />
               <FontAwesomeIcon style={styleIcon} icon={faTwitter} />
               <FontAwesomeIcon style={styleIcon} icon={faInstagram} />

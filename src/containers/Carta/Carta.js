@@ -30,7 +30,7 @@ const Carta = () => {
   //   var attribute = this.getAttribute("data-myattribute");
   //   alert("attribute");
   // };
-  const [platillos, setPlatillos] = useState([
+  const platillos = [
     {
       nombre: "Combo 1 hamburguesa",
       id: 1,
@@ -129,7 +129,7 @@ const Carta = () => {
       imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/u9ag7zo4udawffrjbyin.png',
       descripcion: "Cono de helado con 2 bolas de diferentes sabores.",
     },
-  ]);
+  ];
 
   
   const [carrito, setCarrito] = useState([]);

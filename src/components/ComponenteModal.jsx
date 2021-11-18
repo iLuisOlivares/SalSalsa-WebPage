@@ -1,9 +1,11 @@
 import React from "react";
+import { Button } from "bootstrap";
 import emailjss from "emailjs-com";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 function ComponenteModal({ precio, carrito, setCarrito }) {
+ 
 
   const MySwal = withReactContent(Swal);
 
@@ -60,7 +62,7 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
   };
 
   const eliminarAllItems = async () => {
-    const lista = carrito.filter((item) => item.id == 0);
+    const lista = carrito.filter((item) => item.id === 0);
     // await fetch(
     //   "https://store-express-greg.herokuapp.com/api/v1/orders/",
     //   {
@@ -89,7 +91,7 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
@@ -109,7 +111,7 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
             <div className="modal-body">
               <form onSubmit={sendEmail}>
                 <div className="mb-3">
-                  <label for="exampleInputEmail1" className="form-label">
+                  <label htmlFor="exampleInputEmail1" className="form-label">
                     Correo electronico
                   </label>
                   <input
@@ -122,7 +124,7 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
                 </div>
 
                 <div className="mb-3">
-                  <label for="exampleInputPassword1" className="form-label">
+                  <label htmlFor="exampleInputPassword1" className="form-label">
                     Nombre
                   </label>
                   <input
@@ -135,7 +137,7 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
 
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   name="lol"
                   value={precio}
                   style={{ display: "none" }}

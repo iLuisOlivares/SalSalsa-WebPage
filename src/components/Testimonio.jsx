@@ -8,7 +8,7 @@ export default function Testimonio({ img, name }) {
           <img
             src={img}
             className="img-fluid rounded-start testimonio-img"
-            alt="Testimonio image"
+            alt="Testimonio"
           />
         </div>
         <div className="col-md-8">
