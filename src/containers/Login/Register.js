@@ -1,5 +1,4 @@
-import React, { Component }  from 'react';
-import { Checkbox } from "@mui/material";
+import React from 'react';
 import { useHistory } from "react-router";
 import UseAuth from "../Login/auth/useAuth";
 import "./login.css";

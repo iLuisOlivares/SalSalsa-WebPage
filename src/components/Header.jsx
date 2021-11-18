@@ -55,7 +55,7 @@ const Header = () => {
               {auth.isLogged() &&(
                 <>
                   <li className="nav-item">
-                    <NavLink className="select-items" exact to="/updateCarta" activeClass="active">
+                    <NavLink className="select-items" exact to="/updateCarta" activeclass="active">
                       Actualizar Menú
                     </NavLink>
                   </li>
@@ -87,7 +87,7 @@ const Header = () => {
               <div className="d-flex px-5">  
                 {!auth.isLogged() && (
                   <><li className="nav-item">
-                    <NavLink className="select-items" exact to="login" activeClass="active">
+                    <NavLink className="select-items" exact to="login" activeclass="active">
                       Iniciar Sesión
                     </NavLink>
                   </li><li className="nav-item">

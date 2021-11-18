@@ -86,7 +86,18 @@ const ItemPlato = ({
 
   return (
     <Fragment>
-      <div className="col">
+       <div className="col">
+         <div className="card text-center text-white bg-dark shadow-5 h-100">
+          <img src={imgPlato} className="card-img-top" alt={tituloPlato} />
+               <div className="card-body text-light">
+          <h4 className="m-2 card-title">{tituloPlato}</h4>
+          <p className="card-text text-secondary">{descripcionPlato}</p>
+          </div>
+          <a className="btn btn-dark" onClick={handleOpen} > Agregar al carrito <i className="fas fa-shopping-cart"></i></a>
+          </div>
+      </div> 
+    
+      {/* <div className="col">
         <div className="card h-100">
           <img src={imgPlato} alt={tituloPlato} />
           <div className="card-body">
@@ -94,16 +105,16 @@ const ItemPlato = ({
               <h5 className="card-title">{tituloPlato}</h5>
               <p className="card-text">{descripcionPlato}</p>
             </div>
-            {/* Trigger/Open The Modal */}
+           
             <div className="d-flex justify-content-around align-items-center pb-2 pt-3">
-              <button type="button" className="botones" onClick={handleOpen}>
-                {/* <button type="button" className="botones"> */}
-                Agregar al carrito <i className="fas fa-shopping-cart"></i>
+              <button type="button" className="botones" onClick={handleOpen}> Agregar al carrito <i className="fas fa-shopping-cart"></i>
+                
+               
               </button>
             </div>
           </div>
         </div>
-      </div>
+        </div> */}
 
       <Modal
         open={open}

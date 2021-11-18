@@ -37,7 +37,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Aniversario"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = {imagenes.aniversario}
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251609/Sal-Salsa/servicios%20/lfdfxg3933sraplv4kf1.jpg'
                   >
                   </ComponenteServicio>
                   </div>
@@ -46,7 +46,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Cumpleaños"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = {imagenes.cumpleaños}
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/c3wor97idvhmxtlhvrrs.jpg'
                   >
                   </ComponenteServicio>
                   </div>
@@ -55,7 +55,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Fiestas Infantiles"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = {imagenes.fiesta}
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251609/Sal-Salsa/servicios%20/uj8sqc18vawecqqyxpcg.jpg'
                   >
                   </ComponenteServicio>
                   </div>
@@ -64,7 +64,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Declaraciones"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = {imagenes.declaracion}
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/gi9n6qrhmike9iktgb35.jpg'
                   >
                   </ComponenteServicio>
                   </div>
@@ -73,7 +73,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Despedidas"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = {imagenes.despedida}
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/uqlj6uhr8fv58y8xpqmw.jpg  '
                   >
                   </ComponenteServicio>
                     </div>
@@ -82,7 +82,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Cena de amigos"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = {imagenes.amigos}
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251609/Sal-Salsa/servicios%20/oaqnhv31tx7pyuwezy9m.jpg'
                   >
                   </ComponenteServicio>
                   </div>

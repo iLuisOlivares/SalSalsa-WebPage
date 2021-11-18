@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Layout from "../components/Layout";
@@ -17,6 +17,7 @@ import AuthProvider from "../containers/Login/auth/AuthProvider";
 import PrivateRoute from "./PrivateRoute";
 import InicioAdmin from "../containers/Login/InicioAdmin";
 import Contact from "../containers/ContacUs/ContactUs";
+import Comentarios from '../containers/Comentarios/Comentarios';
 
 /* 
   función que permite crear todas las rutas de la página:
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/carrito" component={Carrito} />
             <Route exact path="/mapa" component={Mapa} />
             <Route exact path="/inicioAdmin" component={InicioAdmin} />
+            <Route exact path="/calificacion" component={Comentarios} />
 
             <Route exact path="/signin">
               <Redirect to="/login" />

@@ -120,9 +120,9 @@ const Reserva = () => {
         <div className="row gx-0 gx-lg-0 justify-content-center mb-2 mx-1 py-5">
           
           <div className=" shadow-lg  col-xll-3 col-xl-6 col-lg-8 px-4 py-3 px-sm-5 rounded-3">
-          <div class="col-12 text-center p-3">
-            <h2 class="text fw-bold">Reserva</h2>
-            <hr class="divider" />
+          <div className="col-12 text-center p-3">
+            <h2 className="text fw-bold">Reserva</h2>
+            <hr className="divider" />
           </div>
             <form onSubmit={onSubmit} estado={formulario}>
               <SelectElement />

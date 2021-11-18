@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import imagen from "../assets/Img/img1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";

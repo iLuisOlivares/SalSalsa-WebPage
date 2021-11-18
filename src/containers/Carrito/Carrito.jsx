@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ComponentePago from "../../components/ComponentePago";
-import ItemsCarrito from "../../components/ItemsCarrito";
 import ContainerCarro from "../../assets/Elements/ContainerCarro";
-
-import withReactContent from 'sweetalert2-react-content'
-import { text } from "@fortawesome/fontawesome-svg-core";
-
 
 const Carrito = () => {
  

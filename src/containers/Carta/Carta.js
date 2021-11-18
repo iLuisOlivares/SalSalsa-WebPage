@@ -7,20 +7,7 @@ import { Link } from "react-router-dom";
   Container para mostrar el diseño de la página Carta
 */
 import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../../assets/static/img/img1.jpg";
-import img2 from "../../assets/static/img/img2.jpg";
-import img3 from "../../assets/static/img/img3.jpg";
-import img4 from "../../assets/static/img/img4.jpg";
-import img5 from "../../assets/static/img/img5.jpg";
-import img6 from "../../assets/static/img/img6.jpg";
-import img7 from "../../assets/static/img/img7.jpg";
-import img8 from "../../assets/static/img/img8.jpg";
-import img9 from "../../assets/static/img/img9.jpg";
-import img10 from "../../assets/static/img/img10.jpg";
-import img11 from "../../assets/static/img/img11.jpg";
-import img12 from "../../assets/static/img/img12.jpg";
-import img13 from "../../assets/static/img/img13.jpg";
-import img14 from "../../assets/static/img/img14.png";
+
 
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
@@ -48,98 +35,98 @@ const Carta = () => {
       nombre: "Combo 1 hamburguesa",
       id: 1,
       precio: 15000,
-      imagen: img1,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637252099/Sal-Salsa/Carta/odtr4rwnd76oo1bkw1f4.jpg',
       descripcion: "combo de hamburguesa, con papas y refresco",
     },
     {
       nombre: "Combo 2 hamburguesa",
       id: 2,
       precio: 10000,
-      imagen: img2,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251559/Sal-Salsa/Carta/pxb8b6m7a74dmlsrlhhn.jpg',
       descripcion: "Combo de hamburguesa y papas",
     },
     {
       nombre: "Hamburguesa sencilla",
       id: 3,
       precio: 5000,
-      imagen: img3,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251559/Sal-Salsa/Carta/bs9tfhmj4fb6uwuyuudg.jpg',
       descripcion: "Hamburguesa con carne, tomate y demás vegetales.",
     },
     {
       nombre: "Combo Hot Dog",
       id: 4,
       precio: 15000,
-      imagen: img4,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/wejy86iuoyt7iqydb2xs.jpg',
       descripcion: "Combo 1 de Hot dog y papas.",
     },
     {
       nombre: "Hot Dog Sencillo",
       id: 5,
       precio: 10000,
-      imagen: img5,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/fmtmlzteabdqmd5zjptf.jpg',
       descripcion: "Hot dog sencillo con salsa.",
     },
     {
       nombre: "Copa de papas sencillo",
       id: 6,
       precio: 7000,
-      imagen: img6,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/y369haituki9kv9zkcco.jpg',
       descripcion: "Copa de papas con guacamole.",
     },
     {
       nombre: "Papas sencillas",
       id: 7,
       precio: 5000,
-      imagen: img7,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/qchlvkpzvkwd4kcdeptx.jpg',
       descripcion: "Papas a la francesa sencilla",
     },
     {
       nombre: "2 Latas de Coca Cola",
       id: 8,
       precio: 7000,
-      imagen: img8,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/wejy86iuoyt7iqydb2xs.jpg',
       descripcion: "Latas de Coca Cola, con limón y hielo",
     },
     {
       nombre: "Jarra con limonada",
       id: 9,
       precio: 8000,
-      imagen: img9,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/q5cio56nnzthp6kusrt1.jpg',
       descripcion: "Jarra con limonada de 1/2 litro.",
     },
     {
       nombre: "Jarra de agua",
       id: 10,
       precio: 7000,
-      imagen: img10,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/ln5ob6lvyue3yday9rqd.jpg',
       descripcion: "Jarra de agua de 1/2 litro.",
     },
     {
       nombre: "Pizza Italiana",
       id: 11,
       precio: 15000,
-      imagen: img11,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/iqvffmvyynor4vrupoxx.jpg',
       descripcion: "Pizza Italiana de 8 porciones.",
     },
     {
       nombre: "Pizza personal italiana",
       id: 12,
       precio: 5000,
-      imagen: img12,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/arf0fvm5ombmybtnb5rw.jpg',
       descripcion: "Pizza Italiana para 1 persona.",
     },
     {
       nombre: "Copa de helado",
       id: 13,
       precio: 3000,
-      imagen: img13,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/vaqhsvk9i35v98l0ytqr.jpg',
       descripcion: "Copa de helado de 1 sabor con uvas.",
     },
     {
       nombre: "Cono de helado",
       id: 14,
       precio: 4000,
-      imagen: img14,
+      imagen: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/u9ag7zo4udawffrjbyin.png',
       descripcion: "Cono de helado con 2 bolas de diferentes sabores.",
     },
   ]);

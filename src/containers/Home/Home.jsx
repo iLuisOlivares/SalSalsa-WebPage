@@ -1,39 +1,9 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
-import img1 from "../../assets/static/img/img1.jpg";
-// import img2 from "../../assets/static/img/img2.jpg";
-// import img3 from "../../assets/static/img/img3.jpg";
-// import img4 from "../../assets/static/img/img4.jpg";
-// import img5 from "../../assets/static/img/img5.jpg";
-// import img6 from "../../assets/static/img/img6.jpg";
-import img7 from "../../assets/static/img/img7.jpg";
-// import img8 from "../../assets/static/img/img8.jpg";
-// import img9 from "../../assets/static/img/img9.jpg";
-// import img10 from "../../assets/static/img/img10.jpg";
-import img11 from "./../../assets/static/img/img11.jpg";
-// import img12 from "../../assets/static/img/img12.jpg";
-import img13 from "../../assets/static/img/img13.jpg";
-import img14 from "../../assets/static/img/img14.png";
-
-import slide1 from "../../assets/static/img/slide.jfif";
-import slide2 from "../../assets/static/img/slide1.jfif";
-import slide3 from "../../assets/static/img/slide3.jfif";
-
-import Testimonio1 from "../../assets/static/img/personaUno.jpg";
-import Testimonio2 from "../../assets/static/img/personaDos.jpg";
-import Testimonio3 from "../../assets/static/img/personaTres.jpg";
-
-import FeaturedPlato from "../../components/FeaturedPlato";
 import Testimonio from "../../components/Testimonio";
 import WhatComponent from "../../components/WhatComponent";
 import ServicesComponent from "../../components/ServicesComponent";
 
-import imagen1 from "../../assets/static/img/img11.jpg";
-import imagen2 from "../../assets/static/img/img2.jpg";
-import imagen3 from "../../assets/static/img/img4.jpg";
-
-import imagenes from "../../assets/Img/imagenes";
 /* 
   Container para mostrar el diseño de la página Home
 */
@@ -44,19 +14,19 @@ const items = [
   {
     id: 1,
     tittle: "Pizzas",
-    image: imagen1,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/iqvffmvyynor4vrupoxx.jpg',
   },
 
   {
     id: 2,
     tittle: "Hamburguesas",
-    image: imagen2,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251559/Sal-Salsa/Carta/pxb8b6m7a74dmlsrlhhn.jpg',
   },
 
   {
     id: 3,
     tittle: "Hot Dogs",
-    image: imagen3,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/c87euygdni6qzz651sob.jpg',
   },
 ];
 
@@ -64,25 +34,25 @@ const servicios = [
   {
     id: 1,
     tittle: "Cumpleaños",
-    image: imagenes.cumpleaños,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/c3wor97idvhmxtlhvrrs.jpg',
   },
 
   {
     id: 2,
     tittle: "Declaraciones",
-    image: imagenes.declaracion,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/gi9n6qrhmike9iktgb35.jpg',
   },
 
   {
     id: 3,
     tittle: "Aniversarios",
-    image: imagenes.aniversario,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251609/Sal-Salsa/servicios%20/lfdfxg3933sraplv4kf1.jpg',
   },
 
   {
     id: 4,
     tittle: "Despedidas",
-    image: imagenes.despedida,
+    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/uqlj6uhr8fv58y8xpqmw.jpg',
   },
 ];
 
@@ -110,7 +80,7 @@ class Home extends React.Component {
             </section>
             <img
               className="o-slide-inicio"
-              src={slide3}
+              src='https://res.cloudinary.com/iluiss/image/upload/v1637251632/Sal-Salsa/Inicio/nuh9qecpe1fgt6onnfhh.jpg'
               alt="First slide"
               id="anchoImagenCaId"
             />
@@ -122,7 +92,7 @@ class Home extends React.Component {
             </section>
             <img
               className="o-slide-inicio"
-              src={slide2}
+              src='https://res.cloudinary.com/iluiss/image/upload/v1637251633/Sal-Salsa/Inicio/jil3kmsvkeewvdwkd0ju.jpg'
               alt="First slide"
               id="anchoImagenCaId"
             />
@@ -134,7 +104,7 @@ class Home extends React.Component {
             </section>
             <img
               className="o-slide-inicio"
-              src={slide1}
+              src='https://res.cloudinary.com/iluiss/image/upload/v1637251632/Sal-Salsa/Inicio/gwi0vnglrp6gj1c0mzae.jpg'
               alt="First slide"
               id="anchoImagenCaId"
             />
@@ -236,7 +206,7 @@ class Home extends React.Component {
           <div className="row">
             <div className="col-12">
               <div className="card mb-3 o-testimonio-fix">
-                <Testimonio img={Testimonio1} name="Juan Pablo" />
+                <Testimonio img='https://res.cloudinary.com/iluiss/image/upload/v1637251586/Sal-Salsa/opiniones/t3thfiktcgbkdrbr6veb.jpg'name="Juan Pablo" />
               </div>
               {/* <div className=" card mb-3 o-testimonio-fix">
           <Testimonio img={Testimonio2} name="Violeta Salazar" />
