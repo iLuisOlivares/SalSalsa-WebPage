@@ -124,87 +124,99 @@ const Reserva = () => {
             <hr className="divider" />
           </div>
             <form onSubmit={onSubmit} estado={formulario}>
+
               <SelectElement />
-              <Input
-                estado={asunto}
-                cambiarEstado={cambiarAsunto}
-                label="Asunto"
-                placeholder="Asunto"
-                inputType="text"
-                leyenda="Escriba un asunto valido"
-                expresionRegular={expresiones.asunto}
-                name = "asunto"
-              />
-              <Input
-                estado={nombre}
-                cambiarEstado={cambiarNombre}
-                expresionRegular={expresiones.nombre}
-                label="Nombre Completo"
-                placeholder="Nombre Completo"
-                inputType="text"
-                leyenda="Escriba un nombre valido"
-                name = "nombre"
-              />
-              <Input
-                estado={correo}
-                cambiarEstado={cambiarCorreo}
-                expresionRegular={expresiones.correo}
-                label="Correo Electronico"
-                placeholder="Correo Electronico"
-                inputType="email"
-                leyenda="Escriba un Email valido"
-                name = "email"
-              />
-              <Input
-                estado={celular}
-                cambiarEstado={cambiarCelular}
-                expresionRegular={expresiones.celular}
-                label="Celular"
-                placeholder="Celular"
-                inputType="text"
-                leyenda="Escriba un numero celular valido"
-                name = "celular"
-              />
-              <InputNumber
-                estado={numeroPersonas}
-                cambiarEstado={cambiarNumero}
-                label="Numero de personas"
-                leyenda="Ingrese un numero de valido: Entre 1 y 30 personas"
-                exprecionRegular=""
-                name = "personas"
-              />
-              <InputDate
-                estado={fecha}
-                cambiarEstado={cambiarFecha}
-                expresionRegular={expresiones.celular}
-                label="Fecha"
-                leyenda="Ingrese una fecha valida: Posterior al dia de hoy"
-                name = "fecha"
-              />
-              <InputTime
-                estado={hora}
-                cambiarEstado={cambiarHora}
-                expresionRegular={expresiones.celular}
-                label="Hora"
-                leyenda="Ingrese una hora valida: Entre las 13:00 y las 23:00"
-                name = "hora"
-              />
-              <CheckElement
-                estado={terminos}
-                cambiarEstado={cambiarTerminos}
-              ></CheckElement>
-              {formulario === 'false' && (
-                <MensajeStyled1>
-                  No se ha enviado el formulario: Verifique cada uno de los
-                  campos
-                </MensajeStyled1>
-              )}
-              {formulario === 'true' && (
-                <MensajeStyled2>
-                  Se ha enviado el formulario: Muchas gracias
-                </MensajeStyled2>
-              )}
-              <button id="button-id" value = "Send" type="submit" className="btn btn-danger">Enviar</button>
+                  <Input
+                    estado={asunto}
+                    cambiarEstado={cambiarAsunto}
+                    label="Asunto"
+                    placeholder="Asunto"
+                    inputType="text"
+                    leyenda="Escriba un asunto valido"
+                    expresionRegular={expresiones.asunto}
+                    name = "asunto"
+                  />
+              <div className = "row">
+                <div className= "col-12 col-md-6">
+                <Input
+                  estado={nombre}
+                  cambiarEstado={cambiarNombre}
+                  expresionRegular={expresiones.nombre}
+                  label="Nombre Completo"
+                  placeholder="Nombre Completo"
+                  inputType="text"
+                  leyenda="Escriba un nombre valido"
+                  name = "nombre"
+                />
+                <Input
+                  estado={correo}
+                  cambiarEstado={cambiarCorreo}
+                  expresionRegular={expresiones.correo}
+                  label="Correo Electronico"
+                  placeholder="Correo Electronico"
+                  inputType="email"
+                  leyenda="Escriba un Email valido"
+                  name = "email"
+                />
+                <Input
+                  estado={celular}
+                  cambiarEstado={cambiarCelular}
+                  expresionRegular={expresiones.celular}
+                  label="Celular"
+                  placeholder="Celular"
+                  inputType="text"
+                  leyenda="Escriba un numero celular valido"
+                  name = "celular"
+                />
+                </div>
+                <div className="col-12 col-md-6">
+                <InputNumber
+                  estado={numeroPersonas}
+                  cambiarEstado={cambiarNumero}
+                  label="Numero de personas"
+                  leyenda="Ingrese un numero de valido: Entre 1 y 30 personas"
+                  exprecionRegular=""
+                  name = "personas"
+                />
+                <InputDate
+                  estado={fecha}
+                  cambiarEstado={cambiarFecha}
+                  expresionRegular={expresiones.celular}
+                  label="Fecha"
+                  leyenda="Ingrese una fecha valida: Posterior al dia de hoy"
+                  name = "fecha"
+                />
+                <InputTime
+                  estado={hora}
+                  cambiarEstado={cambiarHora}
+                  expresionRegular={expresiones.celular}
+                  label="Hora"
+                  leyenda="Ingrese una hora valida: Entre las 13:00 y las 23:00"
+                  name = "hora"
+                />
+                </div>
+                <div className="d-flex justify-content-center">
+                  <CheckElement
+                    estado={terminos}
+                    cambiarEstado={cambiarTerminos}
+                    ></CheckElement>
+                </div>
+                    <div className="m-1 d-flex justify-content-center">
+                      {formulario === 'false' && (
+                        <MensajeStyled1 className="fw-light">
+                          No se ha enviado el formulario: Verifique cada uno de los
+                          campos
+                        </MensajeStyled1>
+                      )}
+                      {formulario === 'true' && (
+                        <MensajeStyled2>
+                          Se ha enviado el formulario: Muchas gracias
+                        </MensajeStyled2>
+                      )}
+                    </div>
+              <div className="d-flex justify-content-center" ><button style={{width: "9rem"}}id="button-id" value = "Send" type="submit" className="btn btn-danger">Enviar</button></div>
+              </div>
+              
             </form>
           </div>
         </div>

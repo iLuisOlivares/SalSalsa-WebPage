@@ -17,9 +17,9 @@ function InputDate({estado,cambiarEstado, label,leyenda,name}) {
     }
 
     return(
-        <div className="form mb-3" id="grupo_fecha">
-            <LabelStyled valido={estado} htmlFor="" className="form_label">{label}</LabelStyled>
-            <InputStyled name={name} valido={estado} type="date" min={minFecha} defaultValue={minFecha} onChange={validacion} onKeyUp = {validacion} onBlur={validacion} className="item-formulario form-control mb-2 "/>                
+        <div style={{minHeight: "100px"}} className="mb-0" id="grupo_fecha">
+            <LabelStyled valido={estado} htmlFor="" className="form-label">{label}</LabelStyled>
+            <InputStyled name={name} valido={estado} type="date" min={minFecha} defaultValue={minFecha} onChange={validacion} onKeyUp = {validacion} onBlur={validacion} className="item-formulario form-control "/>                
             <LeyendaStyled valido={estado} className="form-text msg_ok">{leyenda}</LeyendaStyled>
         </div>
   

@@ -13,8 +13,8 @@ function InputNumber({estado,cambiarEstado, label,leyenda,name}) {
     }
 
     return(
-        <div className="mb-3">
-            <LabelStyled valido={estado} htmlFor="" className="form_label">{label}</LabelStyled>
+        <div style={{minHeight: "100px"}} className="mb-0">
+            <LabelStyled valido={estado} htmlFor="" className="form-label">{label}</LabelStyled>
             <InputStyled name={name} valido={estado} type="number" defaultValue ="1" min="1" max="30" className="item-formulario form-control" onChange={validacion} onKeyUp = {validacion} onBlur={validacion} id=""/>                
             <LeyendaStyled valido={estado} classNames="form-text msg_ok">{leyenda}</LeyendaStyled>
         </div>

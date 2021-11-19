@@ -1,9 +1,9 @@
 import React from 'react';
-import { LabelStyled, LeyendaStyled } from './Formularios';
+import { LabelStyled} from './Formularios';
 
 function SelectElement() {
     return (
-            <div className="mb-3 mt-4" id="grupo_select">
+            <div className="mb-4 " id="grupo_select">
                 <LabelStyled className="form-label ">Seleccione el servicio</LabelStyled>
                 <select  defaultValue="Reunion" name="select" id="select-id" className="item-formulario form-select">
                     <option> Reunion</option>
@@ -15,7 +15,6 @@ function SelectElement() {
                     <option> Cena con amigos </option>
                     <option> Otro </option>
                 </select>
-                <LeyendaStyled className="form-text">Seleccione un servicio</LeyendaStyled>
             </div>
     )
 }
