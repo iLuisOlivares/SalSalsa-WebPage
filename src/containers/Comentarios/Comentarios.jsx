@@ -21,7 +21,7 @@ const style1= {
 function Comentarios() {
 
     const [mensaje, cambiarMensaje] = useState({ campo: "", valido: null });
-    const [respuestas, cambiarRespuetas] = useState( []);
+    const [respuestas, cambiarRespuetas] = useState([]);
 
     useEffect(()=>{
         console.log('si');

@@ -2,6 +2,10 @@ import React from 'react'
 import '../assets/styles/components/Comenterios.css'
 
 function ComentariosDiv({mensaje,usuario,fecha}) {
+
+
+
+    
     return (
         <div className="col-12 m-2 contenedor">
 

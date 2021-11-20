@@ -1,0 +1,37 @@
+.filtros{
+
+    min-width: 300px;
+
+
+}
+
+.nav-r{
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius:  8px 8px 0px 0px;
+    word-wrap: break-word;
+
+}
+
+
+
+.body-r{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 0px 0px 8px 8px;
+    min-height: 300px;
+ 
+}
+
+.container-botones{
+    min-width: 15rem;
+    word-wrap: break-word;
+
+}
+
+.conte{
+    margin: 2px solid black;
+}

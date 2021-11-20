@@ -3,13 +3,13 @@
     height: auto;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid #c33636;
+    border: 2px solid #700303;
     word-wrap: break-word;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 
 .top{
-    background-color: #c33636;
+    background-color: #a80a0ad5;
     color: aliceblue;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;;
