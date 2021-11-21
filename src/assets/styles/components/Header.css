@@ -6,6 +6,7 @@
 .icono-1 {
   color: whitesmoke;
   font-size: 20px;
+  margin-right: 4rem;
 }
 .select-items {
   color: whitesmoke;
@@ -26,12 +27,152 @@
 }
 
 .logo {
-  width: 200px;
-  height: 150px;
+  width: 10rem;
+  height: auto;
 }
 
 .active {
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 1rem; 
+  border-radius: 1rem;
+  padding: 1rem 1.4rem;
   color: rgb(228, 94, 94);
 }
+
+/* new styles */
+
+nav {
+  height: 16vh;
+  /* background: #5b78c7; */
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-container-main-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li {
+  margin: 0rem calc(6rem - 5.8rem);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  /* height: 200vh; */
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1210px) {
+  li {
+    margin: 0rem;
+    font-size: 0.7rem;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+}
+/*
+
+
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
+  color: #ae5fce;
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #5b78c7;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+} */

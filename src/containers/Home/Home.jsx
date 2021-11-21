@@ -14,19 +14,22 @@ const items = [
   {
     id: 1,
     tittle: "Pizzas",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/iqvffmvyynor4vrupoxx.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251557/Sal-Salsa/Carta/iqvffmvyynor4vrupoxx.jpg",
   },
 
   {
     id: 2,
     tittle: "Hamburguesas",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251559/Sal-Salsa/Carta/pxb8b6m7a74dmlsrlhhn.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251559/Sal-Salsa/Carta/pxb8b6m7a74dmlsrlhhn.jpg",
   },
 
   {
     id: 3,
     tittle: "Hot Dogs",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/c87euygdni6qzz651sob.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251558/Sal-Salsa/Carta/c87euygdni6qzz651sob.jpg",
   },
 ];
 
@@ -34,25 +37,29 @@ const servicios = [
   {
     id: 1,
     tittle: "Cumpleaños",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/c3wor97idvhmxtlhvrrs.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/c3wor97idvhmxtlhvrrs.jpg",
   },
 
   {
     id: 2,
     tittle: "Declaraciones",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/gi9n6qrhmike9iktgb35.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/gi9n6qrhmike9iktgb35.jpg",
   },
 
   {
     id: 3,
     tittle: "Aniversarios",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251609/Sal-Salsa/servicios%20/lfdfxg3933sraplv4kf1.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251609/Sal-Salsa/servicios%20/lfdfxg3933sraplv4kf1.jpg",
   },
 
   {
     id: 4,
     tittle: "Despedidas",
-    image: 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/uqlj6uhr8fv58y8xpqmw.jpg',
+    image:
+      "https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/uqlj6uhr8fv58y8xpqmw.jpg",
   },
 ];
 
@@ -80,7 +87,7 @@ class Home extends React.Component {
             </section>
             <img
               className="o-slide-inicio"
-              src='https://res.cloudinary.com/iluiss/image/upload/v1637251632/Sal-Salsa/Inicio/nuh9qecpe1fgt6onnfhh.jpg'
+              src="https://res.cloudinary.com/iluiss/image/upload/v1637251632/Sal-Salsa/Inicio/nuh9qecpe1fgt6onnfhh.jpg"
               alt="First slide"
               id="anchoImagenCaId"
             />
@@ -92,7 +99,7 @@ class Home extends React.Component {
             </section>
             <img
               className="o-slide-inicio"
-              src='https://res.cloudinary.com/iluiss/image/upload/v1637251633/Sal-Salsa/Inicio/jil3kmsvkeewvdwkd0ju.jpg'
+              src="https://res.cloudinary.com/iluiss/image/upload/v1637251633/Sal-Salsa/Inicio/jil3kmsvkeewvdwkd0ju.jpg"
               alt="First slide"
               id="anchoImagenCaId"
             />
@@ -104,7 +111,7 @@ class Home extends React.Component {
             </section>
             <img
               className="o-slide-inicio"
-              src='https://res.cloudinary.com/iluiss/image/upload/v1637251632/Sal-Salsa/Inicio/gwi0vnglrp6gj1c0mzae.jpg'
+              src="https://res.cloudinary.com/iluiss/image/upload/v1637251632/Sal-Salsa/Inicio/gwi0vnglrp6gj1c0mzae.jpg"
               alt="First slide"
               id="anchoImagenCaId"
             />
@@ -156,7 +163,9 @@ class Home extends React.Component {
                 Ven a disfrutar de la mejor comida escuchando la mejor musica en
                 vivo de la ciudad
               </p>
-              <a href="/nosotros"><button className="btn btn-l m-3">Conócenos</button></a>
+              <a href="/nosotros">
+                <button className="btn btn-l m-3">Conócenos</button>
+              </a>
             </div>
           </div>
         </section>
@@ -184,17 +193,11 @@ class Home extends React.Component {
               ))}
 
               <div className="mt-5 d-flex justify-content-center">
-
-              <a href="/reserva">
-              <button className=" btn-l2 ">Haz tu reserva</button>
-              </a>
+                <a href="/reserva">
+                  <button className=" btn-l2 ">Haz tu reserva</button>
+                </a>
               </div>
             </div>
-
-
-
-
-
           </div>
         </section>
 
@@ -206,7 +209,10 @@ class Home extends React.Component {
           <div className="row">
             <div className="col-12">
               <div className="card mb-3 o-testimonio-fix">
-                <Testimonio img='https://res.cloudinary.com/iluiss/image/upload/v1637251586/Sal-Salsa/opiniones/t3thfiktcgbkdrbr6veb.jpg'name="Juan Pablo" />
+                <Testimonio
+                  img="https://res.cloudinary.com/iluiss/image/upload/v1637251586/Sal-Salsa/opiniones/t3thfiktcgbkdrbr6veb.jpg"
+                  name="Juan Pablo"
+                />
               </div>
               {/* <div className=" card mb-3 o-testimonio-fix">
           <Testimonio img={Testimonio2} name="Violeta Salazar" />
