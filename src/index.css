@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   /* font-family: 'inter', sans-serif; */
 }
 
@@ -28,3 +28,6 @@ code {
   height: 100%;
 }
 
+.MuiBox-root {
+  width: 90vw !important;
+}

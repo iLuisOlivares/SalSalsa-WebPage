@@ -1,10 +1,10 @@
-import React, { Fragment} from "react";
+import React, { Fragment } from "react";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import NumericInput from "react-numeric-input";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 const style = {
   position: "absolute",
@@ -30,30 +30,24 @@ const ItemPlato = ({
   setCarrito,
   platillos,
 }) => {
+  const MySwal = withReactContent(Swal);
 
-  const MySwal = withReactContent(Swal)
-
-  const addAlert = () =>{
-
+  const addAlert = () => {
     MySwal.fire({
       title: <p>Juventic</p>,
-      footer: 'Copyright 2021',
+      footer: "Copyright 2021",
       didOpen: () => {
-
-        MySwal.clickConfirm()
-      }
+        MySwal.clickConfirm();
+      },
     }).then(() => {
       return Swal.fire({
-        title: 'Agregado!',
-        text: 'Se ha agregado el platillo',
-        icon: 'success',
-        confirmButtonText: 'Cool'
-      })
-    })
-  }
-
-
-  
+        title: "Agregado!",
+        text: "Se ha agregado el platillo",
+        icon: "success",
+        confirmButtonText: "¡Agregado!",
+      });
+    });
+  };
 
   const postData = (id) => {
     let amount = parseInt(document.getElementById("id_cantidad").value);
@@ -71,32 +65,32 @@ const ItemPlato = ({
     addAlert();
     setCarrito([...lista, item]);
     setOpen(false);
-
   };
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
-  
     setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
   };
 
-
   return (
     <Fragment>
-       <div className="col">
-         <div className="card text-center text-white bg-dark shadow-5 h-100">
+      <div className="col">
+        <div className="card text-center text-white bg-dark shadow-5 h-100">
           <img src={imgPlato} className="card-img-top" alt={tituloPlato} />
-               <div className="card-body text-light">
-          <h4 className="m-2 card-title">{tituloPlato}</h4>
-          <p className="card-text text-secondary">{descripcionPlato}</p>
+          <div className="card-body text-light">
+            <h4 className="m-2 card-title">{tituloPlato}</h4>
+            <p className="card-text text-secondary">{descripcionPlato}</p>
           </div>
-          <button  className="btn btn-dark" onClick={handleOpen} > Agregar al carrito <i className="fas fa-shopping-cart"></i></button>
-          </div>
-      </div> 
-    
+          <button className="btn btn-dark" onClick={handleOpen}>
+            {" "}
+            Agregar al carrito <i className="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+
       {/* <div className="col">
         <div className="card h-100">
           <img src={imgPlato} alt={tituloPlato} />
@@ -132,7 +126,7 @@ const ItemPlato = ({
               src={imgPlato}
               className="img-thumbnail rounded o-img-modal-container"
               style={{ height: 220 }}
-              alt= "imagen de plato"
+              alt="imagen de plato"
             />
           </div>
           <div className="o-information-cost">
