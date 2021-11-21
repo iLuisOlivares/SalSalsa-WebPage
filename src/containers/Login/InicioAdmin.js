@@ -6,7 +6,7 @@ export default function InicioAdmin() {
             <h1>Inicio para el administrador</h1>
 
 
-            <p>Ya puedes modificar el menú por uno mas completo :v</p>
+            <p>Ya puedes modificar el menú por uno mas completo</p>
         </div>
     )
 }

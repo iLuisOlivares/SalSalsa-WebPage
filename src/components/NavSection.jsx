@@ -52,6 +52,26 @@ export default function NavSection({ modalControl, isLittle, closeModal }) {
                       Actualizar Menú
                     </NavLink>
                   </li>
+                  <li className="nav-item">
+                    <NavLink
+                      className="select-items"
+                      exact
+                      to="/admin/Reservas"
+                      activeclass="active"
+                    >
+                      Reservas
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      className="select-items"
+                      exact
+                      to="/admin/Comentarios"
+                      activeclass="active"
+                    >
+                      Comentarios
+                    </NavLink>
+                  </li>
                 </>
               )}
 

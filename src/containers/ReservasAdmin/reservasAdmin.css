@@ -1,6 +1,6 @@
 .filtros{
 
-    min-width: 300px;
+    min-width: 400px;
 
 
 }
@@ -35,3 +35,12 @@
 .conte{
     margin: 2px solid black;
 }
+
+.mintam{
+    max-width: 300px;
+    max-height: 40px;
+}
+
+@media (max-width: 600px) {
+    
+    }

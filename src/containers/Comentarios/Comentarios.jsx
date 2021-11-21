@@ -59,9 +59,10 @@ function Comentarios() {
                     {
                         respuestas.map(( resp) => (
                             <ComentariosDiv
+                            key = {resp.id}
                             usuario = {resp.id}
                             mensaje = {resp.Mensaje}
-                            fecha = "21/07/2021"
+                            fecha = {resp.fecha}
                             ></ComentariosDiv>
                         )
                         )}

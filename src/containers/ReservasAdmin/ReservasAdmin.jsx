@@ -3,8 +3,22 @@ import { useState, useEffect } from "react";
 import "./reservasAdmin.css";
 import ItemReserva from "./ItemReserva";
 
+
+const searchReserva = (term) =>{
+
+  return function(x){
+    return 
+
+}}
+
 function ReservasAdmin() {
+
+
   const [reservas, cambiarReservas] = useState([]);
+  const [term, setTerm] = useState("estado");
+  const [term2, setTerm2] = useState("");
+  const [term3, setTerm3] = useState("");
+  
 
   useEffect(() => {
     console.log("si");
@@ -13,12 +27,17 @@ function ReservasAdmin() {
 
   const obtenerReservas = async () => {
     const data = await fetch(
-      "https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/comments"
+      "https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/Reservas"
     );
     const resp = await data.json();
     console.log(resp);
     cambiarReservas(resp);
   };
+
+
+ 
+
+
 
   return (
     <div className="m-3">
@@ -27,49 +46,40 @@ function ReservasAdmin() {
           <div className="col-12">
             <div className="">
               <div className="nav-r">
-                <div className="text-light px-2 py-2 d-flex  justify-content-around filtros">
-                  <p className="m-0">Pendientes</p>
-                  <p className="m-0">Aceptados</p>
-                  <p className="m-0">Rechazados</p>
+                <div className="text-light px-2 py-2 d-flex  justify-content-between filtros">
+                  <select  onChange = {e => setTerm(e.target.value)} className="mintam form-select form-select-sm" name="select" id="1">
+                  <option defaultValue>Estado</option>
+                    <option >Aceptados</option>
+                    <option >Rechazados</option>
+                    <option >Caducados</option>
+
+                  </select>
                 </div>
                 <div className="py-2 px-2 text-light">
-                  <p className="m-0">Historial</p>
+                  <input style={{width: "100px"}} className="m-1" onChange = {e => setTerm2(e.target.value)} placeholder = "Id"type="text" />
+                  <input style={{width: "100px"}} className="m-1" onChange = {e => setTerm3(e.target.value)} placeholder = "Fecha"type="text" />
+
                 </div>
               </div>
 
               <div className="body-r">
-                <ItemReserva
-                  reservaId="1"
-                  tipo="Reunion"
-                  cliente="cliente"
-                  clienteEmail="cliente@email.com"
-                  asunto="asunto"
-                  fecha="21/12/2022 - 03:00"
-                  numeroPersonas="2"
-                  estado = "pendiente"
-                ></ItemReserva>
+                {
+                  reservas.filter( (e) => e.estado.includes(term.toLowerCase())  || !term).filter((e) => e.id.includes(term2)  || !term2).filter((e) => e.fecha.includes(term3)  || !term3).map((reser)=>(
+                    <ItemReserva
+                      key = {reser.id}
+                      reservaId={reser.id}
+                      tipo={reser.tipo}
+                      cliente={reser.name}
+                      clienteEmail={reser.email}
+                      asunto={reser.asunto}
+                      fecha={reser.fecha}
+                      numeroPersonas={reser.cantidad}
+                      estado = "pendiente"
+                    ></ItemReserva>
 
-                <ItemReserva
-                  reservaId="2"
-                  tipo="Reunion"
-                  cliente="cliente"
-                  clienteEmail="cliente@email.com"
-                  asunto="asunto"
-                  fecha="21/12/2022 - 03:00"
-                  numeroPersonas="2"
-                  estado ="rechazado"
-                ></ItemReserva>
-                
 
-                <ItemReserva
-                  reservaId="3"
-                  tipo="Reunion"
-                  cliente="cliente"
-                  clienteEmail="cliente@email.com"
-                  asunto="asunto"
-                  fecha="21/12/2022 - 03:00"
-                  numeroPersonas="2"
-                ></ItemReserva>
+                  ))
+                }
               </div>
             </div>
           </div>

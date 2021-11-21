@@ -174,6 +174,7 @@ const Carta = () => {
                 ) : (
                   platillos.map((item) => (
                     <ItemPlato
+                      key={item.id}
                       tituloPlato={item.nombre}
                       descripcionPlato={item.descripcion}
                       imgPlato={item.imagen}

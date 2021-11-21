@@ -3,7 +3,12 @@ import "./reservasAdmin.css";
 
 function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, numeroPersonas, estado }) {
     
+    const mail = "mailto:" + {clienteEmail};
     
+
+
+
+
 
     if(estado === "pendiente"){
 
@@ -25,8 +30,8 @@ function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, num
             <p className="m-0 p-3">Asunto: {asunto}</p>
     
             <div className="p-3 container-botones d-flex justify-content-around ">
-                <button className="btn btn-success">Aceptar</button>
-                <button className="btn btn-danger">Rechazar</button>
+                <a href={mail} className="mintam btn btn-success">Aceptar</a>
+                <button className="mintam btn btn-danger">Rechazar</button>
             </div>
     
             </div>
@@ -54,7 +59,7 @@ function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, num
             <p className="m-0 p-3">Asunto: {asunto}</p>
     
             <div className="p-3 container-botones d-flex justify-content-around ">
-                <button className="text-light btn btn-info">Modificar</button>
+                <button className="mintam text-light btn btn-info">Modificar</button>
             </div>
     
             </div>
