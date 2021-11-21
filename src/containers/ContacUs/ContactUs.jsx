@@ -114,10 +114,10 @@ function ContactUs() {
   };
 
   return (
-    <div className="container mb-5">
-      <div className="col-12 text-center p-lg-5 pb-lg-4 m-ms-1 p-ms-2">
+    <div className="container my-5">
+      <div className="col-12 text-center ">
         <h2 className="text fw-bold">Contactanos</h2>
-        <hr className="divider" />
+        <hr className="divider mb-5" />
       </div>
 
       <div className="row">
@@ -184,12 +184,12 @@ function ContactUs() {
               name="message"
             />
             {formulario === false && (
-              <MensajeStyled1>
+              <MensajeStyled1  className="fw-light">
                 No se ha enviado el formulario: Verifique cada uno de los campos
               </MensajeStyled1>
             )}
             {formulario === true && (
-              <MensajeStyled2>
+              <MensajeStyled2  className="fw-light">
                 Se ha enviado el formulario: Muchas gracias
               </MensajeStyled2>
             )}

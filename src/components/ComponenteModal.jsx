@@ -77,8 +77,9 @@ function ComponenteModal({ precio, carrito, setCarrito }) {
   return (
     <>
       <button
+      style={{backgroundColor: "rgb(196 55 55)"}}
         type="button"
-        className="btn btn-dark"
+        className="btn btn-danger"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >

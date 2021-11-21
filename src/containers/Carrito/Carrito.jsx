@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "bootstrap";
 import ComponentePago from "../../components/ComponentePago";
 import ContainerCarro from "../../assets/Elements/ContainerCarro";
 
@@ -20,14 +21,14 @@ const Carrito = () => {
 
   
   return (
-    <div className="my-3 container-xxl" style={{ minHeight: "74vh" }}>
+    <div className="my-5 container-xxl" style={{ minHeight: "74vh" }}>
       
-      <h2 className="d-flex mb-3 justify-content-center">Carrito de compra</h2>
+      <h2 className="d-flex pb-4 justify-content-center fw-bold">Carrito de compra</h2>
 
       {/* Contenedor de los items  */}
       <main className="container">
         <div className="row">
-          <div className="card col-8">
+          <div className="card col-8 p-1">
             <ContainerCarro
               carrito={carrito}
               setCarrito={setCarrito}
@@ -40,8 +41,8 @@ const Carrito = () => {
         </div>
 
         {/* Boton seguir comprando */}
-        <div className="row p-2">
-          <Link className="btn btn-dark " to="/carta">
+        <div className="m-3 d-flex justify-content-center">
+          <Link style={{width:"20rem", color: "white", backgroundColor: "rgba(182, 6, 6, 0.8)"}} className="btn btn-light " to="/carta">
             Continuar comprando
           </Link>
         </div>

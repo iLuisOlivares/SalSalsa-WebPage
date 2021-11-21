@@ -117,12 +117,14 @@ const Reserva = () => {
     <Fragment>
       <section>
         <div className="row gx-0 gx-lg-0 justify-content-center mb-2 mx-1 py-5">
+          <div className="col-12 text-center pb-4">
+              <h2 className="text fw-bold">Reserva</h2>
+              <hr className="divider" />
+            </div>
+
           
-          <div className=" shadow-lg  col-xll-3 col-xl-6 col-lg-8 px-4 py-3 px-sm-5 rounded-3">
-          <div className="col-12 text-center p-3">
-            <h2 className="text fw-bold">Reserva</h2>
-            <hr className="divider" />
-          </div>
+          <div className=" shadow-lg  col-xll-3 col-xl-7 col-lg-8 px-4 py-3 px-sm-5 rounded-3">
+   
             <form onSubmit={onSubmit} estado={formulario}>
 
               <SelectElement />
@@ -209,7 +211,7 @@ const Reserva = () => {
                         </MensajeStyled1>
                       )}
                       {formulario === 'true' && (
-                        <MensajeStyled2>
+                        <MensajeStyled2  className="fw-light">
                           Se ha enviado el formulario: Muchas gracias
                         </MensajeStyled2>
                       )}
