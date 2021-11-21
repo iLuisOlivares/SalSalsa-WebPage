@@ -72,7 +72,7 @@ function Servicios () {
                   <ComponenteServicio
                   nombre = "Despedidas"
                   leyenda = "Lorem ipsum dolor sit amet consect  dolor epsum adipisicing elit. Voluptatum, qui!"
-                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/uqlj6uhr8fv58y8xpqmw.jpg  '
+                  imagen = 'https://res.cloudinary.com/iluiss/image/upload/v1637251608/Sal-Salsa/servicios%20/uqlj6uhr8fv58y8xpqmw.jpg'
                   >
                   </ComponenteServicio>
                     </div>

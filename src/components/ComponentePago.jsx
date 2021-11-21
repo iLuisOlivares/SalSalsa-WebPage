@@ -17,9 +17,9 @@ function ComponentePago({carrito,setCarrito}) {
   return (
     <div className="col-4">
       <div className=" card d-flex align-content-center ">
-        <div className="card-body  ">
-          <h5 className="card-title d-flex justify-content-center ">Total</h5>
-          <p id="costo-total" className="d-flex justify-content-center card-text">
+        <div style={{backgroundColor:"rgb(0 0 0 / 80%)"}} className="card-body  ">
+          <h5 className="card-title text-light d-flex justify-content-center ">Total</h5>
+          <p id="costo-total" className="text-light d-flex justify-content-center card-text">
             {valor}
           </p>
           <div className=" d-flex justify-content-center  ">
