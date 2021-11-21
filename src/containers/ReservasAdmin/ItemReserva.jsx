@@ -1,14 +1,46 @@
 import React from 'react';
 import "./reservasAdmin.css";
 
-function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, numeroPersonas, estado }) {
+function ItemReserva({reservas, cambiarReservas, reservaId,reserva, tipo, cliente, clienteEmail, asunto ,fecha, numeroPersonas, estado }) {
+
+
+    const info = "%0D%0A%0D%0A%20Id%20reserva:%20"+reservaId+"%0D%0A%0D%0A%20Tipo:%20"+tipo+"%0D%0A%0D%0A%20Cantidad:%20"+numeroPersonas+"%0D%0A%0D%0A%20Fecha:%20"+fecha;
+    const mailAccept = "mailto:"+clienteEmail +"?cc=luissolivaresp@gmail.com&bcc=luissolivares14@gmail.com&subject=Aceptar%20Reserva%20-%20Sal%20y%20Salsa&body=Coordial%20saludo%20"+cliente+ "%0D%0A%0D%0ASu%20reserva%20ha%20sido%20aceptada!"+info;
+    const mailCancel = "mailto:"+clienteEmail +"?cc=luissolivaresp@gmail.com&bcc=luissolivares14@gmail.com&subject=Rechazar%20Reserva%20-%20Sal%20y%20Salsa&body=Coordial%20saludo%20"+cliente+ "%0D%0A%0D%0ASu%20reserva%20ha%20sido%20rechazadab!"+info;
     
-    const mail = "mailto:" + {clienteEmail};
+    const updateEstado = async(reserva,id)=>{
+
+        const resp = await fetch("https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/Reservas/"+ id,{
+            method: 'PUT',
+            body: JSON.stringify(reserva),
+            headers:{'Content-Type': 'application/json'}
+            });
+
+            return(resp.ok) ? 'Actualizado' : 'No Actualizado'
+    }
+
+    const onAccept = () =>{
+        reserva.estado = 'aceptado';
+        updateEstado(reserva,reservaId);
+        cambiarReservas([...reservas]);
+
+    }
+
+    const onReject = () =>{
+        reserva.estado = 'rechazado';
+        updateEstado(reserva,reservaId);
+        cambiarReservas([...reservas]);
+
+    }
+
+    const onPendiente = () =>{
+        reserva.estado = 'pendiente';
+        updateEstado(reserva,reservaId);
+        cambiarReservas([...reservas]);
+    }
+
+
     
-
-
-
-
 
     if(estado === "pendiente"){
 
@@ -30,8 +62,8 @@ function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, num
             <p className="m-0 p-3">Asunto: {asunto}</p>
     
             <div className="p-3 container-botones d-flex justify-content-around ">
-                <a href={mail} className="mintam btn btn-success">Aceptar</a>
-                <button className="mintam btn btn-danger">Rechazar</button>
+                <a href={mailAccept} target="_blank" onClick={()=>onAccept()} className="mintam btn btn-success">Aceptar</a>
+                <a href={mailCancel} target="_blank" onClick={()=>onReject()}  className="mintam btn btn-danger">Rechazar</a>
             </div>
     
             </div>
@@ -59,7 +91,7 @@ function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, num
             <p className="m-0 p-3">Asunto: {asunto}</p>
     
             <div className="p-3 container-botones d-flex justify-content-around ">
-                <button className="mintam text-light btn btn-info">Modificar</button>
+                <button onClick={()=>{onPendiente()}} className="mintam text-light btn btn-info">Modificar</button>
             </div>
     
             </div>
@@ -86,7 +118,6 @@ function ItemReserva({reservaId, tipo, cliente, clienteEmail, asunto ,fecha, num
             <p className="m-0 p-3">Asunto: {asunto}</p>
     
         
-    
             </div>
     
         </div>

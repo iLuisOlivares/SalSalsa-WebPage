@@ -91,7 +91,7 @@ export default function NavSection({ modalControl, isLittle, closeModal }) {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="select-items" to="mapa">
+                <NavLink className="select-items" to="/mapa">
                   Mapa
                 </NavLink>
               </li>
@@ -126,7 +126,7 @@ export default function NavSection({ modalControl, isLittle, closeModal }) {
             </ul>
             <ul>
               <li className="nav-item">
-                <NavLink className="icono-1 select-item" to="carrito">
+                <NavLink className="icono-1 select-item" to="/carrito">
                   <FontAwesomeIcon icon={faShoppingBasket} />
                 </NavLink>
               </li>

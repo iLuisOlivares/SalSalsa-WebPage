@@ -4,26 +4,28 @@ import "./reservasAdmin.css";
 import ItemReserva from "./ItemReserva";
 
 
-const searchReserva = (term) =>{
 
-  return function(x){
-    return 
-
-}}
 
 function ReservasAdmin() {
 
 
   const [reservas, cambiarReservas] = useState([]);
-  const [term, setTerm] = useState("estado");
+  const [term, setTerm] = useState("pendiente");
   const [term2, setTerm2] = useState("");
   const [term3, setTerm3] = useState("");
   
 
   useEffect(() => {
-    console.log("si");
     obtenerReservas();
+
   }, []);
+
+  useEffect(() => {
+    console.log("si");
+  }, [reservas]);
+  
+
+
 
   const obtenerReservas = async () => {
     const data = await fetch(
@@ -48,10 +50,9 @@ function ReservasAdmin() {
               <div className="nav-r">
                 <div className="text-light px-2 py-2 d-flex  justify-content-between filtros">
                   <select  onChange = {e => setTerm(e.target.value)} className="mintam form-select form-select-sm" name="select" id="1">
-                  <option defaultValue>Estado</option>
-                    <option >Aceptados</option>
-                    <option >Rechazados</option>
-                    <option >Caducados</option>
+                  <option defaultValue>Pendiente</option>
+                    <option >Aceptado</option>
+                    <option >Rechazado</option>
 
                   </select>
                 </div>
@@ -74,7 +75,10 @@ function ReservasAdmin() {
                       asunto={reser.asunto}
                       fecha={reser.fecha}
                       numeroPersonas={reser.cantidad}
-                      estado = "pendiente"
+                      estado = {reser.estado}
+                      reserva = {reser}
+                      reservas = {reservas}
+                      cambiarReservas = {cambiarReservas}
                     ></ItemReserva>
 
 
