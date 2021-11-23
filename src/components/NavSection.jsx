@@ -10,7 +10,7 @@ export default function NavSection({ modalControl, isLittle, closeModal }) {
   const auth = useAuth();
   return (
     <Fragment>
-      {isLittle == false ? (
+      {isLittle === false ? (
         <Fragment>
           <section className="hamburger" onClick={() => modalControl()}>
             <div className="line"></div>
