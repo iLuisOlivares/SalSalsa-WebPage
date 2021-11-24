@@ -74,8 +74,9 @@ li {
 }
 
 @media screen and (max-width: 1210px) {
-  .navbar-brand > img {
-    margin-top: 2rem;
+  .logo {
+    width: 120px;
+    height: auto;
   }
   li {
     font-weight: bold;
