@@ -20,6 +20,7 @@ import Contact from "../containers/ContacUs/ContactUs";
 import Comentarios from '../containers/Comentarios/Comentarios';
 import ReservasAdmin from '../containers/ReservasAdmin/ReservasAdmin';
 import ComentariosAdmin from '../containers/ComentariosAdmin/ComentariosAdmin';
+import NosotrosAdmin from '../containers/NosotrosAdmin/NosotrosAdmin';
 
 /* 
   función que permite crear todas las rutas de la página:
@@ -47,6 +48,7 @@ function App() {
 
             <Route exact path="/Admin/Reservas" component={ReservasAdmin} />
             <Route exact path="/Admin/Comentarios" component={ComentariosAdmin} />
+            <Route exact path="/Admin/Nosotros" component={NosotrosAdmin} />
 
             <Route exact path="/signin">
               <Redirect to="/login" />

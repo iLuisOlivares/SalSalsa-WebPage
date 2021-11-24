@@ -1,5 +1,7 @@
 import React, { useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Fragment } from "react";
+import Comentarios from "../Comentarios/Comentarios";
 
 import {
   faPhone,
@@ -114,97 +116,102 @@ function ContactUs() {
   };
 
   return (
-    <div className="container my-5">
-      <div className="col-12 text-center ">
-        <h2 className="text fw-bold">Contactanos</h2>
-        <hr className="divider mb-5" />
-      </div>
-
-      <div className="row">
-        <div className="p-3 col-12 col-md-6">
-          <div className="info d-flex justify-content-center ">
-            <div>
-              <p>{envelope} contactanos@colnodo.com</p>
-              <p>{marker} Cra. 51a #46, Medellín, Antioquia</p>
-              <p> {phone} (+57) 555 1234</p>
-              <p> {mobile} (318) 4344 760 </p>
+    <Fragment>
+      <div className="container my-5">
+        <div className="col-12 text-center ">
+          <h2 className="text fw-bold">Contactanos</h2>
+          <hr className="divider mb-5" />
+        </div>
+        <div className="row">
+          <div className="p-3 col-12 col-md-6">
+            <div className="info d-flex justify-content-center ">
+              <div>
+                <p>{envelope} contactanos@colnodo.com</p>
+                <p>{marker} Cra. 51a #46, Medellín, Antioquia</p>
+                <p> {phone} (+57) 555 1234</p>
+                <p> {mobile} (318) 4344 760 </p>
+              </div>
+            </div>
+            <div style={{ fontSize: "20px", color: "white" }} className="Barlist mt-4 d-flex justify-content-center"  >
+              <div  style={{ width: "250px" }} className="d-flex justify-content-between mb-5">
+      
+                <FontAwesomeIcon style={styleIcon} icon={faFacebookF} />
+                <FontAwesomeIcon style={styleIcon} icon={faTwitter} />
+                <FontAwesomeIcon style={styleIcon} icon={faInstagram} />
+              </div>
             </div>
           </div>
-
-          <div style={{ fontSize: "20px", color: "white" }} className="Barlist mt-4 d-flex justify-content-center"  >
-            <div  style={{ width: "250px" }} className="d-flex justify-content-between mb-5">
-                
-              <FontAwesomeIcon style={styleIcon} icon={faFacebookF} />
-              <FontAwesomeIcon style={styleIcon} icon={faTwitter} />
-              <FontAwesomeIcon style={styleIcon} icon={faInstagram} />
-            </div>
+          <div className="shadow rounded-3 p-3 col-12 col-md-6">
+            <form className="Form" onSubmit={onSubmit} estado={formulario}>
+              <Input
+                estado={nombre}
+                cambiarEstado={cambiarNombre}
+                expresionRegular={expresiones.nombre}
+                label="Nombre Completo"
+                placeholder="Nombre Completo"
+                inputType="text"
+                leyenda="Escriba un nombre valido"
+                name="name"
+              />
+              <Input
+                estado={correo}
+                cambiarEstado={cambiarCorreo}
+                expresionRegular={expresiones.correo}
+                label="Correo Electronico"
+                placeholder="Correo Electronico"
+                inputType="email"
+                leyenda="Escriba un Email valido"
+                name="email"
+              />
+              <Input
+                estado={asunto}
+                cambiarEstado={cambiarAsunto}
+                label="Asunto"
+                placeholder="Asunto"
+                inputType="text"
+                leyenda="Escriba un asunto valido"
+                expresionRegular={expresiones.asunto}
+                name="subject"
+              />
+              <TextAreaComponent
+                estado={descripcion}
+                cambiarEstado={cambiarDescripcion}
+                expresionRegular={expresiones.descripcion}
+                label="Descripcion"
+                placeholder="Descripcion"
+                inputType="text"
+                leyenda="Escriba una descripcion valida"
+                name="message"
+              />
+              {formulario === false && (
+                <MensajeStyled1  className="fw-light">
+                  No se ha enviado el formulario: Verifique cada uno de los campos
+                </MensajeStyled1>
+              )}
+              {formulario === true && (
+                <MensajeStyled2  className="fw-light">
+                  Se ha enviado el formulario: Muchas gracias
+                </MensajeStyled2>
+              )}
+              <button
+                id="button-id"
+                value="Send"
+                type="submit"
+                className="btn btn-danger"
+              >
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
 
-        <div className="shadow rounded-3 p-3 col-12 col-md-6">
-          <form className="Form" onSubmit={onSubmit} estado={formulario}>
-            <Input
-              estado={nombre}
-              cambiarEstado={cambiarNombre}
-              expresionRegular={expresiones.nombre}
-              label="Nombre Completo"
-              placeholder="Nombre Completo"
-              inputType="text"
-              leyenda="Escriba un nombre valido"
-              name="name"
-            />
-            <Input
-              estado={correo}
-              cambiarEstado={cambiarCorreo}
-              expresionRegular={expresiones.correo}
-              label="Correo Electronico"
-              placeholder="Correo Electronico"
-              inputType="email"
-              leyenda="Escriba un Email valido"
-              name="email"
-            />
-            <Input
-              estado={asunto}
-              cambiarEstado={cambiarAsunto}
-              label="Asunto"
-              placeholder="Asunto"
-              inputType="text"
-              leyenda="Escriba un asunto valido"
-              expresionRegular={expresiones.asunto}
-              name="subject"
-            />
-            <TextAreaComponent
-              estado={descripcion}
-              cambiarEstado={cambiarDescripcion}
-              expresionRegular={expresiones.descripcion}
-              label="Descripcion"
-              placeholder="Descripcion"
-              inputType="text"
-              leyenda="Escriba una descripcion valida"
-              name="message"
-            />
-            {formulario === false && (
-              <MensajeStyled1  className="fw-light">
-                No se ha enviado el formulario: Verifique cada uno de los campos
-              </MensajeStyled1>
-            )}
-            {formulario === true && (
-              <MensajeStyled2  className="fw-light">
-                Se ha enviado el formulario: Muchas gracias
-              </MensajeStyled2>
-            )}
-            <button
-              id="button-id"
-              value="Send"
-              type="submit"
-              className="btn btn-danger"
-            >
-              Enviar
-            </button>
-          </form>
-        </div>
+      <Comentarios></Comentarios>
+
       </div>
-    </div>
+    
+      
+
+    </Fragment>
   );
 }
 

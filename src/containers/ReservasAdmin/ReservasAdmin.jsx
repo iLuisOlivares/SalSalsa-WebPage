@@ -19,17 +19,14 @@ function ReservasAdmin() {
     obtenerReservas();
 
   }, []);
-
-  useEffect(() => {
-    console.log("si");
-  }, [reservas]);
   
+ 
 
 
 
   const obtenerReservas = async () => {
     const data = await fetch(
-      "https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/Reservas"
+      "https://restaurante-sal-salsa20211123190304.azurewebsites.net/api/reserva"
     );
     const resp = await data.json();
     console.log(resp);
@@ -65,16 +62,16 @@ function ReservasAdmin() {
 
               <div className="body-r">
                 {
-                  reservas.filter( (e) => e.estado.includes(term.toLowerCase())  || !term).filter((e) => e.id.includes(term2)  || !term2).filter((e) => e.fecha.includes(term3)  || !term3).map((reser)=>(
+                  reservas.filter( (e) => e.estado.includes(term.toLowerCase())  || !term).filter((e) => e.id.toString().includes(term2)  || !term2).filter((e) => e.fecha.includes(term3)  || !term3).map((reser)=>(
                     <ItemReserva
                       key = {reser.id}
                       reservaId={reser.id}
-                      tipo={reser.tipo}
-                      cliente={reser.name}
-                      clienteEmail={reser.email}
+                      tipo={reser.servicio_nombre}
+                      cliente={reser.nombre_referencia}
+                      clienteEmail={reser.correo}
                       asunto={reser.asunto}
                       fecha={reser.fecha}
-                      numeroPersonas={reser.cantidad}
+                      numeroPersonas={reser.cantidad_personas}
                       estado = {reser.estado}
                       reserva = {reser}
                       reservas = {reservas}

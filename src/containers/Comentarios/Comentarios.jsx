@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../../components/ComponenteInput'
+import InputContact from '../ContacUs/InputContact';
 import { useState , useEffect} from 'react';
 import ComentariosDiv from '../../components/ComentariosDiv';
 
@@ -21,7 +21,7 @@ const style1= {
 function Comentarios() {
 
     const [mensaje, cambiarMensaje] = useState({ campo: "", valido: null });
-    const [respuestas, cambiarRespuetas] = useState([]);
+    const [respuestas, cambiarRespuestas] = useState([]);
 
     useEffect(()=>{
         console.log('si');
@@ -29,19 +29,24 @@ function Comentarios() {
 
     }, [])
 
+    
+
     const obtenerComentarios = async () =>{
-        const data = await fetch('https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/comments');
+        const data = await fetch('https://restaurante-sal-salsa20211123190304.azurewebsites.net/api/comentario');
         const resp = await data.json();
         console.log(resp);
-        cambiarRespuetas(resp)
-
+        cambiarRespuestas(resp)
     }
 
-    return (
-        <div className="container">
-            <h2 className="p-4">Comentarios</h2>
+  
 
-            <Input
+  
+
+    return (
+        <div className="mt-5 container ">
+            <h2 className="p-4 d-flex justify-content-center">Comentarios</h2>
+
+            <InputContact
                 estado={mensaje}
                 cambiarEstado={cambiarMensaje}
                 label="Mensaje"
@@ -49,8 +54,11 @@ function Comentarios() {
                 inputType="text"
                 leyenda="Escriba un mensaje valido"
                 expresionRegular={expresiones.descripcion}
+                obtenerComentarios = {obtenerComentarios}
               />
+          
             <div>
+
 
                 <div  className="shadow container rounded" style={style1}>
 
@@ -60,8 +68,9 @@ function Comentarios() {
                         respuestas.map(( resp) => (
                             <ComentariosDiv
                             key = {resp.id}
-                            usuario = {resp.id}
-                            mensaje = {resp.Mensaje}
+                            usuarioId = {resp.cliente_id}
+                            nombre = {resp.nombre_completo}
+                            mensaje = {resp.comentario}
                             fecha = {resp.fecha}
                             ></ComentariosDiv>
                         )

@@ -6,13 +6,13 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 
-function ItemComentario({cliente,comentario ,fecha,respuestas,cambiar}) {    
+function ItemComentario({idComentario,cliente,nombre,comentario ,fecha,respuestas,cambiar}) {    
 
 
     
   const eliminarItem = (id) => {
     const lista = respuestas.filter((item) => item.id !== id);
-    eliminarComentarios(cliente)
+    eliminarComentarios(id);
     console.log(lista);
     if(lista !== ''){
       cambiar(lista);
@@ -23,7 +23,7 @@ function ItemComentario({cliente,comentario ,fecha,respuestas,cambiar}) {
 
     
     const eliminarComentarios = async(id) =>{
-        const resp = await fetch("https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/comments/"+ id,{
+        const resp = await fetch("https://restaurante-sal-salsa20211123190304.azurewebsites.net/api/comentario/"+ id,{
         method: 'DELETE'
         }
         );
@@ -36,10 +36,10 @@ function ItemComentario({cliente,comentario ,fecha,respuestas,cambiar}) {
             <div style = {{backgroundColor: "rgba(28, 27, 29, 0.836)"}}className="conte text-light">
     
             <div className="d-flex justify-content-around">
-            <p className="m-2 ">Cliente: {cliente}</p>
+            <p style={{width: "120px", fontSize: "13px"}} className="m-2 ">Cliente: {cliente} - {nombre}</p>
 
             <p className="m-2 fw-lighter fw-lighter">{fecha}</p>
-                <button onClick={()=>{eliminarItem(cliente)}} className="m-2 btn btn-danger">   <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button>
+                <button onClick={()=>{eliminarItem(idComentario)}} className="m-2 btn btn-danger">   <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button>
             </div>
             
             <div style={{backgroundColor:"#f1eded"}} className=" text-dark d-flex justify-content-around">

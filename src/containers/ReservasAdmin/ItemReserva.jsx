@@ -8,11 +8,11 @@ function ItemReserva({reservas, cambiarReservas, reservaId,reserva, tipo, client
     const mailAccept = "mailto:"+clienteEmail +"?cc=luissolivaresp@gmail.com&bcc=luissolivares14@gmail.com&subject=Aceptar%20Reserva%20-%20Sal%20y%20Salsa&body=Coordial%20saludo%20"+cliente+ "%0D%0A%0D%0ASu%20reserva%20ha%20sido%20aceptada!"+info;
     const mailCancel = "mailto:"+clienteEmail +"?cc=luissolivaresp@gmail.com&bcc=luissolivares14@gmail.com&subject=Rechazar%20Reserva%20-%20Sal%20y%20Salsa&body=Coordial%20saludo%20"+cliente+ "%0D%0A%0D%0ASu%20reserva%20ha%20sido%20rechazadab!"+info;
     
-    const updateEstado = async(reserva,id)=>{
+    const updateEstado = async(object,id)=>{
 
-        const resp = await fetch("https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/Reservas/"+ id,{
+        const resp = await fetch("https://restaurante-sal-salsa20211123190304.azurewebsites.net/api/estado/"+ id,{
             method: 'PUT',
-            body: JSON.stringify(reserva),
+            body: JSON.stringify(object),
             headers:{'Content-Type': 'application/json'}
             });
 
@@ -20,7 +20,8 @@ function ItemReserva({reservas, cambiarReservas, reservaId,reserva, tipo, client
     }
 
     const onAccept = () =>{
-        reserva.estado = 'aceptado';
+ 
+        reserva.estado = "aceptado";
         updateEstado(reserva,reservaId);
         cambiarReservas([...reservas]);
 

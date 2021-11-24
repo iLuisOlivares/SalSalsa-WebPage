@@ -16,7 +16,7 @@ function ComentariosAdmin() {
     
 
     const obtenerComentarios = async () =>{
-      const data = await fetch('https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/comments');
+      const data = await fetch('https://restaurante-sal-salsa20211123190304.azurewebsites.net/api/comentario');
       const resp = await data.json();
       console.log(resp);
       cambiarRespuetas(resp)
@@ -45,8 +45,10 @@ function ComentariosAdmin() {
 
                         <ItemComentario
                         key  = {resp.id}
-                        cliente = {resp.id}
-                        comentario = {resp.Mensaje}
+                        idComentario = {resp.id}
+                        cliente = {resp.cliente_id}
+                        comentario = {resp.comentario}
+                        nombre = {resp.nombre_completo}
                         fecha ={resp.fecha}
                         respuestas = {respuestas}
                         cambiar = {cambiarRespuetas}

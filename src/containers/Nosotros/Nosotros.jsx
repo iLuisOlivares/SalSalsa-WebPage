@@ -15,7 +15,7 @@ function Nosotros() {
 
   const obtenerEmpleados = async () => {
     const data = await fetch(
-      "https://61955d6c74c1bd00176c6d13.mockapi.io/api/v1/Empleado"
+      "https://restaurante-sal-salsa20211123190304.azurewebsites.net/api/empleado"
     );
     const resp = await data.json();
     console.log(resp);
@@ -69,9 +69,9 @@ function Nosotros() {
 
           {/* <!-- row principal -->  */}
           <div className="row pb-5">
-            <div className="col-12 col-lg-12">
+            <div className="col-12  col-lg-12">
               {/* <!-- sub-row1 -->  */}
-              <div className="row1 row cok-12 bg-dark rounded m-lg-2 m-0 m-md-1">
+              <div className="row1 d-flex justify-content-center row cok-12 bg-dark rounded m-lg-2 m-0 m-md-1">
                 {empleados.map((item) => (
                   <EmpleadoComponent
                     key={item.id}
@@ -88,7 +88,7 @@ function Nosotros() {
       </section>
 
       {/* <!-- Testimonials -->  */}
-      <section
+      {/* <section
         style={{ maxWidth: "1000px" }}
         className="container page-section"
         id="Testimonials"
@@ -146,7 +146,7 @@ function Nosotros() {
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </section>
+      </section> */}
     </Fragment>
   );
 }
