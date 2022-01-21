@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dab48e93.chunk.css",
+    "main.js": "/static/js/main.51aacb51.chunk.js",
+    "main.js.map": "/static/js/main.51aacb51.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.865bd490.js",
+    "runtime-main.js.map": "/static/js/runtime-main.865bd490.js.map",
+    "static/css/2.85bb1a1b.chunk.css": "/static/css/2.85bb1a1b.chunk.css",
+    "static/js/2.8d1ccc30.chunk.js": "/static/js/2.8d1ccc30.chunk.js",
+    "static/js/2.8d1ccc30.chunk.js.map": "/static/js/2.8d1ccc30.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e384bc37e033a20db316961d81468f5c.js": "/precache-manifest.e384bc37e033a20db316961d81468f5c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.85bb1a1b.chunk.css.map": "/static/css/2.85bb1a1b.chunk.css.map",
+    "static/css/main.dab48e93.chunk.css.map": "/static/css/main.dab48e93.chunk.css.map",
+    "static/js/2.8d1ccc30.chunk.js.LICENSE.txt": "/static/js/2.8d1ccc30.chunk.js.LICENSE.txt",
+    "static/media/LogoTipo.png": "/static/media/LogoTipo.edb7f34a.png",
+    "static/media/Home.css": "/static/media/fondo.10ed3436.jfif",
+    "static/media/img1.jpg": "/static/media/img1.c3daaf80.jpg",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.865bd490.js",
+    "static/css/2.85bb1a1b.chunk.css",
+    "static/js/2.8d1ccc30.chunk.js",
+    "static/css/main.dab48e93.chunk.css",
+    "static/js/main.51aacb51.chunk.js"
+  ]
+}
